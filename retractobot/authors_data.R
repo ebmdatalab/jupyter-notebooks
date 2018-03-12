@@ -125,8 +125,9 @@ dt <- mutate(dt, year_bin = ifelse(not2cit > 0, ceiling(not2cit/365.25), NA))
 dt <- mutate(dt, year_bin = ifelse(not2cit == 0, 1, year_bin)) # if TRUE set to 1 ; otherwise leave as it is
 dt <- mutate(dt, year_bin = ifelse(not2cit < 0, floor(not2cit/365.25), year_bin))
 
-dt <- mutate(dt, fup = ifelse(year_bin < 0, pmin(abs(fup - not2ret), 365.25), NA))
+dt <- mutate(dt, fup = ifelse(year_bin < 0, pmin(abs(fup - not2ret), 365.25), year_bin * 365.26))
 dt <- mutate(dt, fup = ifelse(year_bin > 0, pmin(abs(not2now - fup), 365.25), fup))
+dt <- mutate(dt, fup = fup/365.25)
 
 dt <- dt %>% 
   group_by(year_bin, retracted_id) %>% # for each study within one year 
@@ -171,3 +172,6 @@ brm.fit <- brm(count ~ offset(log(fup)) + cited_retracted + retracted_bestdate +
                data = dt)
 
 ## we will use rate base modelling (Poisson/quasi-Poisson/negative binomials/survial models/time to first citation)
+
+
+
