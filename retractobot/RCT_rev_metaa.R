@@ -100,8 +100,8 @@ dt <- mutate(dt, metaa = ifelse(grepl("meta(-| )?analys(e|i)s", citing_pub_types
 dt <- filter(dt, rct == 1)
 dt <- filter(dt, sysrev == 1 | metaa == 1)
 
-
-
+setwd("/Users/kawa/Documents/DataLab/Retracto-bot/ReMeta") 
+write.table(dt, "RetractedRCTs.txt", quote=F, sep = "\t", na = "", row.names = F)
 
 
 

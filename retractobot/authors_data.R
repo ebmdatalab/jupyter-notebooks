@@ -31,16 +31,18 @@ figures <- "~/Documents/Datalab/Retracto-bot/Figures"
 ### Import Data ###
 setwd(paperdata)
 #readLines("citation_rates_20180112.tsv", n = 2) # Sample file
-col.classes <- c("double", "integer",rep("character",7),"integer",rep("character",3),"double","integer",rep("character",8))
-dt <- tbl_df(read.delim("citation_rates_20180112.tsv",
-                        na.strings = "",
-                        colClasses = col.classes))
+#col.classes <- c("double", "integer",rep("character",7),"integer",rep("character",3),"double","integer",rep("character",8))
+#dt <- tbl_df(read.delim("citation_rates_20180112.tsv",
+#                        na.strings = "",
+#                        colClasses = col.classes))
+dt <- readRDS("citation_rates_20180112.rds")
 print(object.size(dt), units = "MB")
 
 setwd(authdata)
-auth <- tbl_df(read.delim("citing_authors_20180212.tsv", 
-                          na.strings = "",
-                          stringsAsFactors = F))
+#auth <- tbl_df(read.delim("citing_authors_20180212.tsv", 
+#                          na.strings = "",
+#                          stringsAsFactors = F))
+auth <- readRDS("citing_authors_20180212.rds")
 print(object.size(auth), units = "MB")
 
 ### Drop Useless Crud ###
@@ -101,6 +103,17 @@ auth <- auth %>%
   ungroup()
 auth <- filter(auth, complete.cases(email_address)) # Only scopus author IDs with email addresses.
 
+
+### Keep only authors citing a single retracted paper
+temp <- auth %>%
+  group_by(scopus_auid, retracted_id) %>% 
+  slice(1) %>%
+  ungroup()
+
+summarise(temp, N=n_distinct(scopus_auid))
+summarise(temp, N=n_distinct(retracted_id))
+
+
 ### Create Randomisation Sequence ###
 indices <- distinct(auth, retracted_id)
 indices <- select(indices, retracted_id)
@@ -114,6 +127,7 @@ rm(indices_int, indices_comp)
 
 auth <- left_join(auth, indices, by = "retracted_id")
 rm(indices)
+summarise(auth, N=n_distinct(scopus_auid))
 
 ###================================###
 ### Poisson model for the analysis ###
