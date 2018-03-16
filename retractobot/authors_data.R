@@ -31,16 +31,18 @@ figures <- "~/Documents/Datalab/Retracto-bot/Figures"
 ### Import Data ###
 setwd(paperdata)
 #readLines("citation_rates_20180112.tsv", n = 2) # Sample file
-col.classes <- c("double", "integer",rep("character",7),"integer",rep("character",3),"double","integer",rep("character",8))
-dt <- tbl_df(read.delim("citation_rates_20180112.tsv",
-                        na.strings = "",
-                        colClasses = col.classes))
+#col.classes <- c("double", "integer",rep("character",7),"integer",rep("character",3),"double","integer",rep("character",8))
+#dt <- tbl_df(read.delim("citation_rates_20180112.tsv",
+#                        na.strings = "",
+#                        colClasses = col.classes))
+dt <- readRDS("citation_rates_20180112.rds")
 print(object.size(dt), units = "MB")
 
 setwd(authdata)
-auth <- tbl_df(read.delim("citing_authors_20180212.tsv", 
-                          na.strings = "",
-                          stringsAsFactors = F))
+#auth <- tbl_df(read.delim("citing_authors_20180212.tsv", 
+#                          na.strings = "",
+#                          stringsAsFactors = F))
+auth <- readRDS("citing_authors_20180212.rds")
 print(object.size(auth), units = "MB")
 
 ### Drop Useless Crud ###
@@ -101,6 +103,17 @@ auth <- auth %>%
   ungroup()
 auth <- filter(auth, complete.cases(email_address)) # Only scopus author IDs with email addresses.
 
+
+### Keep only authors citing a single retracted paper
+temp <- auth %>%
+  group_by(scopus_auid, retracted_id) %>% 
+  slice(1) %>%
+  ungroup()
+
+summarise(temp, N=n_distinct(scopus_auid))
+summarise(temp, N=n_distinct(retracted_id))
+
+
 ### Create Randomisation Sequence ###
 indices <- distinct(auth, retracted_id)
 indices <- select(indices, retracted_id)
@@ -114,6 +127,7 @@ rm(indices_int, indices_comp)
 
 auth <- left_join(auth, indices, by = "retracted_id")
 rm(indices)
+summarise(auth, N=n_distinct(scopus_auid))
 
 ###================================###
 ### Poisson model for the analysis ###
@@ -125,8 +139,9 @@ dt <- mutate(dt, year_bin = ifelse(not2cit > 0, ceiling(not2cit/365.25), NA))
 dt <- mutate(dt, year_bin = ifelse(not2cit == 0, 1, year_bin)) # if TRUE set to 1 ; otherwise leave as it is
 dt <- mutate(dt, year_bin = ifelse(not2cit < 0, floor(not2cit/365.25), year_bin))
 
-dt <- mutate(dt, fup = ifelse(year_bin < 0, pmin(abs(fup - not2ret), 365.25), NA))
+dt <- mutate(dt, fup = ifelse(year_bin < 0, pmin(abs(fup - not2ret), 365.25), year_bin * 365.26))
 dt <- mutate(dt, fup = ifelse(year_bin > 0, pmin(abs(not2now - fup), 365.25), fup))
+dt <- mutate(dt, fup = fup/365.25)
 
 dt <- dt %>% 
   group_by(year_bin, retracted_id) %>% # for each study within one year 
@@ -171,3 +186,6 @@ brm.fit <- brm(count ~ offset(log(fup)) + cited_retracted + retracted_bestdate +
                data = dt)
 
 ## we will use rate base modelling (Poisson/quasi-Poisson/negative binomials/survial models/time to first citation)
+
+
+
