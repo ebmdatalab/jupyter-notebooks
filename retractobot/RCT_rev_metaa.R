@@ -40,7 +40,7 @@ print(object.size(dt), units = "MB")
 ### Drop Useless Crud ###
 #any(is.na(dt$citing_scopus_id)) #use to search for missing
 
-dt <- select(dt,  retracted_scopus_id, retracted_artdate, retracted_journaldate,  retracted_title, retracted_pub_types, retracted_issn, citing_scopus_id, citing_artdate, citing_journaldate, citing_title, citing_pub_types, citing_issn, notice_pmid, notice_journaldate, notice_artdate)
+dt <- select(dt,  retracted_pmid, retracted_scopus_id, retracted_artdate, retracted_journaldate,  retracted_title, retracted_pub_types, citing_scopus_id, citing_pmid, citing_doi, citing_artdate, citing_journaldate, citing_title, citing_pub_types, notice_pmid, notice_journaldate, notice_artdate)
 
 
 ### Convert Scopus IDs to 64-Bit Integers ###
@@ -65,8 +65,9 @@ dt <- mutate_at(dt, vars(contains("date")), funs(as.Date(., origin = "1970-01-01
 dt <- filter(dt, notice_bestdate >= retracted_bestdate) # Retraction notice must be after article publication
 dt <- filter(dt, citing_bestdate >= retracted_bestdate) # Citation must be after publication
 ### Sort Dataset ###
-names(dt) <-  gsub("scopus_id|pmid", "id", names(dt))
-dt <- select(dt, retracted_id, retracted_bestdate, retracted_pub_types, retracted_title, retracted_issn, citing_id, citing_bestdate, citing_pub_types, citing_title, citing_issn, notice_id, notice_bestdate)
+#names(dt) <-  gsub("scopus_id|pmid", "id", names(dt))
+dt <- select(dt, retracted_id, retracted_pmid, retracted_scopus_id, retracted_bestdate, retracted_pub_types, retracted_title, citing_id, citing_pmid, citing_scopus_id, citing_bestdate, citing_pub_types, citing_title, notice_pmid, notice_bestdate)
+
 dt <- arrange(dt, retracted_id, citing_bestdate) # sorts the rows
 
 ### Generate Lags ###
