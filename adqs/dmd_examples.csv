@@ -1,0 +1,43 @@
+bnf_code,name,form_size,form_units,unit_of_measure,strnt_nmrtr_val,strnt_dnmtr_val
+0704040U0AAABAB,Noxytiolin 2.5g irrigation vials,1,vial,vial,2.5,¤
+0704040U0BBABAB,Noxyflex-S 2.5g irrigation vials,1,vial,vial,2.5,¤
+0502030B0AAAIAI,"Nystatin 500,000unit tablets",1,tablet,tablet,500000,¤
+0902021X0AAAPAP,Water for injections 10ml vials,10,ml,vial,1,1
+0902021X0AAAQAQ,Water for injections 100ml vials,100,ml,vial,1,1
+0101010I0AAAEAE,Magnesium oxide 100mg tablets,1,tablet,tablet,100,¤
+0101010I0AAALAL,Magnesium oxide 160mg tablets,1,tablet,tablet,160,¤
+0101010F0BBAAA0,Andrews Antacid chewable tablets,1,tablet,tablet,125,¤
+0101010F0BBAAA0,Andrews Antacid chewable tablets,1,tablet,tablet,600,¤
+0410020B0BBACAS,Nicorette 5mg patches,1,patch,patch,5,16
+0410020B0BBADAT,Nicorette 10mg patches,1,patch,patch,10,16
+0410020B0BBAEAU,Nicorette 15mg patches,1,patch,patch,15,16
+0407020K0AAEUEU,Diamorphine 20mg impregnated cigarettes,1,cigarette,cigarette,20,¤
+0407020K0AABFBF,Diamorphine 30mg impregnated cigarettes,1,cigarette,cigarette,30,¤
+0407020K0AADCDC,Diamorphine 40mg impregnated cigarettes,1,cigarette,cigarette,40,¤
+030902000BEDSA0,Buttercup Bronchostop Cough syrup,15,ml,cup,8,1
+030902000BEDSA0,Buttercup Bronchostop Cough syrup,15,ml,cup,55.33,1
+0301040R0BBABAB,Combivent nebuliser liquid 2.5ml UDVs,2.5,ml,unit dose,1,1
+0301040R0BBABAB,Combivent nebuliser liquid 2.5ml UDVs,2.5,ml,unit dose,200,1
+0302000N0BBAVAV,Flixotide 0.5mg/2ml Nebules,2,ml,unit dose,250,1
+0302000N0BBAWAW,Flixotide 2mg/2ml Nebules,2,ml,unit dose,1,1
+0604011G0BIABAU,Oestrogel Pump-Pack 0.06% gel,1.25,gram,actuation,600,1
+0604020K0BMAABM,Tostran 2% gel,0.5,gram,actuation,20,1
+0301011R0BLABAK,Ventodisks 200microgram,1,actuation,actuation,200,¤
+0301011R0BLADAL,Ventodisks 400microgram,1,actuation,actuation,400,¤
+0303010Q0BGABAK,Aerocrom Syncroner with spacer,1,dose,dose,1,1
+0303010Q0BGABAK,Aerocrom Syncroner with spacer,1,dose,dose,100,1
+0302000R0BBABAB,Asmanex 200micrograms/dose Twisthaler,1,dose,dose,200,1
+0302000R0BBACAC,Asmanex 400micrograms/dose Twisthaler,1,dose,dose,400,1
+0409010N0BDAAAR,Duodopa intestinal gel 100ml cassette,1,bag,bag,5,1
+0409010N0BDAAAR,Duodopa intestinal gel 100ml cassette,1,bag,bag,20,1
+0501040H0AABCBC,Gentamicin 80mg/80ml infusion bags,80,ml,bag,1,1
+0501040H0AABDBD,Gentamicin 240mg/80ml infusion bags,80,ml,bag,3,1
+0501040H0AABEBE,Gentamicin 360mg/120ml infusion bags,120,ml,bag,3,1
+1001010P0AABFBF,Naproxen 250mg/5ml oral suspension,5,ml,spoonful,50,1
+1001010P0AAASAS,Naproxen 250mg/5ml oral suspension,5,ml,spoonful,50,1
+091200000BFLCA0,Herbalache oral solution,5,ml,spoonful,100,1
+091200000BFLCA0,Herbalache oral solution,5,ml,spoonful,154,1
+1311020L0BRABAX,Sterets Tisept solution 25ml sachets,25,ml,sachet,1.5,1
+1311020L0BRABAX,Sterets Tisept solution 25ml sachets,25,ml,sachet,150,1
+140400060BCAAAC,Infanrix-Hib vaccine injection pack,1,pre-filled disposable injection,pre-filled disposable injection,¤,¤
+140400060BBACAD,Act-HIB DTP vaccine injection pack,1,pre-filled disposable injection,pre-filled disposable injection,¤,¤
