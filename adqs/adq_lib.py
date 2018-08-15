@@ -55,7 +55,9 @@ def compute_quantity_units(row):
 
 
 def normalise(row, number_name='', unit_name=''):
-    """Please note if N/A in ADQ usage column this indicates that there
+    """Notes from NHSBSA in FOI response:
+
+    Please note if N/A in ADQ usage column this indicates that there
     is no ADQ value available and therefore no ADQ usage can be
     calculated.
 
