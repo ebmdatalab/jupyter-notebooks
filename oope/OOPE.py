@@ -120,6 +120,8 @@ goodies.groupby("name").sum()
 #
 # The mean OOPE per item in the "bad" group was 11p. For presentations not actually dispensed in the "good" group, the mean OOPE per item was 18p; presentations also dispensed in the "good" group had a mean OOPE per item of 8p.
 #
+# In terms of location, there might be something worth pursuing - there's a cluster of 4 around Tyneside.
+#
 
 df3 = baddies.groupby('bnf_name').sum()
 df3['oope_per_item'] = df3['item_pay_oope_amt'] / df3['item_pay_dr_nic']
