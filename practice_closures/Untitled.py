@@ -172,3 +172,58 @@ data[data.practice == 'C88627']
 # * September - November each year sees large net list size increases of up to 50,000 more than in other months. This is likely to be university students enrolling and going on their local practice list. These are patients who are either appearing in practice lists for the first time ever, or not also being removed from their previous patient list
 # * When a practice closes, its list size usually goes elsewhere in the same CCG, and we can see this happening
 # * RCT analysis for CCG visits currently broken; it will under-report `items` numerators where practices have closed but are still seeing significant prescribing. Closures seem to cluster within CCGs as they are often mergers, so this may have affected our analysis
+
+# # Q: How do practice list sizes correlate with total population estimates?
+#
+# Answer: very well (r=0.99). But wierdly there are consistently about 230,000 more patients on lists than population of England.
+
+# +
+import pandas as pd
+import numpy as np
+
+import logging
+logger = logging.getLogger('pandas_gbq')
+logger.setLevel(logging.ERROR)
+
+GBQ_PROJECT_ID = '620265099307'
+
+
+# +
+# from https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland
+
+pop = pd.read_csv('MYEB3_summary_components_of_change_series_UK_(2017).csv')
+years = range(2001, 2018)
+pop = pop[pop.country == 'E'][["population_%s" % y for y in years]]
+pop.columns = [str(y) for y in years]
+pop = pd.DataFrame(pop.sum())
+pop.columns = ["population"]
+pop.head(2)
+# -
+
+
+sql = """
+SELECT
+  month,
+  sum(total_list_size) as total_list_size
+FROM
+  `hscic.practice_statistics_all_years`
+WHERE %s
+GROUP BY month
+"""
+conditions = []
+for y in years:
+    conditions.append("month = '%s-06-01'" % y)
+sql = sql % " OR ".join(conditions)
+df = pd.read_gbq(sql, GBQ_PROJECT_ID, dialect='standard')
+
+df['year'] = df.month.dt.strftime("%Y")
+df = df.set_index("year")
+merged = df.join(pop)
+merged = merged.sort_values("month")
+merged['delta'] = merged['total_list_size'] - merged['population']
+
+merged
+
+merged['population'].corr(merged['total_list_size'])
+
+merged.plot.line(x='month')
