@@ -25,7 +25,6 @@ import pandas as pd
 #
 # In one month there were 118,000 dispensers. The worst 10 HQs sare accounted for by 12 dispensers, with a mean item count of 9165, mean NIC of £66,000, and mean OOPE of £5770. 3.5% of prescription items have OOPEs added (compared with 0% for the best dispensers). In a single month these 12 dispensers charged £69,000 in OOPE, equivalent to a 9% surcharge. Compare this with 67% of dispensers have NO OOPE at all.
 #
-# The story may be interesting products that lend themselves to this e.g. B6
 
 # # What are items are generating the most OOPE?
 #
@@ -250,7 +249,7 @@ both[both['item_pay_oope_amt_high'] > 0]['oope_per_item_high'].sort_values(ascen
 bad_only[bad_only['item_pay_oope_amt_high'] > 0]['oope_per_item_high'].sort_values(ascending=False).head()
 # -
 
-# # Finally, there is a wierd £36.98 thing going on
+# # Finally, there is a weird £36.98 thing going on
 # I've noticed a lot of the things with high OOPE have identical OOPE-per item - for example, £20.99 and £36.98, both examined here.
 #
 # These appear to be fixed OOPE prices, regardless of the item - for example, the relatively common `Bio-Vitamin D3_Cap 800u` costs 44p per pack, but £36.98 fixed OOPE.
