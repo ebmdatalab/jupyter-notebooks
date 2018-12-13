@@ -27,6 +27,9 @@ logger.setLevel(logging.ERROR)
 
 GBQ_PROJECT_ID = '620265099307'
 
+
+# -
+
 sql = """
 SELECT
   month,
@@ -35,19 +38,80 @@ SELECT
   total_list_size
 FROM
   `hscic.practice_statistics`
-WHERE
-  month >= '2015-12-01'
-AND 
-  month < '2018-10-01'
 
 """
 df = pd.read_gbq(sql, GBQ_PROJECT_ID, dialect='standard')
 
-# -
 
 months = df.month.unique()
 months.sort()
 months = list(months)
+
+df = df[df.month > '2013-10-01']
+
+import pylab as plt
+import numpy as np
+import scipy as sp
+# Compute the FFT
+qwe = df[df.practice == 'C88627']
+N = len(qwe)
+W    = np.absolute(np.fft.fft(qwe.total_list_size))
+freq = np.fft.fftfreq(N,1)
+W
+largest = max(W[1:])
+repeats = list(W).index(largest)
+print("Largest is %s" % largest)
+print("The signal repeats %s times" % repeats)
+print("The length of the signal is %s" % (len(qwe) / repeats))
+
+# +
+import scipy
+import scipy.signal
+
+#X = W * scipy.signal.windows.hann(len(W))
+qwe['windowed'] = qwe['total_list_size'] * scipy.signal.windows.hann(len(qwe))
+qwe.plot('month', 'windowed')
+plt.show()
+qwe.plot('month', 'total_list_size')
+plt.show()
+# -
+
+pd.DataFrame(X[1:]).plot()
+
+pd.DataFrame(W[1:]).plot()
+
+# +
+# Look for the longest signal that is "loud"
+threshold = 30000
+idx = np.where(abs(W)>threshold)[0][-1]
+print(np.where(abs(W)>threshold)[0])
+max_f = abs(freq[idx])
+
+print("Max f", max_f)
+print( "Period estimate: ", 1/max_f)
+print(N)
+print(type(W[0]))
+print(W)
+
+# +
+
+
+#print(W)
+
+print(freq)
+plt.subplot(211)
+plt.scatter([max_f,], [np.abs(W[idx]),], s=100,color='r')
+plt.plot(freq[:int(N/2)], abs(W[:int(N/2)]))
+plt.xlabel(r"$f$")
+
+plt.subplot(212)
+plt.plot(1.0/freq[:int(N/2)], abs(W[:int(N/2)]))
+plt.scatter([1/max_f,], [np.abs(W[idx]),], s=100,color='r')
+plt.xlabel(r"$1/f$")
+plt.xlim(0,20)
+
+plt.show()
+# -
 
 import datetime 
 summary = pd.DataFrame()
@@ -227,3 +291,48 @@ merged
 merged['population'].corr(merged['total_list_size'])
 
 merged.plot.line(x='month')
+
+# # Looking at GP at hand population changes
+
+sql = """
+SELECT
+  *
+FROM
+  `hscic.practice_statistics`
+WHERE practice = "E85124"
+
+"""
+df = pd.read_gbq(sql, GBQ_PROJECT_ID, dialect='standard')
+
+
+import matplotlib.pyplot as plt     
+import seaborn as sns              
+# %matplotlib inline
+bands = ['0_4', '5_14', '15_24',
+       '25_34', '35_44', '45_54', '55_64', '65_74',
+       '75_plus']
+
+# put male on left
+for band in bands:
+    df["xmale_" + band] = 0 - df["male_" + band]
+    
+
+# plot every year in turn - write to file so we can animate
+sns.set_style("white")
+for i, month in enumerate(sorted(df.month)):
+    plt.figure(i)
+    
+    df1 = df[df['month'] == month]
+    df2 = pd.DataFrame(columns=['male', 'female'])
+    #df2.columns = []
+    for band in bands:
+        df2.loc[band] = [df1["xmale_" + band].iloc[0], df1["female_" + band].iloc[0]]
+    df2 = df2.reset_index()
+    malemax = df2['male'].min() * -1.1
+    plt.xlim(-malemax, malemax)
+    sns.set_color_codes("pastel")
+    bar_plot = sns.barplot(x="male", y="index", color="blue", label="male",data = df2)
+    bar_plot = sns.barplot(x="female", y="index", color="red", label="female",data = df2)
+    # uncomment to save files for animation
+    #plt.savefig('/tmp/myfig_%s.png' % month.strftime("%Y-%m-%d"))
+
