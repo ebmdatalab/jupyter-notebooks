@@ -280,6 +280,34 @@ df[['bnf_name', 'bnf_code', 'item_pay_dr_nic', 'item_pay_oope_amt', 'oope_per_ni
 
 df.groupby('bnf_name').agg('sum')['item_count'].head(100)
 
+# ## What DT categories are the OOPE items in?
+# Only Category C items can be claimed, but:
 
+sql = """
+SELECT
+  vmpp,
+  tariff_category,
+  d.name,
+  d.hq_name,
+  d.bnf_code,
+  item_count,
+  item_pay_oope_amt,
+  actual_cost
+FROM
+  dispensers.dispensing_with_metadata d
+LEFT JOIN
+  `dmd.dt_viewer` v
+ON
+  d.bnf_code = v.bnf_code
+WHERE
+  year_month = '201703'
+  AND v.date = '2017-03-01'
+  AND item_pay_oope_amt > 0
+  AND tariff_category != "Part VIIIA Category C"
+"""
+df = pd.io.gbq.read_gbq(sql, 'ebmdatalab', dialect='standard')
+df.head()
+
+print("A total of {} OOPE was paid on things that shouldn't".format(df.item_pay_oope_amt.sum()))
 
 #
