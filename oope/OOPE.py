@@ -109,11 +109,6 @@ dftime.set_index('date')[['oope']].plot()
 dftime.set_index('date')[['oope_per_item']].plot()
 dftime.set_index('date')[['oope_items']].plot()
 
-dftime['oope_per_item'] = dftime['oope'] / dftime['oope_items']
-dftime.set_index('date')[['oope']].plot()
-dftime.set_index('date')[['oope_per_item']].plot()
-dftime.set_index('date')[['oope_items']].plot()
-
 # ## Is there interesting variation for multiples?
 
 # summarise OOPE spending per item, grouped by HQ
@@ -390,6 +385,6 @@ df.head()
 
 print("A total of {} OOPE was paid on things that shouldn't".format(df.item_pay_oope_amt.sum()))
 
-df.groupby('tariff_category').
+df.groupby('tariff_category').count()
 
 #
