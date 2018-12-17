@@ -340,9 +340,9 @@ SELECT
 FROM
   dispensers.dispensing_with_metadata
 WHERE
-  (item_pay_oope_amt / item_count = 36.98) 
+  (item_pay_oope_amt / item_count = 36.98
     OR (item_pay_oope_amt / item_count) = 20.99 
-    OR (item_pay_oope_amt / item_count) = 79.0
+    OR (item_pay_oope_amt / item_count) = 79.0)
   AND year_month = '201703'
 """
 df = pd.io.gbq.read_gbq(sql, 'ebmdatalab', dialect='standard')
@@ -352,7 +352,7 @@ df['oope_per_nic'] = (df['item_pay_oope_amt'] / df['item_count']) / df['item_pay
 
 print("A total of {} spent in OOPE for items with OOPE at these three levels".format(df['item_pay_oope_amt'].sum()))
 
-df[['bnf_name', 'bnf_code', 'item_pay_dr_nic', 'item_pay_oope_amt', 'oope_per_nic']].sort_values('oope_per_nic', ascending=False)
+df[['bnf_name', 'bnf_code', 'item_pay_dr_nic', 'item_pay_oope_amt', 'oope_per_nic']].sort_values('oope_per_nic', ascending=False).head()
 
 # The most common of these:
 
@@ -389,5 +389,7 @@ df = pd.io.gbq.read_gbq(sql, 'ebmdatalab', dialect='standard')
 df.head()
 
 print("A total of {} OOPE was paid on things that shouldn't".format(df.item_pay_oope_amt.sum()))
+
+df.groupby('tariff_category').
 
 #
