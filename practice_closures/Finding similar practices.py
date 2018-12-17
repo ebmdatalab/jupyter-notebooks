@@ -22,8 +22,9 @@
 # +
 import matplotlib.pyplot as plt     
 import seaborn as sns   
+import scipy
 
-MIN_LIST_SIZE = 5000  # Don't consider any practice smaller than this for similarity
+MIN_LIST_SIZE = 3000  # Don't consider any practice smaller than this for similarity
 target = "E85124"     # GP At Hand
 
 
@@ -72,15 +73,41 @@ df = pd.read_csv("stats.csv", usecols=['date', 'male_0_4', 'female_0_4', 'male_5
        'male_75_plus', 'female_75_plus', 'total_list_size', 'pct_id', 'practice_id'])
 # -
 
-df[df['date'] > '2018-01-03'].to_csv("/tmp/s.csv")
-
 # slice the current date
 df2 = df[df['date'] == '2018-09-01']
 # invert values for males so we can plot on one chart
 for band in bands:
     df2["xmale_" + band] = 0 - df2["male_" + band]
 
-df2
+# # Exclude practices with very little prescribing
+
+# One method for excluding non-standard practices
+sql = """SELECT
+  p.month,
+  p.practice,
+  items / total_list_size AS items_per_patient
+FROM (
+  SELECT
+    practice,
+    month,
+    SUM(items) AS items
+  FROM
+    `ebmdatalab.hscic.normalised_prescribing_standard_latest_month`  
+  GROUP BY
+    practice,
+    month ) p
+INNER JOIN
+  `ebmdatalab.hscic.practice_statistics` AS stats
+ON
+  p.practice = stats.practice
+  AND stats.month = p.month"""
+stats = pd.read_gbq(sql, project_id='ebmdatalab', verbose=False, dialect='standard')
+
+typical = stats[(stats['items_per_patient'] > stats['items_per_patient'].quantile(0.005))]
+
+typical[typical['practice'] == target]
+
+df2 = df2.merge(typical, how='right', left_on='practice_id', right_on='practice')
 
 # +
 cols_to_compare = ['male_' + x for x in bands]
@@ -94,12 +121,12 @@ def normalise(row):
 
 def ks2(row, target_data=None):  
     return scipy.stats.ks_2samp(target_data, normalise(row[cols_to_compare]))
+# -
 
-target_data = normalise(df2[df2['practice_id'] == target][cols_to_compare].iloc[0])
+target_data = normalise(df2[df2['practice'] == target][cols_to_compare].iloc[0])
 ks = df2.apply(ks2, axis=1, target_data=target_data).apply(pd.Series)
 ks.columns = ['ks2', 'ks2_p']
 df3 = df2.join(ks).sort_values('ks2')
-# -
 
 # Filter for similarity
 df4 = df3[(df3['ks2_p'] > 0.1) & (df3['total_list_size'] > MIN_LIST_SIZE)]
