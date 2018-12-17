@@ -21,11 +21,6 @@
 import pandas as pd
 # %matplotlib inline
 
-# ### TL;DR
-#
-# In one month there were 118,000 dispensers. The worst 10 HQs sare accounted for by 12 dispensers, with a mean item count of 9165, mean NIC of £66,000, and mean OOPE of £5770. 3.5% of prescription items have OOPEs added (compared with 0% for the best dispensers). In a single month these 12 dispensers charged £69,000 in OOPE, equivalent to a 9% surcharge. Compare this with 67% of dispensers have NO OOPE at all.
-#
-
 # # What are items are generating the most OOPE?
 #
 # * The most expensive single presentation is Cinacalcet HCl_Tab 30mg, costing £16,000 per month in OOPE
@@ -46,7 +41,7 @@ SELECT
   bnf_name
 FROM
   `ebmdatalab.dispensers.dispensing_with_metadata`
-WHERE year_month = '201703' 
+WHERE year_month = '201703' AND item_pay_oope_amt > 0
 GROUP BY bnf_code, bnf_name
 ORDER BY SUM(item_pay_oope_amt) DESC
 LIMIT 1000
@@ -64,6 +59,61 @@ items[items['items'] > 100].sort_values('oope_per_item', ascending=False).head(3
 items['bnf_para'] = items['bnf_code'].str.slice(0,6)
 items.groupby('bnf_para').agg(['mean', 'sum']).sort_values(('oope', 'sum'), ascending=False).head(10)
 
+# # How does it change over time?
+#
+# In the period for which we have data, OOPE has decreased overall.  This is because the number of items having OOPE added is decreasing; however, the amount of OOPE being added per item is increasing. See charts below.
+
+sql = """SELECT 
+  PARSE_DATE("%Y%m_%d", CONCAT(year_month, "_01")) AS date,
+  SUM(item_pay_oope_amt) AS oope,
+  SUM(CASE WHEN item_pay_oope_amt > 0 THEN item_count ELSE 0 END) AS oope_items,
+  SUM(item_count) AS items
+FROM
+  `ebmdatalab.dispensers.dispensing_with_metadata`
+GROUP BY
+  year_month
+ORDER BY
+  year_month
+"""
+dftime = pd.io.gbq.read_gbq(sql, 'ebmdatalab', dialect='standard')
+
+dftime['oope_per_item'] = dftime['oope'] / dftime['oope_items']
+dftime.set_index('date')[['oope']].plot()
+dftime.set_index('date')[['oope_per_item']].plot()
+dftime.set_index('date')[['oope_items']].plot()
+
+
+# +
+# Look up by CCG
+# Add a column in bigquery that matches postcode to CCG
+
+
+sql = """SELECT 
+  PARSE_DATE("%Y%m_%d", CONCAT(year_month, "_01")) AS date,
+  SUM(item_pay_oope_amt) AS oope,
+  SUM(CASE WHEN item_pay_oope_amt > 0 THEN item_count ELSE 0 END) AS oope_items,
+  SUM(item_count) AS items
+FROM
+  `ebmdatalab.dispensers.dispensing_with_metadata`
+  WHERE ccg = '08H'
+GROUP BY
+  year_month
+ORDER BY
+  year_month
+"""
+dftime = pd.io.gbq.read_gbq(sql, 'ebmdatalab', dialect='standard')
+# -
+
+dftime['oope_per_item'] = dftime['oope'] / dftime['oope_items']
+dftime.set_index('date')[['oope']].plot()
+dftime.set_index('date')[['oope_per_item']].plot()
+dftime.set_index('date')[['oope_items']].plot()
+
+dftime['oope_per_item'] = dftime['oope'] / dftime['oope_items']
+dftime.set_index('date')[['oope']].plot()
+dftime.set_index('date')[['oope_per_item']].plot()
+dftime.set_index('date')[['oope_items']].plot()
+
 # ## Is there interesting variation for multiples?
 
 # summarise OOPE spending per item, grouped by HQ
@@ -72,15 +122,15 @@ SELECT
   hq_name,
   COUNT(DISTINCT organisation_code) AS branches,
   SUM(item_count) AS items,
-  SUM(item_pay_oope_amt)/SUM(item_count) AS oope_per_item,
+  SUM(actual_cost) AS actual_cost,
+  SUM(CASE WHEN item_pay_oope_amt > 0 THEN item_count ELSE 0 END) AS oope_items,
+  SUM(item_pay_oope_amt) AS oope,
   MAX(item_pay_oope_amt/item_count) AS max_oope_per_item
 FROM
   `ebmdatalab.dispensers.dispensing_with_metadata`
 WHERE year_month = '201703'
 GROUP BY
   hq_name
-ORDER BY
-  oope_per_item DESC
 """
 df = pd.io.gbq.read_gbq(sql, 'ebmdatalab', dialect='standard')
 
@@ -88,22 +138,35 @@ print("In a single month, there were {} branches, represented by {} HQs, prescri
     df['branches'].sum(),
     df['branches'].count(),
     df['items'].sum()))
-print("Total OOPE per month £%s" % (round(df['oope_per_item'] * df['items']).sum()))
+print("{} items had OOPE added".format(df['oope_items'].sum()))
+print("Total OOPE per month £%s ({})" % (round(df['oope']).sum()))
 
 # ## HQs with highest OOPE per item
 #
-# The HQ with the highest OOPE per item charges £2.09 for each item on average.
+# If we only count HQs with at least 100 OOPE items per month, per branch, then the top-spending (per OOPE item) HQ charges an average of £57 per OOPE item, and 6% of its items have OOPE added.  It charges £10,869 of OOPE in one month.
 #
-# Of the top 10 HQs, only two were multiples (i.e. associated with more than contractor/location).
+# Of the top 10 HQs, only one was a multiple (i.e. associated with more than contractor/location).
 #
 
-df.head(10)
+df['oope_per_item'] = df['oope'] / df['items']
+df['oope_per_oope_item'] = df['oope'] / df['oope_items']
+df['percent_oope_items'] = round(df['oope_items'] / df['items'] * 100)
+df['percent_oope_cost'] = round(df['oope'] / df['actual_cost'] * 100)
+df = df.sort_values('oope_per_oope_item', ascending=False)
+common_oopers = df[df['oope_items']/df['branches'] > 100]
+
+common_oopers.head(13)
+
+common_oopers.sort_values('percent_oope_cost', ascending=False).head(5)
 
 # ## Distribution of OOPE per item by HQ
-# The vast, vast majority of HQs have no OOPE at all. All but six have their mean OOPE under 50p; 87% had a mean OOPE of less than 1p.  In the chart, note the log scale!
+# The  majority of HQs have no OOPE at all. All but six have their mean OOPE across all items of under 50p; 87% had a mean OOPE of less than 1p.  In the first chart, note the log scale!
 
-bins = pd.cut(df.oope_per_item, 209)
-df.groupby(bins)['oope_per_item'].agg(['count']).head(10)
+print("{}% of contracts never charge any OOPE".format(round(df[df['oope'] == 0].count().iloc[0] / df.count().iloc[0] * 100)))
+
+
+bins = pd.cut(df.oope_per_oope_item, 209)
+df.groupby(bins)['oope_per_oope_item'].agg(['count']).head()
 
 # %matplotlib inline
 import matplotlib.pyplot as plt
@@ -113,11 +176,18 @@ ax.set_yscale('log')
 ax.set_ylabel('HQ count (log scale)')
 ax.set_xlabel('Mean OOPE per item (£)')
 
+# %matplotlib inline
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+df.hist(ax=ax, column=['oope_per_oope_item'], bins=50)
+ax.set_ylabel('HQ count')
+ax.set_xlabel('Mean OOPE per item that has OOPE (£)')
+
 # ## How does high OOPE covary with group size?
 #
 # None of the large multiples has high mean OOPEs:
 
-df.plot.scatter(x='branches', y='oope_per_item')
+df.plot.scatter(x='branches', y='oope_per_oope_item')
 
 # # Is there anything different about the prescriptions being dispensed?
 #
@@ -143,7 +213,7 @@ WHERE year_month = '201703' AND
 (%s)
 """
 hq_names = []
-for name in list(df.hq_name.head(10)):
+for name in list(common_oopers.hq_name.head(10)):
     hq_names.append("hq_name = '%s'" % name)
 highest = pd.io.gbq.read_gbq(sql % " OR ".join(hq_names), 'ebmdatalab', dialect='standard')
 
@@ -166,14 +236,14 @@ for name in list(df.hq_name.tail(10)):
     hq_names.append("hq_name = '%s'" % name)
 lowest = pd.io.gbq.read_gbq(sql % " OR ".join(hq_names), 'ebmdatalab', dialect='standard')
 
-highest.sort_values('item_pay_oope_amt', ascending=False).head(3)
-
 # ### The 10 HQs with highest OOPE per items
-# ...are accounted for by 12 dispensers, with a mean item count of 9165, mean NIC of £66,000, and mean OOPE of £5770. 3.5% of prescription items come with OOPEs (compared with 0 for the best dispensers). In a single month they charged £69,000 in OOPE, equivalent to a 9% surcharge. 67% of dispensers have NO OOPE.
+# ...are accounted for by 12 dispensers, with a mean item count of 10300, mean NIC of £73,000, and mean OOPE of £5550. 3.5% of prescription items come with OOPEs (compared with 0 for the best dispensers). In a single month they charged £69,000 in OOPE, equivalent to a 9% surcharge (the highest being 22%). 67% of dispensers have NO OOPE.
 
-highest.groupby("name").sum()
+totals = highest.groupby("name").sum().sort_values('item_pay_oope_amt', ascending=False)
+totals['uplift'] = totals['item_pay_oope_amt']/totals['item_pay_dr_nic']
+totals
 
-highest.groupby("name").sum().mean()
+totals.mean()
 
 # ### The 10  HQs with lowest OOPE per item 
 # ...are accounted for by 10 dispensers, with a mean item count of 7739, mean NIC of £58,000, and mean OOPE of £0 (indeed, a maximum OOPE of £0)
@@ -188,25 +258,31 @@ lowest.groupby("name").sum().mean()
 #
 # Descriptive statistics for the "highest" and "lowest" groups are very similar.
 #
-# The mean OOPE per item in the "highest" group was 11p (and 0 in the "lowest"). The "highest" group had about 1250 presentations not seen in the "lowest" group; for presentations only dispensed in the "highest" group, the mean OOPE per item was 18p; presentations also dispensed in the "lowest" group had a mean OOPE per item of 8p.
+# The mean OOPE per item (where OOPE was added at all) in the "highest" group was £36 (and 0 in the "lowest"). The "highest" group had about 120 presentations-with-OOPE not seen in the "lowest" group; for those presentations, the mean OOPE per item was £41; OOPE presentations also dispensed in the "lowest" group had a mean OOPE per item of £26.
 #
 # Therefore it looks like the "highest" group do routinely add more OOPE for everything; but a lot more for things only they see.
 #
 #
 #
 
-# The following shows that in the HQs with the highest OOPE per items, 3746 items were dispensed, with a mean OOPE per item of 11p.
-
+import numpy as np
+highest['oope_count'] = np.where(highest['item_pay_oope_amt'] > 0, highest['item_count'], 0)
 df3 = highest.groupby('bnf_name').sum()
-df3['oope_per_item'] = df3['item_pay_oope_amt'] / df3['item_pay_dr_nic']
-highest_presentations = df3.sort_values('oope_per_item', ascending=False)
+df3['oope_per_oope_item'] = df3['item_pay_oope_amt'] / df3['oope_count']
+highest_presentations = df3.sort_values('oope_per_oope_item', ascending=False)
+highest_presentations[~np.isnan(highest_presentations['oope_per_oope_item'])].head()
+
+# The following shows that in the HQs with the highest OOPE per items, 3746 different presentations were dispensed, of which 286 had OOPE, with a mean OOPE per item of £36
+
 highest_presentations.describe()
 
-# And the next table shows in the HQs with the lowest OOPE per items, 3368 items were dispensed with a mean OOPE per item of 11p.
+# And the next table shows in the HQs with the lowest OOPE per items, 3368 items were dispensed with no OOPE
 
 df3 = lowest.groupby('bnf_name').sum()
-df3['oope_per_item'] = df3['item_pay_oope_amt'] / df3['item_pay_dr_nic']
-lowest_presentations = df3.sort_values('oope_per_item', ascending=False)
+lowest['oope_count'] = np.where(lowest['item_pay_oope_amt'] > 0, lowest['item_count'], 0)
+df3 = lowest.groupby('bnf_name').sum()
+df3['oope_per_oope_item'] = df3['item_pay_oope_amt'] / df3['oope_count']
+lowest_presentations = df3.sort_values('oope_per_oope_item', ascending=False)
 lowest_presentations.describe()
 
 # We can combine the two tables together, to find presentations common to both high and low OOPE dispensers.
@@ -221,7 +297,7 @@ compared = highest_presentations.merge(
     suffixes=["_high", "_low"],
     how="outer"
 )
-compared.sort_values("oope_per_item_high", ascending=False).head()
+compared.sort_values("oope_per_oope_item_high", ascending=False).head()
 # -
 
 import numpy as np
@@ -229,11 +305,11 @@ good_only = compared[np.isnan(compared['item_count_high'])]
 bad_only = compared[np.isnan(compared['item_count_low'])]
 both = compared[(~np.isnan(compared['item_count_low'])) & (~np.isnan(compared['item_count_high']))]
 
-# There are 870 presentations only prescribed in the dispensaries with the lowest OOPE:
+# There are 758 presentations only prescribed in the dispensaries with the lowest OOPE:
 
 good_only.describe()
 
-# ...and 1248 presentations only prescribed in those with the highest OOPE, of which 103 have any OOPE
+# ...and 117 presentations-that-have-OOPE which only prescribed in those with the highest OOPE
 
 bad_only[bad_only['item_pay_oope_amt_high'] > 0].describe()
 
@@ -242,15 +318,15 @@ bad_only[bad_only['item_pay_oope_amt_high'] > 0].describe()
 both[both['item_pay_oope_amt_high'] > 0].describe()
 
 # Total OOPE spent per item, for things prescribed in both places - top 5 (of 192 with any OOPE)
-both[both['item_pay_oope_amt_high'] > 0]['oope_per_item_high'].sort_values(ascending=False).head()
+both['oope_per_oope_item_high'].sort_values(ascending=False).head()
 
 # + {"scrolled": true}
 # Total OOPE spent per item, for things prescribed in only high-oope places - top 5 (of 103 with any OOPE)
-bad_only[bad_only['item_pay_oope_amt_high'] > 0]['oope_per_item_high'].sort_values(ascending=False).head()
+bad_only['oope_per_oope_item_high'].sort_values(ascending=False).head()
 # -
 
 # # Finally, there is a weird £36.98 thing going on
-# I've noticed a lot of the things with high OOPE have identical OOPE-per item - for example, £20.99 and £36.98, both examined here.
+# I've noticed a lot of the things with high OOPE have identical OOPE-per item - for example, £20.99, £36.98, and £79, all examined here.
 #
 # These appear to be fixed OOPE prices, regardless of the item - for example, the relatively common `Bio-Vitamin D3_Cap 800u` costs 44p per pack, but £36.98 fixed OOPE.
 #
@@ -264,7 +340,9 @@ SELECT
 FROM
   dispensers.dispensing_with_metadata
 WHERE
-  (item_pay_oope_amt / item_count = 36.98) OR (item_pay_oope_amt / item_count) = 20.99
+  (item_pay_oope_amt / item_count = 36.98) 
+    OR (item_pay_oope_amt / item_count) = 20.99 
+    OR (item_pay_oope_amt / item_count) = 79.0
   AND year_month = '201703'
 """
 df = pd.io.gbq.read_gbq(sql, 'ebmdatalab', dialect='standard')
@@ -272,13 +350,15 @@ df = pd.io.gbq.read_gbq(sql, 'ebmdatalab', dialect='standard')
 
 df['oope_per_nic'] = (df['item_pay_oope_amt'] / df['item_count']) / df['item_pay_dr_nic']
 
-print("A total of {} spent in OOPE for items with OOPE at these two levels".format(df['item_pay_oope_amt'].sum()))
+print("A total of {} spent in OOPE for items with OOPE at these three levels".format(df['item_pay_oope_amt'].sum()))
 
 df[['bnf_name', 'bnf_code', 'item_pay_dr_nic', 'item_pay_oope_amt', 'oope_per_nic']].sort_values('oope_per_nic', ascending=False)
 
-# A lot of these seem to be devices:
+# The most common of these:
 
-df.groupby('bnf_name').agg('sum')['item_count'].head(100)
+# + {"scrolled": true}
+df.groupby('bnf_name').agg('sum')['item_count'].sort_values(ascending=False).head(10)
+# -
 
 # ## What DT categories are the OOPE items in?
 # Only Category C items can be claimed, but:
