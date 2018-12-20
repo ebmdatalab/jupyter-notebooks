@@ -24,6 +24,7 @@ import os
 if os.path.exists("ghost_generics.csv.gz"):
     ghost_df = pd.read_csv("ghost_generics.csv.gz", compression='gzip')
 else:
+    raise
     ghost_df = pd.read_gbq("""
 SELECT
   prac.ccg_id,
@@ -146,17 +147,21 @@ plt.ylabel("cost per install (£)")
 
 # # Create useful files for CCGs
 
+summary.index.contains(r"^[0-9]")
+
 summary = gpd_ghost_df.assign(saving_from_top_10 = None).set_index('ccg_id')
-import string
+import re
 for ccg_id in summary.index:
-    ccg = ghost_df[ghost_df.ccg_id == ccg_id]
-    top_presentations = ccg.groupby('bnf_description').sum().sort_values('excess_cost_dt', ascending=False).head(10).reset_index()[['bnf_description', 'excess_cost_dt']]
-    target_prescriptions = top_presentations.merge(ccg, how='left', left_on='bnf_description', right_on='bnf_description').sort_values('excess_cost_dt_y', ascending=False)
-    useful_cols = ['practice_code', 'bnf_description', 'bnf_code', 'items', 'excess_cost_dt_y']
-    target_prescriptions = target_prescriptions[useful_cols]
-    target_prescriptions.columns = ['practice_code', 'bnf_description', 'bnf_code', 'items', 'excess_cost']
-    summary.loc[ccg_id, 'saving_from_top_10'] = target_prescriptions['excess_cost_dt_y'].sum()
-    target_prescriptions.to_csv("csv_data/{}.csv".format(ccg_id))
+    if re.match(r"^[0-9]{2}[A-Z]", ccg_id):
+        ccg = ghost_df[ghost_df.ccg_id == ccg_id]
+        top_presentations = ccg.groupby('bnf_description').sum().sort_values('excess_cost_dt', ascending=False).head(10).reset_index()[['bnf_description', 'excess_cost_dt']]
+        target_prescriptions = top_presentations.merge(ccg, how='left', left_on='bnf_description', right_on='bnf_description').sort_values('excess_cost_dt_y', ascending=False)
+        useful_cols = ['practice_code', 'bnf_description', 'bnf_code', 'items', 'excess_cost_dt_y']
+        target_prescriptions = target_prescriptions[useful_cols]
+        target_prescriptions = target_prescriptions.groupby(['practice_code', 'bnf_description', 'bnf_code']).sum().reset_index()
+        target_prescriptions.columns = ['practice_code', 'bnf_description', 'bnf_code', 'items', 'excess_cost']
+        summary.loc[ccg_id, 'saving_from_top_10'] = target_prescriptions['excess_cost'].sum()
+        target_prescriptions.to_csv("csv_data/{}.csv.zip".format(ccg_id), compression='zip')
 summary = summary.reset_index()
 
-
+summary
