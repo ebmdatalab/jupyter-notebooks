@@ -109,6 +109,12 @@ print("Total possible savings in Sept 2018: £{}".format(total_savings))
 print("...excluding price concessions: £{}".format(total_savings_no_concession))
 
 
+df= ghost_df.copy()
+df.columns
+
+df[df['dt_or_concession_ppu'] > df['dt_ppu']]
+       
+
 # # Top savings
 
 by_presentation = ghost_df.groupby('bnf_description')[['excess_cost_dt', 'excess_ppu']].sum().reset_index()
@@ -135,9 +141,17 @@ epr.head()
 numbers = ghost_df[['practice_code', 'excess_cost_dt']]
 by_epr = numbers.merge(epr, how='inner', left_on='practice_code', right_on='ODS')
 
-summary = by_epr.groupby('Principal System')['excess_cost_dt'].agg({'cost': 'sum', 'count': 'count'})
-summary['cost_per_install'] = summary['cost'] / summary['count']
+by_epr.head()
+
+# +
+summary = by_epr.groupby('Principal System')['excess_cost_dt', 'practice_code'].agg({'cost': 'sum', 'count': pd.Series.nunique})
+
+summary.columns = ["excess_cost", "rows_count", "practice_count"]
+summary['cost_per_install'] = summary['excess_cost'] / summary['practice_count']
+#summary = summary.sort_values('cost_per_install', ascending=False)
 summary = summary.sort_values('cost_per_install', ascending=False)
+# -
+
 summary
 
 # %matplotlib inline
@@ -147,10 +161,10 @@ plt.ylabel("cost per install (£)")
 
 # # Create useful files for CCGs
 
-summary.index.contains(r"^[0-9]")
-
 summary = gpd_ghost_df.assign(saving_from_top_10 = None).set_index('ccg_id')
 import re
+import os
+from zipfile import ZipFile
 for ccg_id in summary.index:
     if re.match(r"^[0-9]{2}[A-Z]", ccg_id):
         ccg = ghost_df[ghost_df.ccg_id == ccg_id]
@@ -161,7 +175,11 @@ for ccg_id in summary.index:
         target_prescriptions = target_prescriptions.groupby(['practice_code', 'bnf_description', 'bnf_code']).sum().reset_index()
         target_prescriptions.columns = ['practice_code', 'bnf_description', 'bnf_code', 'items', 'excess_cost']
         summary.loc[ccg_id, 'saving_from_top_10'] = target_prescriptions['excess_cost'].sum()
-        target_prescriptions.to_csv("csv_data/{}.csv.zip".format(ccg_id), compression='zip')
+        f = "{}.csv".format(ccg_id)
+        target_prescriptions.to_csv(f)
+        with ZipFile("csv_data/{}.zip".format(ccg_id), 'w') as myzip:
+            myzip.write(f)
+        os.remove(f)
 summary = summary.reset_index()
 
-summary
+summary.head()
