@@ -1,10 +1,11 @@
+# -*- coding: utf-8 -*-
 # ---
 # jupyter:
 #   jupytext_format_version: '1.2'
 #   kernelspec:
-#     display_name: Python 3
+#     display_name: Python (jupyter virtualenv)
 #     language: python
-#     name: python3
+#     name: jupyter
 #   language_info:
 #     codemirror_mode:
 #       name: ipython
@@ -19,8 +20,11 @@
 
 import pandas as pd
 
-# +
-ghost_df = pd.read_gbq("""
+import os
+if os.path.exists("ghost_generics.csv.gz"):
+    ghost_df = pd.read_csv("ghost_generics.csv.gz", compression='gzip')
+else:
+    ghost_df = pd.read_gbq("""
 SELECT
   prac.ccg_id,
   rx.practice_code,
@@ -30,31 +34,30 @@ SELECT
   rx.quantity,
   rx.nic,
   dt.concession,
-  dt.quantity as dt_quantity,
+  dt.quantity AS dt_quantity,
   dt.price_pence,
-
   SUM(rx.items*rx.quantity) AS QI,
-  ROUND(IEEE_DIVIDE(rx.NIC,(rx.items*rx.quantity)),4) AS rx_ppu,
-  ROUND(CASE
-      WHEN dt.concession IS NOT NULL THEN IEEE_DIVIDE((dt.concession/100),dt.quantity)
-      ELSE IEEE_DIVIDE((dt.price_pence/100),dt.quantity) END,4) AS dt_ppu,
-  rx.quantity*rx.items*(ROUND(IEEE_DIVIDE(rx.NIC,(rx.items*rx.quantity)),4)- ROUND(CASE
-        WHEN dt.concession IS NOT NULL THEN IEEE_DIVIDE((dt.concession/100),dt.quantity)
-        ELSE IEEE_DIVIDE((dt.price_pence/100),dt.quantity) END,4)) AS excess_cost
+  ROUND(IEEE_DIVIDE(rx.NIC, (rx.items*rx.quantity)),4) AS rx_ppu,
+  ROUND(IEEE_DIVIDE((dt.price_pence/100), dt.quantity),4) AS dt_ppu,
+  CASE
+    WHEN dt.concession IS NOT NULL THEN ROUND(IEEE_DIVIDE((dt.concession/100), dt.quantity), 4)
+    ELSE NULL
+  END AS concession_ppu
 FROM
   richard.prescribing_2018_09_full AS rx
 JOIN
   dmd.dt_viewer AS dt
 ON
   rx.bnf_code=dt.bnf_code
-  join 
-  hscic.practices as prac
-  on
-  rx.practice_code=prac.code  
+JOIN
+  hscic.practices AS prac
+ON
+  rx.practice_code=prac.code
 WHERE
   (rx.bnf_description LIKE '%_Tab%'
     OR rx.bnf_description LIKE '%_Cap%')
-  AND dt.date='2018-09-01' AND rx.bnf_code not like '0410020C0%AC'
+  AND dt.date='2018-09-01'
+  AND rx.bnf_code NOT LIKE '0410020C0%AC'
 GROUP BY
   prac.ccg_id,
   rx.practice_code,
@@ -70,16 +73,90 @@ GROUP BY
   rx.NIC
 HAVING
   rx_ppu <> dt_ppu
-  order by excess_cost desc
-""", projectid, dialect='standard')
- 
-ghost_df.to_csv("Ghost Branded Generics.csv")
-# -
+""", 'ebmdatalab', dialect='standard', verbose=False)
+    ghost_df.to_csv("ghost_generics.csv")
 
-gpd_ghost_df = ghost_df.groupby('ccg_id')['excess_cost'].sum().reset_index().sort_values('excess_cost',ascending=False)
 
-gpd_ghost_df.head(20)
+ghost_df.head(1)
 
-gpd_ghost_df.sum()
+ghost_df['dt_or_concession_ppu'] = ghost_df['concession_ppu'].combine_first(ghost_df['dt_ppu'])
 
-ghost_df.head()
+total_items = ghost_df['items'].sum()
+total_presentations = len(ghost_df['bnf_code'].unique())
+cheaper = ghost_df[ghost_df['rx_ppu'].round(3) < ghost_df['dt_or_concession_ppu'].round(3)]['items'].sum()
+costlier = ghost_df[ghost_df['rx_ppu'].round(3) > ghost_df['dt_or_concession_ppu'].round(3)]['items'].sum()
+same = total_items - (cheaper + costlier)
+print("There are {} items prescribed for {} presentations. "
+      "{}% are cheaper than DT, {}% more expensive, the rest the same".format(
+          total_items,
+          total_presentations,
+          round(cheaper/total_items * 100),
+          round(costlier/total_items * 100)
+      ))
+
+ghost_df['excess_ppu'] = ghost_df['rx_ppu'] - ghost_df['dt_or_concession_ppu']
+ghost_df['excess_ppu_no_concession'] = ghost_df['rx_ppu'] - ghost_df['dt_ppu']
+ghost_df['excess_cost_dt_no_concession'] = (ghost_df['excess_ppu_no_concession']) * ghost_df['QI']
+ghost_df['excess_cost_dt'] = (ghost_df['excess_ppu']) * ghost_df['QI']
+ghost_df = ghost_df.sort_values('excess_cost_dt', ascending=False)
+
+# # Summary numbers
+
+total_savings = round(ghost_df['excess_cost_dt'].sum())
+total_savings_no_concession = round(ghost_df['excess_cost_dt_no_concession'].sum())
+print("Total possible savings in Sept 2018: £{}".format(total_savings))
+print("...excluding price concessions: £{}".format(total_savings_no_concession))
+
+
+# # Top savings
+
+by_presentation = ghost_df.groupby('bnf_description')[['excess_cost_dt', 'excess_ppu']].sum().reset_index()
+
+# ## 1. By total cost
+
+by_presentation.sort_values('excess_cost_dt',ascending=False).head()
+
+# ## 2. By per-unit price
+
+by_presentation.sort_values('excess_ppu',ascending=False).head()
+
+# # Top costs per CCG
+
+gpd_ghost_df = ghost_df.groupby('ccg_id')['excess_cost_dt'].sum().reset_index().sort_values('excess_cost_dt',ascending=False)
+
+gpd_ghost_df.head(10)
+
+# # Top costs per EPR
+
+epr = pd.read_csv("gpsoc_marketshare_201801b.csv.gz", compression='gzip', usecols=['ODS', 'Principal Supplier', 'Principal System'])
+epr.head()
+
+numbers = ghost_df[['practice_code', 'excess_cost_dt']]
+by_epr = numbers.merge(epr, how='inner', left_on='practice_code', right_on='ODS')
+
+summary = by_epr.groupby('Principal System')['excess_cost_dt'].agg({'cost': 'sum', 'count': 'count'})
+summary['cost_per_install'] = summary['cost'] / summary['count']
+summary = summary.sort_values('cost_per_install', ascending=False)
+summary
+
+# %matplotlib inline
+import matplotlib.pyplot as plt 
+summary['cost_per_install'].plot.bar()
+plt.ylabel("cost per install (£)")
+
+# # Create useful files for CCGs
+
+summary = gpd_ghost_df.assign(saving_from_top_10 = None).set_index('ccg_id')
+import string
+for ccg_id in summary.index:
+    ccg = ghost_df[ghost_df.ccg_id == ccg_id]
+    top_presentations = ccg.groupby('bnf_description').sum().sort_values('excess_cost_dt', ascending=False).head(10).reset_index()[['bnf_description', 'excess_cost_dt']]
+    target_prescriptions = top_presentations.merge(ccg, how='left', left_on='bnf_description', right_on='bnf_description').sort_values('excess_cost_dt_y', ascending=False)
+    useful_cols = ['practice_code', 'bnf_description', 'bnf_code', 'items', 'excess_cost_dt_y']
+    target_prescriptions = target_prescriptions[useful_cols]
+    target_prescriptions.columns = ['practice_code', 'bnf_description', 'bnf_code', 'items', 'excess_cost']
+    summary.loc[ccg_id, 'saving_from_top_10'] = target_prescriptions['excess_cost_dt_y'].sum()
+    target_prescriptions.to_csv("csv_data/{}.csv".format(ccg_id))
+summary = summary.reset_index()
+
+
