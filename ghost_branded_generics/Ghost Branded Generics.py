@@ -24,7 +24,6 @@ import os
 if os.path.exists("ghost_generics.csv.gz"):
     ghost_df = pd.read_csv("ghost_generics.csv.gz", compression='gzip')
 else:
-    raise
     ghost_df = pd.read_gbq("""
 SELECT
   prac.ccg_id,
@@ -106,14 +105,7 @@ ghost_df = ghost_df.sort_values('excess_cost_dt', ascending=False)
 total_savings = round(ghost_df['excess_cost_dt'].sum())
 total_savings_no_concession = round(ghost_df['excess_cost_dt_no_concession'].sum())
 print("Total possible savings in Sept 2018: £{}".format(total_savings))
-print("...excluding price concessions: £{}".format(total_savings_no_concession))
 
-
-df= ghost_df.copy()
-df.columns
-
-df[df['dt_or_concession_ppu'] > df['dt_ppu']]
-       
 
 # # Top savings
 
