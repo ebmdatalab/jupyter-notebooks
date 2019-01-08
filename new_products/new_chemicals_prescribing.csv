@@ -1,0 +1,1770 @@
+month,chemical,chemical_code,items
+2010-08-01,Nitrous Oxide,1501020R0,192
+2010-09-01,Nitrous Oxide,1501020R0,272
+2010-10-01,Nitrous Oxide,1501020R0,160
+2010-11-01,Nitrous Oxide,1501020R0,64
+2010-12-01,Nitrous Oxide,1501020R0,144
+2011-01-01,Nitrous Oxide,1501020R0,16
+2011-02-01,Nitrous Oxide,1501020R0,160
+2011-03-01,Nitrous Oxide,1501020R0,80
+2011-04-01,Nitrous Oxide,1501020R0,32
+2011-05-01,Nitrous Oxide,1501020R0,128
+2011-06-01,Nitrous Oxide,1501020R0,32
+2011-07-01,Nitrous Oxide,1501020R0,64
+2011-08-01,Nitrous Oxide,1501020R0,16
+2011-09-01,Nitrous Oxide,1501020R0,96
+2011-10-01,Nitrous Oxide,1501020R0,32
+2011-11-01,Nitrous Oxide,1501020R0,128
+2011-12-01,Nitrous Oxide,1501020R0,32
+2012-01-01,Nitrous Oxide,1501020R0,64
+2012-02-01,Nitrous Oxide,1501020R0,240
+2012-03-01,Nitrous Oxide,1501020R0,144
+2012-04-01,Nitrous Oxide,1501020R0,128
+2012-05-01,Nitrous Oxide,1501020R0,240
+2012-06-01,Nitrous Oxide,1501020R0,224
+2012-07-01,Nitrous Oxide,1501020R0,112
+2012-08-01,Nitrous Oxide,1501020R0,128
+2012-09-01,Nitrous Oxide,1501020R0,240
+2012-10-01,Nitrous Oxide,1501020R0,144
+2012-11-01,Nitrous Oxide,1501020R0,464
+2012-12-01,Nitrous Oxide,1501020R0,112
+2013-01-01,Nitrous Oxide,1501020R0,144
+2013-02-01,Nitrous Oxide,1501020R0,112
+2013-03-01,Nitrous Oxide,1501020R0,96
+2013-04-01,Nitrous Oxide,1501020R0,16
+2013-05-01,Nitrous Oxide,1501020R0,80
+2013-06-01,Nitrous Oxide,1501020R0,80
+2013-07-01,Nitrous Oxide,1501020R0,96
+2013-08-01,Nitrous Oxide,1501020R0,32
+2013-09-01,Nitrous Oxide,1501020R0,48
+2013-10-01,Nitrous Oxide,1501020R0,16
+2013-11-01,Nitrous Oxide,1501020R0,64
+2014-01-01,Alogliptin,0601023AK,6
+2014-01-01,Fluticasone Furoate (Inh),0302000V0,680
+2014-01-01,Nitrous Oxide,1501020R0,112
+2014-01-01,Solifenacin/Tamsulosin,0704010W0,30
+2014-02-01,Alogliptin,0601023AK,36
+2014-02-01,Canagliflozin,0601023AM,4
+2014-02-01,Fluticasone Furoate (Inh),0302000V0,3320
+2014-02-01,Nitrous Oxide,1501020R0,80
+2014-02-01,Solifenacin/Tamsulosin,0704010W0,82
+2014-03-01,Alogliptin,0601023AK,300
+2014-03-01,Aripiprazole,0402020AD,4
+2014-03-01,Canagliflozin,0601023AM,44
+2014-03-01,Fluticasone Furoate (Inh),0302000V0,8685
+2014-03-01,Nitrous Oxide,1501020R0,96
+2014-03-01,Solifenacin/Tamsulosin,0704010W0,272
+2014-04-01,Alogliptin,0601023AK,672
+2014-04-01,Aripiprazole,0402020AD,4
+2014-04-01,Avanafil,0704050AC,6
+2014-04-01,Brimonidine Tart (Rosacea),1306030A0,350
+2014-04-01,Canagliflozin,0601023AM,228
+2014-04-01,Dapagliflozin/Metformin,0601023AL,28
+2014-04-01,Fluticasone Furoate (Inh),0302000V0,11630
+2014-04-01,Nitrous Oxide,1501020R0,32
+2014-04-01,Perindopril + Calcium Channel Blocker,0205051AC,4
+2014-04-01,Solifenacin/Tamsulosin,0704010W0,548
+2014-05-01,Alogliptin,0601023AK,1134
+2014-05-01,Aripiprazole,0402020AD,4
+2014-05-01,Avanafil,0704050AC,24
+2014-05-01,Brimonidine Tart (Rosacea),1306030A0,928
+2014-05-01,Canagliflozin,0601023AM,532
+2014-05-01,Dapagliflozin/Metformin,0601023AL,92
+2014-05-01,Fluticasone Furoate (Inh),0302000V0,16000
+2014-05-01,Nitrous Oxide,1501020R0,64
+2014-05-01,Perindopril + Calcium Channel Blocker,0205051AC,12
+2014-05-01,Solifenacin/Tamsulosin,0704010W0,828
+2014-06-01,Alogliptin,0601023AK,1848
+2014-06-01,Aripiprazole,0402020AD,12
+2014-06-01,Avanafil,0704050AC,102
+2014-06-01,Brimonidine Tart (Rosacea),1306030A0,1234
+2014-06-01,Canagliflozin,0601023AM,1128
+2014-06-01,Clindamycin/Tretinoin,1306010AB,2
+2014-06-01,Dapagliflozin/Metformin,0601023AL,160
+2014-06-01,Fluticasone Furoate (Inh),0302000V0,19200
+2014-06-01,Nitrous Oxide,1501020R0,64
+2014-06-01,Perindopril + Calcium Channel Blocker,0205051AC,32
+2014-06-01,Solifenacin/Tamsulosin,0704010W0,1070
+2014-07-01,Alogliptin,0601023AK,3156
+2014-07-01,Aripiprazole,0402020AD,36
+2014-07-01,Avanafil,0704050AC,150
+2014-07-01,Brimonidine Tart (Rosacea),1306030A0,1550
+2014-07-01,Brinzolamide/Brimonidine,1106000AL,16
+2014-07-01,Canagliflozin,0601023AM,2356
+2014-07-01,Clindamycin/Tretinoin,1306010AB,6
+2014-07-01,Dapagliflozin/Metformin,0601023AL,284
+2014-07-01,Fluticasone Furoate (Inh),0302000V0,24610
+2014-07-01,Nitrous Oxide,1501020R0,144
+2014-07-01,Perindopril + Calcium Channel Blocker,0205051AC,44
+2014-07-01,Solifenacin/Tamsulosin,0704010W0,1394
+2014-07-01,Umeclidinium Brom/Vilanterol,0301040W0,32
+2014-08-01,Alogliptin,0601023AK,4236
+2014-08-01,Aripiprazole,0402020AD,80
+2014-08-01,Avanafil,0704050AC,222
+2014-08-01,Brimonidine Tart (Rosacea),1306030A0,1204
+2014-08-01,Brinzolamide/Brimonidine,1106000AL,14
+2014-08-01,Canagliflozin,0601023AM,3392
+2014-08-01,Clindamycin/Tretinoin,1306010AB,66
+2014-08-01,Dapagliflozin/Metformin,0601023AL,392
+2014-08-01,Empagliflozin,0601023AN,4
+2014-08-01,Fluticasone Furoate (Inh),0302000V0,26415
+2014-08-01,Nitrous Oxide,1501020R0,32
+2014-08-01,Perindopril + Calcium Channel Blocker,0205051AC,96
+2014-08-01,Solifenacin/Tamsulosin,0704010W0,1482
+2014-08-01,Umeclidinium Brom/Vilanterol,0301040W0,116
+2014-09-01,Alogliptin,0601023AK,5460
+2014-09-01,Aripiprazole,0402020AD,108
+2014-09-01,Avanafil,0704050AC,306
+2014-09-01,Brimonidine Tart (Rosacea),1306030A0,1404
+2014-09-01,Brinzolamide/Brimonidine,1106000AL,30
+2014-09-01,Canagliflozin,0601023AM,5140
+2014-09-01,Clindamycin/Tretinoin,1306010AB,306
+2014-09-01,Dapagliflozin/Metformin,0601023AL,468
+2014-09-01,Empagliflozin,0601023AN,96
+2014-09-01,Fluticasone Furoate (Inh),0302000V0,30275
+2014-09-01,Lurasidone,0402010AI,6
+2014-09-01,Nitrous Oxide,1501020R0,160
+2014-09-01,Perindopril + Calcium Channel Blocker,0205051AC,44
+2014-09-01,Solifenacin/Tamsulosin,0704010W0,1694
+2014-09-01,Umeclidinium Brom/Vilanterol,0301040W0,246
+2014-10-01,Alogliptin,0601023AK,7536
+2014-10-01,Aripiprazole,0402020AD,124
+2014-10-01,Avanafil,0704050AC,702
+2014-10-01,Brimonidine Tart (Rosacea),1306030A0,1448
+2014-10-01,Brinzolamide/Brimonidine,1106000AL,282
+2014-10-01,Canagliflozin,0601023AM,7716
+2014-10-01,Clindamycin/Tretinoin,1306010AB,970
+2014-10-01,Dapagliflozin/Metformin,0601023AL,684
+2014-10-01,Empagliflozin,0601023AN,264
+2014-10-01,Fluticasone Furoate (Inh),0302000V0,36245
+2014-10-01,Lurasidone,0402010AI,12
+2014-10-01,Nitrous Oxide,1501020R0,48
+2014-10-01,Perindopril + Calcium Channel Blocker,0205051AC,80
+2014-10-01,Solifenacin/Tamsulosin,0704010W0,2156
+2014-10-01,Umeclidinium Brom,0301020T0,2
+2014-10-01,Umeclidinium Brom/Vilanterol,0301040W0,650
+2014-11-01,Alogliptin,0601023AK,8400
+2014-11-01,Aripiprazole,0402020AD,144
+2014-11-01,Avanafil,0704050AC,870
+2014-11-01,Brimonidine Tart (Rosacea),1306030A0,1362
+2014-11-01,Brinzolamide/Brimonidine,1106000AL,866
+2014-11-01,Canagliflozin,0601023AM,10480
+2014-11-01,Clindamycin/Tretinoin,1306010AB,1162
+2014-11-01,Dapagliflozin/Metformin,0601023AL,840
+2014-11-01,Empagliflozin,0601023AN,340
+2014-11-01,Fluticasone Furoate (Inh),0302000V0,37795
+2014-11-01,Ins Degludec/Liraglutide,0601023AU,10
+2014-11-01,Lurasidone,0402010AI,48
+2014-11-01,Nitrous Oxide,1501020R0,112
+2014-11-01,Perindopril + Calcium Channel Blocker,0205051AC,168
+2014-11-01,Solifenacin/Tamsulosin,0704010W0,2334
+2014-11-01,Triamcinolone Hexacetonide,1001022Y0,21
+2014-11-01,Umeclidinium Brom,0301020T0,42
+2014-11-01,Umeclidinium Brom/Vilanterol,0301040W0,1026
+2014-12-01,Alogliptin,0601023AK,11490
+2014-12-01,Aripiprazole,0402020AD,192
+2014-12-01,Avanafil,0704050AC,1104
+2014-12-01,Brimonidine Tart (Rosacea),1306030A0,1314
+2014-12-01,Brinzolamide/Brimonidine,1106000AL,1746
+2014-12-01,Canagliflozin,0601023AM,14544
+2014-12-01,Canagliflozin/Metformin,0601023AP,20
+2014-12-01,Clindamycin/Tretinoin,1306010AB,1268
+2014-12-01,Dapagliflozin/Metformin,0601023AL,1104
+2014-12-01,Empagliflozin,0601023AN,712
+2014-12-01,Fluticasone Furoate (Inh),0302000V0,46675
+2014-12-01,Indacaterol/Glycopyrronium,0301040Y0,4
+2014-12-01,Ins Degludec/Liraglutide,0601023AU,16
+2014-12-01,Lurasidone,0402010AI,78
+2014-12-01,Nitrous Oxide,1501020R0,64
+2014-12-01,Perindopril + Calcium Channel Blocker,0205051AC,204
+2014-12-01,Solifenacin/Tamsulosin,0704010W0,2836
+2014-12-01,Umeclidinium Brom,0301020T0,320
+2014-12-01,Umeclidinium Brom/Vilanterol,0301040W0,1784
+2015-01-01,Aclidinium Brom/Formoterol,0301040V0,10
+2015-01-01,Alogliptin,0601023AK,12552
+2015-01-01,Aripiprazole,0402020AD,252
+2015-01-01,Avanafil,0704050AC,1224
+2015-01-01,Brimonidine Tart (Rosacea),1306030A0,1280
+2015-01-01,Brinzolamide/Brimonidine,1106000AL,2386
+2015-01-01,Canagliflozin,0601023AM,14580
+2015-01-01,Canagliflozin/Metformin,0601023AP,24
+2015-01-01,Clindamycin/Tretinoin,1306010AB,1350
+2015-01-01,Dapagliflozin/Metformin,0601023AL,1212
+2015-01-01,Dulaglutide,0601023AQ,8
+2015-01-01,Empagliflozin,0601023AN,812
+2015-01-01,Fluticasone Furoate (Inh),0302000V0,49835
+2015-01-01,Indacaterol/Glycopyrronium,0301040Y0,16
+2015-01-01,Ins Degludec/Liraglutide,0601023AU,20
+2015-01-01,Lurasidone,0402010AI,114
+2015-01-01,Nitrous Oxide,1501020R0,128
+2015-01-01,Perindopril + Calcium Channel Blocker,0205051AC,232
+2015-01-01,Solifenacin/Tamsulosin,0704010W0,2842
+2015-01-01,Triamcinolone Hexacetonide,1001022Y0,35
+2015-01-01,Umeclidinium Brom,0301020T0,714
+2015-01-01,Umeclidinium Brom/Vilanterol,0301040W0,2356
+2015-02-01,Aclidinium Brom/Formoterol,0301040V0,142
+2015-02-01,Alogliptin,0601023AK,14694
+2015-02-01,Aripiprazole,0402020AD,240
+2015-02-01,Avanafil,0704050AC,1326
+2015-02-01,Brimonidine Tart (Rosacea),1306030A0,1378
+2015-02-01,Brinzolamide/Brimonidine,1106000AL,2844
+2015-02-01,Canagliflozin,0601023AM,17036
+2015-02-01,Canagliflozin/Metformin,0601023AP,52
+2015-02-01,Clindamycin/Tretinoin,1306010AB,1416
+2015-02-01,Dapagliflozin/Metformin,0601023AL,1356
+2015-02-01,Dulaglutide,0601023AQ,32
+2015-02-01,Empagliflozin,0601023AN,1184
+2015-02-01,Fluticasone Furoate (Inh),0302000V0,52285
+2015-02-01,Indacaterol/Glycopyrronium,0301040Y0,78
+2015-02-01,Ins Degludec/Liraglutide,0601023AU,18
+2015-02-01,Lurasidone,0402010AI,324
+2015-02-01,Nitrous Oxide,1501020R0,240
+2015-02-01,Perindopril + Calcium Channel Blocker,0205051AC,304
+2015-02-01,Solifenacin/Tamsulosin,0704010W0,2908
+2015-02-01,Umeclidinium Brom,0301020T0,1184
+2015-02-01,Umeclidinium Brom/Vilanterol,0301040W0,2960
+2015-03-01,Aclidinium Brom/Formoterol,0301040V0,438
+2015-03-01,Alogliptin,0601023AK,21114
+2015-03-01,Aripiprazole,0402020AD,348
+2015-03-01,Avanafil,0704050AC,1626
+2015-03-01,Brimonidine Tart (Rosacea),1306030A0,1686
+2015-03-01,Brinzolamide/Brimonidine,1106000AL,3924
+2015-03-01,Canagliflozin,0601023AM,25712
+2015-03-01,Canagliflozin/Metformin,0601023AP,116
+2015-03-01,Clindamycin/Tretinoin,1306010AB,1780
+2015-03-01,Dapagliflozin/Metformin,0601023AL,1812
+2015-03-01,Dulaglutide,0601023AQ,152
+2015-03-01,Empagliflozin,0601023AN,1964
+2015-03-01,Fluticasone Furoate (Inh),0302000V0,64810
+2015-03-01,Indacaterol/Glycopyrronium,0301040Y0,244
+2015-03-01,Ins Degludec/Liraglutide,0601023AU,16
+2015-03-01,Lurasidone,0402010AI,444
+2015-03-01,Nitrous Oxide,1501020R0,208
+2015-03-01,Perindopril + Calcium Channel Blocker,0205051AC,316
+2015-03-01,Solifenacin/Tamsulosin,0704010W0,3382
+2015-03-01,Triamcinolone Hexacetonide,1001022Y0,42
+2015-03-01,Umeclidinium Brom,0301020T0,2278
+2015-03-01,Umeclidinium Brom/Vilanterol,0301040W0,4226
+2015-04-01,Aclidinium Brom/Formoterol,0301040V0,602
+2015-04-01,Alogliptin,0601023AK,23466
+2015-04-01,Aripiprazole,0402020AD,424
+2015-04-01,Avanafil,0704050AC,2100
+2015-04-01,Brimonidine Tart (Rosacea),1306030A0,1644
+2015-04-01,Brinzolamide/Brimonidine,1106000AL,4668
+2015-04-01,Canagliflozin,0601023AM,29388
+2015-04-01,Canagliflozin/Metformin,0601023AP,252
+2015-04-01,Clindamycin/Tretinoin,1306010AB,1812
+2015-04-01,Dapagliflozin/Metformin,0601023AL,1796
+2015-04-01,Dulaglutide,0601023AQ,304
+2015-04-01,Empagliflozin,0601023AN,2516
+2015-04-01,Fluticasone Furoate (Inh),0302000V0,70725
+2015-04-01,Indacaterol/Glycopyrronium,0301040Y0,394
+2015-04-01,Ins Degludec/Liraglutide,0601023AU,32
+2015-04-01,Lurasidone,0402010AI,558
+2015-04-01,Nitrous Oxide,1501020R0,96
+2015-04-01,Perindopril + Calcium Channel Blocker,0205051AC,252
+2015-04-01,Solifenacin/Tamsulosin,0704010W0,3658
+2015-04-01,Umeclidinium Brom,0301020T0,2556
+2015-04-01,Umeclidinium Brom/Vilanterol,0301040W0,4812
+2015-05-01,Aclidinium Brom/Formoterol,0301040V0,850
+2015-05-01,Alogliptin,0601023AK,28188
+2015-05-01,Aripiprazole,0402020AD,388
+2015-05-01,Avanafil,0704050AC,2508
+2015-05-01,Brimonidine Tart (Rosacea),1306030A0,1632
+2015-05-01,Brinzolamide/Brimonidine,1106000AL,5274
+2015-05-01,Canagliflozin,0601023AM,33888
+2015-05-01,Canagliflozin/Metformin,0601023AP,432
+2015-05-01,Clindamycin/Tretinoin,1306010AB,1854
+2015-05-01,Dapagliflozin/Metformin,0601023AL,2076
+2015-05-01,Dulaglutide,0601023AQ,496
+2015-05-01,Empagliflozin,0601023AN,3572
+2015-05-01,Fluticasone Furoate (Inh),0302000V0,73200
+2015-05-01,Indacaterol/Glycopyrronium,0301040Y0,580
+2015-05-01,Ins Degludec/Liraglutide,0601023AU,48
+2015-05-01,Lurasidone,0402010AI,798
+2015-05-01,Nitrous Oxide,1501020R0,80
+2015-05-01,Perindopril + Calcium Channel Blocker,0205051AC,332
+2015-05-01,Solifenacin/Tamsulosin,0704010W0,3768
+2015-05-01,Triamcinolone Hexacetonide,1001022Y0,168
+2015-05-01,Umeclidinium Brom,0301020T0,3280
+2015-05-01,Umeclidinium Brom/Vilanterol,0301040W0,5648
+2015-06-01,Aclidinium Brom/Formoterol,0301040V0,1186
+2015-06-01,Alogliptin,0601023AK,35502
+2015-06-01,Aripiprazole,0402020AD,444
+2015-06-01,Avanafil,0704050AC,2952
+2015-06-01,Brimonidine Tart (Rosacea),1306030A0,1720
+2015-06-01,Brinzolamide/Brimonidine,1106000AL,6374
+2015-06-01,Canagliflozin,0601023AM,39584
+2015-06-01,Canagliflozin/Metformin,0601023AP,572
+2015-06-01,Clindamycin/Tretinoin,1306010AB,2198
+2015-06-01,Dapagliflozin/Metformin,0601023AL,2352
+2015-06-01,Dulaglutide,0601023AQ,640
+2015-06-01,Empagliflozin,0601023AN,5076
+2015-06-01,Fluticasone Furoate (Inh),0302000V0,85160
+2015-06-01,Indacaterol/Glycopyrronium,0301040Y0,868
+2015-06-01,Ins Degludec/Liraglutide,0601023AU,96
+2015-06-01,Ivermectin,1306030B0,4
+2015-06-01,Lurasidone,0402010AI,918
+2015-06-01,Nitrous Oxide,1501020R0,208
+2015-06-01,Perindopril + Calcium Channel Blocker,0205051AC,312
+2015-06-01,Solifenacin/Tamsulosin,0704010W0,4248
+2015-06-01,Triamcinolone Hexacetonide,1001022Y0,77
+2015-06-01,Umeclidinium Brom,0301020T0,4492
+2015-06-01,Umeclidinium Brom/Vilanterol,0301040W0,7342
+2015-07-01,Aclidinium Brom/Formoterol,0301040V0,1654
+2015-07-01,Alogliptin,0601023AK,45510
+2015-07-01,Aripiprazole,0402020AD,532
+2015-07-01,Avanafil,0704050AC,2982
+2015-07-01,Brimonidine Tart (Rosacea),1306030A0,1692
+2015-07-01,Brinzolamide/Brimonidine,1106000AL,7762
+2015-07-01,Canagliflozin,0601023AM,46744
+2015-07-01,Canagliflozin/Metformin,0601023AP,760
+2015-07-01,Ciclosporin (Eye Anti Inflam),1104020AE,3
+2015-07-01,Clindamycin/Tretinoin,1306010AB,2268
+2015-07-01,Dapagliflozin/Metformin,0601023AL,2500
+2015-07-01,Dulaglutide,0601023AQ,896
+2015-07-01,Edoxaban,0208020AA,6
+2015-07-01,Empagliflozin,0601023AN,6900
+2015-07-01,Fluticasone Furoate (Inh),0302000V0,100590
+2015-07-01,Indacaterol/Glycopyrronium,0301040Y0,1182
+2015-07-01,Ins Degludec/Liraglutide,0601023AU,234
+2015-07-01,Ivermectin,1306030B0,74
+2015-07-01,Lurasidone,0402010AI,1278
+2015-07-01,Nitrous Oxide,1501020R0,48
+2015-07-01,Perindopril + Calcium Channel Blocker,0205051AC,360
+2015-07-01,Solifenacin/Tamsulosin,0704010W0,4576
+2015-07-01,Tiotropium Brom/Olodaterol,0301040X0,4
+2015-07-01,Triamcinolone Hexacetonide,1001022Y0,231
+2015-07-01,Umeclidinium Brom,0301020T0,6148
+2015-07-01,Umeclidinium Brom/Vilanterol,0301040W0,8872
+2015-08-01,Aclidinium Brom/Formoterol,0301040V0,1986
+2015-08-01,Alogliptin,0601023AK,48840
+2015-08-01,Aripiprazole,0402020AD,540
+2015-08-01,Avanafil,0704050AC,2796
+2015-08-01,Brimonidine Tart (Rosacea),1306030A0,1402
+2015-08-01,Brinzolamide/Brimonidine,1106000AL,7572
+2015-08-01,Canagliflozin,0601023AM,46572
+2015-08-01,Canagliflozin/Metformin,0601023AP,768
+2015-08-01,Ciclosporin (Eye Anti Inflam),1104020AE,21
+2015-08-01,Clindamycin/Tretinoin,1306010AB,2026
+2015-08-01,Dapagliflozin/Metformin,0601023AL,2456
+2015-08-01,Dulaglutide,0601023AQ,1064
+2015-08-01,Edoxaban,0208020AA,12
+2015-08-01,Empagliflozin,0601023AN,7608
+2015-08-01,Fluticasone Furoate (Inh),0302000V0,96365
+2015-08-01,Indacaterol/Glycopyrronium,0301040Y0,1366
+2015-08-01,Ins Degludec/Liraglutide,0601023AU,258
+2015-08-01,Ivermectin,1306030B0,156
+2015-08-01,Lurasidone,0402010AI,1152
+2015-08-01,Nitrous Oxide,1501020R0,64
+2015-08-01,Perindopril + Calcium Channel Blocker,0205051AC,316
+2015-08-01,Solifenacin/Tamsulosin,0704010W0,4280
+2015-08-01,Tafluprost & Timolol,1106000AM,14
+2015-08-01,Tiotropium Brom/Olodaterol,0301040X0,20
+2015-08-01,Triamcinolone Hexacetonide,1001022Y0,161
+2015-08-01,Umeclidinium Brom,0301020T0,6892
+2015-08-01,Umeclidinium Brom/Vilanterol,0301040W0,9120
+2015-09-01,Aclidinium Brom/Formoterol,0301040V0,2582
+2015-09-01,Alogliptin,0601023AK,60228
+2015-09-01,Aripiprazole,0402020AD,604
+2015-09-01,Avanafil,0704050AC,3546
+2015-09-01,Brimonidine Tart (Rosacea),1306030A0,1576
+2015-09-01,Brinzolamide/Brimonidine,1106000AL,8752
+2015-09-01,Canagliflozin,0601023AM,53920
+2015-09-01,Canagliflozin/Metformin,0601023AP,740
+2015-09-01,Ciclosporin (Eye Anti Inflam),1104020AE,69
+2015-09-01,Clindamycin/Tretinoin,1306010AB,2268
+2015-09-01,Dapagliflozin/Metformin,0601023AL,2792
+2015-09-01,Dulaglutide,0601023AQ,1444
+2015-09-01,Edoxaban,0208020AA,60
+2015-09-01,Empagliflozin,0601023AN,9680
+2015-09-01,Fluticasone Furoate (Inh),0302000V0,110920
+2015-09-01,Indacaterol/Glycopyrronium,0301040Y0,1596
+2015-09-01,Ins Degludec/Liraglutide,0601023AU,378
+2015-09-01,Ivermectin,1306030B0,276
+2015-09-01,Lurasidone,0402010AI,1392
+2015-09-01,Naloxegol,0106060B0,12
+2015-09-01,Nitrous Oxide,1501020R0,96
+2015-09-01,Perindopril + Calcium Channel Blocker,0205051AC,340
+2015-09-01,Solifenacin/Tamsulosin,0704010W0,4782
+2015-09-01,Tafluprost & Timolol,1106000AM,68
+2015-09-01,Tiotropium Brom/Olodaterol,0301040X0,142
+2015-09-01,Triamcinolone Hexacetonide,1001022Y0,238
+2015-09-01,Umeclidinium Brom,0301020T0,9042
+2015-09-01,Umeclidinium Brom/Vilanterol,0301040W0,10844
+2015-09-01,Vortioxetine,0403040AB,6
+2015-10-01,Aclidinium Brom/Formoterol,0301040V0,3400
+2015-10-01,Alogliptin,0601023AK,57276
+2015-10-01,Aripiprazole,0402020AD,648
+2015-10-01,Avanafil,0704050AC,3468
+2015-10-01,Brimonidine Tart (Rosacea),1306030A0,1600
+2015-10-01,Brinzolamide/Brimonidine,1106000AL,9512
+2015-10-01,Canagliflozin,0601023AM,65120
+2015-10-01,Canagliflozin/Metformin,0601023AP,1024
+2015-10-01,Ciclosporin (Eye Anti Inflam),1104020AE,105
+2015-10-01,Ciprofloxain/Dexameth,1201010AE,4
+2015-10-01,Clindamycin/Tretinoin,1306010AB,2756
+2015-10-01,Dapagliflozin/Metformin,0601023AL,2904
+2015-10-01,Dulaglutide,0601023AQ,1932
+2015-10-01,Edoxaban,0208020AA,144
+2015-10-01,Empagliflozin,0601023AN,13388
+2015-10-01,Empagliflozin/Metformin,0601023AR,56
+2015-10-01,Fluticasone Furoate (Inh),0302000V0,123275
+2015-10-01,Indacaterol/Glycopyrronium,0301040Y0,2086
+2015-10-01,Ins Degludec/Liraglutide,0601023AU,492
+2015-10-01,Ivermectin,1306030B0,476
+2015-10-01,Lurasidone,0402010AI,1320
+2015-10-01,Naloxegol,0106060B0,20
+2015-10-01,Nitrous Oxide,1501020R0,192
+2015-10-01,Perindopril + Calcium Channel Blocker,0205051AC,388
+2015-10-01,Solifenacin/Tamsulosin,0704010W0,5010
+2015-10-01,Tafluprost & Timolol,1106000AM,130
+2015-10-01,Tiotropium Brom/Olodaterol,0301040X0,360
+2015-10-01,Triamcinolone Hexacetonide,1001022Y0,126
+2015-10-01,Umeclidinium Brom,0301020T0,11210
+2015-10-01,Umeclidinium Brom/Vilanterol,0301040W0,12646
+2015-10-01,Vortioxetine,0403040AB,6
+2015-11-01,Aclidinium Brom/Formoterol,0301040V0,4242
+2015-11-01,Alogliptin,0601023AK,61848
+2015-11-01,Aripiprazole,0402020AD,644
+2015-11-01,Avanafil,0704050AC,3450
+2015-11-01,Brimonidine Tart (Rosacea),1306030A0,1584
+2015-11-01,Brinzolamide/Brimonidine,1106000AL,10232
+2015-11-01,Canagliflozin,0601023AM,68448
+2015-11-01,Canagliflozin/Metformin,0601023AP,1224
+2015-11-01,Ciclosporin (Eye Anti Inflam),1104020AE,216
+2015-11-01,Ciprofloxain/Dexameth,1201010AE,40
+2015-11-01,Clindamycin/Tretinoin,1306010AB,2574
+2015-11-01,Dapagliflozin/Metformin,0601023AL,3212
+2015-11-01,Dulaglutide,0601023AQ,2548
+2015-11-01,Edoxaban,0208020AA,318
+2015-11-01,Empagliflozin,0601023AN,16400
+2015-11-01,Empagliflozin/Metformin,0601023AR,288
+2015-11-01,Fluticasone Furoate (Inh),0302000V0,130185
+2015-11-01,Indacaterol/Glycopyrronium,0301040Y0,2464
+2015-11-01,Ins Degludec/Liraglutide,0601023AU,630
+2015-11-01,Ivermectin,1306030B0,616
+2015-11-01,Lurasidone,0402010AI,1536
+2015-11-01,Naloxegol,0106060B0,72
+2015-11-01,Nitrous Oxide,1501020R0,80
+2015-11-01,Perindopril + Calcium Channel Blocker,0205051AC,448
+2015-11-01,Solifenacin/Tamsulosin,0704010W0,5096
+2015-11-01,Tafluprost & Timolol,1106000AM,146
+2015-11-01,Tiotropium Brom/Olodaterol,0301040X0,576
+2015-11-01,Triamcinolone Hexacetonide,1001022Y0,329
+2015-11-01,Umeclidinium Brom,0301020T0,13480
+2015-11-01,Umeclidinium Brom/Vilanterol,0301040W0,13644
+2015-11-01,Vortioxetine,0403040AB,66
+2015-12-01,Aclidinium Brom/Formoterol,0301040V0,5670
+2015-12-01,Alogliptin,0601023AK,89838
+2015-12-01,Aripiprazole,0402020AD,660
+2015-12-01,Avanafil,0704050AC,4194
+2015-12-01,Brimonidine Tart (Rosacea),1306030A0,1542
+2015-12-01,Brinzolamide/Brimonidine,1106000AL,12010
+2015-12-01,Canagliflozin,0601023AM,77716
+2015-12-01,Canagliflozin/Metformin,0601023AP,1480
+2015-12-01,Ciclosporin (Eye Anti Inflam),1104020AE,444
+2015-12-01,Ciprofloxain/Dexameth,1201010AE,396
+2015-12-01,Clindamycin/Tretinoin,1306010AB,2790
+2015-12-01,Dapagliflozin/Metformin,0601023AL,3756
+2015-12-01,Dulaglutide,0601023AQ,4052
+2015-12-01,Edoxaban,0208020AA,528
+2015-12-01,Empagliflozin,0601023AN,23504
+2015-12-01,Empagliflozin/Metformin,0601023AR,720
+2015-12-01,Fluticasone Furoate (Inh),0302000V0,154080
+2015-12-01,Indacaterol/Glycopyrronium,0301040Y0,3152
+2015-12-01,Ins Degludec/Liraglutide,0601023AU,720
+2015-12-01,Ivermectin,1306030B0,844
+2015-12-01,Lurasidone,0402010AI,1650
+2015-12-01,Naloxegol,0106060B0,176
+2015-12-01,Nitrous Oxide,1501020R0,96
+2015-12-01,Perindopril + Calcium Channel Blocker,0205051AC,500
+2015-12-01,Solifenacin/Tamsulosin,0704010W0,5748
+2015-12-01,Tafluprost & Timolol,1106000AM,216
+2015-12-01,Tiotropium Brom/Olodaterol,0301040X0,1230
+2015-12-01,Triamcinolone Hexacetonide,1001022Y0,441
+2015-12-01,Umeclidinium Brom,0301020T0,16832
+2015-12-01,Umeclidinium Brom/Vilanterol,0301040W0,16586
+2015-12-01,Vortioxetine,0403040AB,216
+2016-01-01,Aclidinium Brom/Formoterol,0301040V0,5748
+2016-01-01,Alogliptin,0601023AK,94356
+2016-01-01,Aripiprazole,0402020AD,748
+2016-01-01,Avanafil,0704050AC,3954
+2016-01-01,Brimonidine Tart (Rosacea),1306030A0,1602
+2016-01-01,Brinzolamide/Brimonidine,1106000AL,11358
+2016-01-01,Canagliflozin,0601023AM,74800
+2016-01-01,Canagliflozin/Metformin,0601023AP,1484
+2016-01-01,Ciclosporin (Eye Anti Inflam),1104020AE,585
+2016-01-01,Ciprofloxain/Dexameth,1201010AE,556
+2016-01-01,Clindamycin/Tretinoin,1306010AB,2646
+2016-01-01,Dapagliflozin/Metformin,0601023AL,3448
+2016-01-01,Dulaglutide,0601023AQ,4764
+2016-01-01,Edoxaban,0208020AA,576
+2016-01-01,Empagliflozin,0601023AN,26064
+2016-01-01,Empagliflozin/Metformin,0601023AR,920
+2016-01-01,Fluticasone Furoate (Inh),0302000V0,137535
+2016-01-01,Indacaterol/Glycopyrronium,0301040Y0,3236
+2016-01-01,Ins Degludec/Liraglutide,0601023AU,796
+2016-01-01,Ivermectin,1306030B0,900
+2016-01-01,Lurasidone,0402010AI,1716
+2016-01-01,Naloxegol,0106060B0,236
+2016-01-01,Nitrous Oxide,1501020R0,64
+2016-01-01,Perindopril + Calcium Channel Blocker,0205051AC,472
+2016-01-01,Solifenacin/Tamsulosin,0704010W0,5426
+2016-01-01,Tafluprost & Timolol,1106000AM,208
+2016-01-01,Tiotropium Brom/Olodaterol,0301040X0,1212
+2016-01-01,Triamcinolone Hexacetonide,1001022Y0,427
+2016-01-01,Umeclidinium Brom,0301020T0,17698
+2016-01-01,Umeclidinium Brom/Vilanterol,0301040W0,16644
+2016-01-01,Vortioxetine,0403040AB,240
+2016-02-01,Aclidinium Brom/Formoterol,0301040V0,6772
+2016-02-01,Alogliptin,0601023AK,106908
+2016-02-01,Aripiprazole,0402020AD,756
+2016-02-01,Avanafil,0704050AC,3672
+2016-02-01,Brimonidine Tart (Rosacea),1306030A0,1682
+2016-02-01,Brinzolamide/Brimonidine,1106000AL,12234
+2016-02-01,Brivaracetam,0408010AL,42
+2016-02-01,Canagliflozin,0601023AM,79068
+2016-02-01,Canagliflozin/Metformin,0601023AP,1448
+2016-02-01,Ciclosporin (Eye Anti Inflam),1104020AE,735
+2016-02-01,Ciprofloxain/Dexameth,1201010AE,778
+2016-02-01,Clindamycin/Tretinoin,1306010AB,2806
+2016-02-01,Dapagliflozin/Metformin,0601023AL,3860
+2016-02-01,Dulaglutide,0601023AQ,6408
+2016-02-01,Edoxaban,0208020AA,882
+2016-02-01,Empagliflozin,0601023AN,32220
+2016-02-01,Empagliflozin/Metformin,0601023AR,1584
+2016-02-01,Fluticasone Furoate (Inh),0302000V0,145320
+2016-02-01,Guanfacine,0404000V0,56
+2016-02-01,Indacaterol/Glycopyrronium,0301040Y0,3810
+2016-02-01,Ins Degludec/Liraglutide,0601023AU,870
+2016-02-01,Ivermectin,1306030B0,1128
+2016-02-01,Lurasidone,0402010AI,1560
+2016-02-01,Naloxegol,0106060B0,300
+2016-02-01,Nitrous Oxide,1501020R0,1856
+2016-02-01,Perindopril + Calcium Channel Blocker,0205051AC,448
+2016-02-01,Sacubitril/Valsartan,0205052AE,6
+2016-02-01,Solifenacin/Tamsulosin,0704010W0,5488
+2016-02-01,Tafluprost & Timolol,1106000AM,260
+2016-02-01,Tiotropium Brom/Olodaterol,0301040X0,1612
+2016-02-01,Triamcinolone Hexacetonide,1001022Y0,427
+2016-02-01,Umeclidinium Brom,0301020T0,19652
+2016-02-01,Umeclidinium Brom/Vilanterol,0301040W0,18616
+2016-02-01,Vortioxetine,0403040AB,612
+2016-03-01,Aclidinium Brom/Formoterol,0301040V0,8248
+2016-03-01,Alogliptin,0601023AK,144132
+2016-03-01,Aripiprazole,0402020AD,764
+2016-03-01,Avanafil,0704050AC,4062
+2016-03-01,Brimonidine Tart (Rosacea),1306030A0,1752
+2016-03-01,Brinzolamide/Brimonidine,1106000AL,13628
+2016-03-01,Brivaracetam,0408010AL,98
+2016-03-01,Canagliflozin,0601023AM,89984
+2016-03-01,Canagliflozin/Metformin,0601023AP,1812
+2016-03-01,Ciclosporin (Eye Anti Inflam),1104020AE,1029
+2016-03-01,Ciprofloxain/Dexameth,1201010AE,846
+2016-03-01,Clindamycin/Tretinoin,1306010AB,2952
+2016-03-01,Dapagliflozin/Metformin,0601023AL,4284
+2016-03-01,Dulaglutide,0601023AQ,8468
+2016-03-01,Edoxaban,0208020AA,1494
+2016-03-01,Empagliflozin,0601023AN,40168
+2016-03-01,Empagliflozin/Metformin,0601023AR,2144
+2016-03-01,Fluticasone Furoate (Inh),0302000V0,170460
+2016-03-01,Guanfacine,0404000V0,280
+2016-03-01,Indacaterol/Glycopyrronium,0301040Y0,4772
+2016-03-01,Ins Degludec/Liraglutide,0601023AU,998
+2016-03-01,Ivermectin,1306030B0,1414
+2016-03-01,Lurasidone,0402010AI,1914
+2016-03-01,Naloxegol,0106060B0,508
+2016-03-01,Nitrous Oxide,1501020R0,512
+2016-03-01,Perindopril + Calcium Channel Blocker,0205051AC,528
+2016-03-01,Sacubitril/Valsartan,0205052AE,30
+2016-03-01,Solifenacin/Tamsulosin,0704010W0,6130
+2016-03-01,Tafluprost & Timolol,1106000AM,360
+2016-03-01,Tiotropium Brom/Olodaterol,0301040X0,1994
+2016-03-01,Triamcinolone Hexacetonide,1001022Y0,511
+2016-03-01,Umeclidinium Brom,0301020T0,23330
+2016-03-01,Umeclidinium Brom/Vilanterol,0301040W0,21098
+2016-03-01,Vortioxetine,0403040AB,1086
+2016-04-01,Aclidinium Brom/Formoterol,0301040V0,9260
+2016-04-01,Alogliptin,0601023AK,156636
+2016-04-01,Aripiprazole,0402020AD,856
+2016-04-01,Avanafil,0704050AC,3918
+2016-04-01,Brimonidine Tart (Rosacea),1306030A0,2002
+2016-04-01,Brinzolamide/Brimonidine,1106000AL,14772
+2016-04-01,Brivaracetam,0408010AL,168
+2016-04-01,Canagliflozin,0601023AM,96780
+2016-04-01,Canagliflozin/Metformin,0601023AP,1876
+2016-04-01,Ciclosporin (Eye Anti Inflam),1104020AE,1374
+2016-04-01,Ciprofloxain/Dexameth,1201010AE,952
+2016-04-01,Clindamycin/Tretinoin,1306010AB,3296
+2016-04-01,Dapagliflozin/Metformin,0601023AL,4412
+2016-04-01,Dulaglutide,0601023AQ,10472
+2016-04-01,Edoxaban,0208020AA,2034
+2016-04-01,Empagliflozin,0601023AN,45948
+2016-04-01,Empagliflozin/Metformin,0601023AR,2504
+2016-04-01,Fluticasone Furoate (Inh),0302000V0,181930
+2016-04-01,Guanfacine,0404000V0,504
+2016-04-01,Indacaterol/Glycopyrronium,0301040Y0,5318
+2016-04-01,Ins Degludec/Liraglutide,0601023AU,1162
+2016-04-01,Ivermectin,1306030B0,1816
+2016-04-01,Lurasidone,0402010AI,2022
+2016-04-01,Naloxegol,0106060B0,548
+2016-04-01,Nitrous Oxide,1501020R0,864
+2016-04-01,Perindopril + Calcium Channel Blocker,0205051AC,520
+2016-04-01,Sacubitril/Valsartan,0205052AE,84
+2016-04-01,Solifenacin/Tamsulosin,0704010W0,6418
+2016-04-01,Tafluprost & Timolol,1106000AM,456
+2016-04-01,Tiotropium Brom/Olodaterol,0301040X0,2550
+2016-04-01,Triamcinolone Hexacetonide,1001022Y0,252
+2016-04-01,Umeclidinium Brom,0301020T0,26336
+2016-04-01,Umeclidinium Brom/Vilanterol,0301040W0,22784
+2016-04-01,Vortioxetine,0403040AB,1740
+2016-05-01,Aclidinium Brom/Formoterol,0301040V0,9538
+2016-05-01,Alogliptin,0601023AK,150918
+2016-05-01,Aripiprazole,0402020AD,868
+2016-05-01,Avanafil,0704050AC,4224
+2016-05-01,Brimonidine Tart (Rosacea),1306030A0,1996
+2016-05-01,Brinzolamide/Brimonidine,1106000AL,15090
+2016-05-01,Brivaracetam,0408010AL,406
+2016-05-01,Canagliflozin,0601023AM,96020
+2016-05-01,Canagliflozin/Metformin,0601023AP,1772
+2016-05-01,Ciclosporin (Eye Anti Inflam),1104020AE,1539
+2016-05-01,Ciprofloxain/Dexameth,1201010AE,884
+2016-05-01,Clindamycin/Tretinoin,1306010AB,3132
+2016-05-01,Dapagliflozin/Metformin,0601023AL,4480
+2016-05-01,Dulaglutide,0601023AQ,12152
+2016-05-01,Edoxaban,0208020AA,2826
+2016-05-01,Empagliflozin,0601023AN,50296
+2016-05-01,Empagliflozin/Metformin,0601023AR,2952
+2016-05-01,Fluticasone Furoate (Inh),0302000V0,185190
+2016-05-01,Guanfacine,0404000V0,728
+2016-05-01,Indacaterol/Glycopyrronium,0301040Y0,5588
+2016-05-01,Ins Degludec/Liraglutide,0601023AU,1268
+2016-05-01,Ivermectin,1306030B0,2008
+2016-05-01,Lurasidone,0402010AI,2142
+2016-05-01,Naloxegol,0106060B0,664
+2016-05-01,Nitrous Oxide,1501020R0,1104
+2016-05-01,Perindopril + Calcium Channel Blocker,0205051AC,544
+2016-05-01,Sacubitril/Valsartan,0205052AE,198
+2016-05-01,Solifenacin/Tamsulosin,0704010W0,6218
+2016-05-01,Tafluprost & Timolol,1106000AM,550
+2016-05-01,Tiotropium Brom/Olodaterol,0301040X0,2898
+2016-05-01,Triamcinolone Hexacetonide,1001022Y0,518
+2016-05-01,Umeclidinium Brom,0301020T0,27256
+2016-05-01,Umeclidinium Brom/Vilanterol,0301040W0,23570
+2016-05-01,Vortioxetine,0403040AB,2580
+2016-06-01,Aclidinium Brom/Formoterol,0301040V0,11194
+2016-06-01,Alogliptin,0601023AK,165054
+2016-06-01,Aripiprazole,0402020AD,828
+2016-06-01,Avanafil,0704050AC,4500
+2016-06-01,Brimonidine Tart (Rosacea),1306030A0,1988
+2016-06-01,Brinzolamide/Brimonidine,1106000AL,16746
+2016-06-01,Brivaracetam,0408010AL,812
+2016-06-01,Canagliflozin,0601023AM,103268
+2016-06-01,Canagliflozin/Metformin,0601023AP,2056
+2016-06-01,Ciclosporin (Eye Anti Inflam),1104020AE,1767
+2016-06-01,Ciprofloxain/Dexameth,1201010AE,1112
+2016-06-01,Clindamycin/Tretinoin,1306010AB,3428
+2016-06-01,Dapagliflozin/Metformin,0601023AL,5076
+2016-06-01,Dulaglutide,0601023AQ,15612
+2016-06-01,Edoxaban,0208020AA,3882
+2016-06-01,Empagliflozin,0601023AN,58096
+2016-06-01,Empagliflozin/Metformin,0601023AR,3352
+2016-06-01,Fluticasone Furoate (Inh),0302000V0,206155
+2016-06-01,Guanfacine,0404000V0,808
+2016-06-01,Indacaterol/Glycopyrronium,0301040Y0,6962
+2016-06-01,Ins Degludec/Liraglutide,0601023AU,1410
+2016-06-01,Ivermectin,1306030B0,2352
+2016-06-01,Lurasidone,0402010AI,2550
+2016-06-01,Naloxegol,0106060B0,816
+2016-06-01,Nitrous Oxide,1501020R0,1120
+2016-06-01,Perindopril + Calcium Channel Blocker,0205051AC,532
+2016-06-01,Sacubitril/Valsartan,0205052AE,672
+2016-06-01,Safinamide,0409010AA,4
+2016-06-01,Solifenacin/Tamsulosin,0704010W0,6534
+2016-06-01,Tafluprost & Timolol,1106000AM,604
+2016-06-01,Tiotropium Brom/Olodaterol,0301040X0,3410
+2016-06-01,Triamcinolone Hexacetonide,1001022Y0,567
+2016-06-01,Umeclidinium Brom,0301020T0,30950
+2016-06-01,Umeclidinium Brom/Vilanterol,0301040W0,27036
+2016-06-01,Vortioxetine,0403040AB,3912
+2016-07-01,Aclidinium Brom/Formoterol,0301040V0,11964
+2016-07-01,Alogliptin,0601023AK,169932
+2016-07-01,Aripiprazole,0402020AD,924
+2016-07-01,Avanafil,0704050AC,4716
+2016-07-01,Brimonidine Tart (Rosacea),1306030A0,1870
+2016-07-01,Brinzolamide/Brimonidine,1106000AL,17188
+2016-07-01,Brivaracetam,0408010AL,1498
+2016-07-01,Canagliflozin,0601023AM,102632
+2016-07-01,Canagliflozin/Metformin,0601023AP,2056
+2016-07-01,Ciclosporin (Eye Anti Inflam),1104020AE,2256
+2016-07-01,Ciprofloxain/Dexameth,1201010AE,1262
+2016-07-01,Clindamycin/Tretinoin,1306010AB,3448
+2016-07-01,Dapagliflozin/Metformin,0601023AL,5100
+2016-07-01,Dulaglutide,0601023AQ,18248
+2016-07-01,Edoxaban,0208020AA,5334
+2016-07-01,Empagliflozin,0601023AN,62920
+2016-07-01,Empagliflozin/Metformin,0601023AR,3560
+2016-07-01,Fluticasone Furoate (Inh),0302000V0,219115
+2016-07-01,Guanfacine,0404000V0,936
+2016-07-01,Indacaterol/Glycopyrronium,0301040Y0,8104
+2016-07-01,Ins Degludec/Liraglutide,0601023AU,1422
+2016-07-01,Ivermectin,1306030B0,2756
+2016-07-01,Lurasidone,0402010AI,2676
+2016-07-01,Naloxegol,0106060B0,812
+2016-07-01,Nitrous Oxide,1501020R0,880
+2016-07-01,Perindopril + Calcium Channel Blocker,0205051AC,576
+2016-07-01,Sacubitril/Valsartan,0205052AE,1218
+2016-07-01,Safinamide,0409010AA,4
+2016-07-01,Solifenacin/Tamsulosin,0704010W0,6600
+2016-07-01,Tafluprost & Timolol,1106000AM,626
+2016-07-01,Tiotropium Brom/Olodaterol,0301040X0,3986
+2016-07-01,Triamcinolone Hexacetonide,1001022Y0,469
+2016-07-01,Umeclidinium Brom,0301020T0,32772
+2016-07-01,Umeclidinium Brom/Vilanterol,0301040W0,28440
+2016-07-01,Vortioxetine,0403040AB,5088
+2016-08-01,Aclidinium Brom/Formoterol,0301040V0,13456
+2016-08-01,Alogliptin,0601023AK,181986
+2016-08-01,Aripiprazole,0402020AD,936
+2016-08-01,Avanafil,0704050AC,4758
+2016-08-01,Brimonidine Tart (Rosacea),1306030A0,1630
+2016-08-01,Brinzolamide/Brimonidine,1106000AL,18248
+2016-08-01,Brivaracetam,0408010AL,2058
+2016-08-01,Canagliflozin,0601023AM,106096
+2016-08-01,Canagliflozin/Metformin,0601023AP,1928
+2016-08-01,Ciclosporin (Eye Anti Inflam),1104020AE,2394
+2016-08-01,Ciprofloxain/Dexameth,1201010AE,1520
+2016-08-01,Clindamycin/Tretinoin,1306010AB,3272
+2016-08-01,Dapagliflozin/Metformin,0601023AL,5124
+2016-08-01,Dulaglutide,0601023AQ,21256
+2016-08-01,Edoxaban,0208020AA,7116
+2016-08-01,Empagliflozin,0601023AN,70176
+2016-08-01,Empagliflozin/Metformin,0601023AR,4096
+2016-08-01,Fluticasone Furoate (Inh),0302000V0,231535
+2016-08-01,Guanfacine,0404000V0,1048
+2016-08-01,Indacaterol/Glycopyrronium,0301040Y0,9394
+2016-08-01,Ins Degludec/Liraglutide,0601023AU,1650
+2016-08-01,Ivermectin,1306030B0,2700
+2016-08-01,Lurasidone,0402010AI,2604
+2016-08-01,Naloxegol,0106060B0,956
+2016-08-01,Nitrous Oxide,1501020R0,1360
+2016-08-01,Perindopril + Calcium Channel Blocker,0205051AC,532
+2016-08-01,Sacubitril/Valsartan,0205052AE,2604
+2016-08-01,Safinamide,0409010AA,16
+2016-08-01,Solifenacin/Tamsulosin,0704010W0,6840
+2016-08-01,Tafluprost & Timolol,1106000AM,696
+2016-08-01,Tiotropium Brom/Olodaterol,0301040X0,4600
+2016-08-01,Triamcinolone Hexacetonide,1001022Y0,959
+2016-08-01,Umeclidinium Brom,0301020T0,36322
+2016-08-01,Umeclidinium Brom/Vilanterol,0301040W0,30850
+2016-08-01,Vortioxetine,0403040AB,6648
+2016-09-01,Aclidinium Brom/Formoterol,0301040V0,14518
+2016-09-01,Alogliptin,0601023AK,193998
+2016-09-01,Aripiprazole,0402020AD,1020
+2016-09-01,Avanafil,0704050AC,5178
+2016-09-01,Brimonidine Tart (Rosacea),1306030A0,1584
+2016-09-01,Brinzolamide/Brimonidine,1106000AL,19184
+2016-09-01,Brivaracetam,0408010AL,2884
+2016-09-01,Canagliflozin,0601023AM,108948
+2016-09-01,Canagliflozin/Metformin,0601023AP,2092
+2016-09-01,Ciclosporin (Eye Anti Inflam),1104020AE,2607
+2016-09-01,Ciprofloxain/Dexameth,1201010AE,1818
+2016-09-01,Clindamycin/Tretinoin,1306010AB,3540
+2016-09-01,Dapagliflozin/Metformin,0601023AL,5528
+2016-09-01,Dulaglutide,0601023AQ,23704
+2016-09-01,Edoxaban,0208020AA,9300
+2016-09-01,Empagliflozin,0601023AN,77272
+2016-09-01,Empagliflozin/Metformin,0601023AR,4344
+2016-09-01,Fluticasone Furoate (Inh),0302000V0,237665
+2016-09-01,Guanfacine,0404000V0,1600
+2016-09-01,Indacaterol/Glycopyrronium,0301040Y0,10504
+2016-09-01,Ins Degludec/Liraglutide,0601023AU,1692
+2016-09-01,Ivermectin,1306030B0,2856
+2016-09-01,Lurasidone,0402010AI,2838
+2016-09-01,Naloxegol,0106060B0,1132
+2016-09-01,Nitrous Oxide,1501020R0,1232
+2016-09-01,Perindopril + Calcium Channel Blocker,0205051AC,504
+2016-09-01,Sacubitril/Valsartan,0205052AE,4164
+2016-09-01,Safinamide,0409010AA,20
+2016-09-01,Solifenacin/Tamsulosin,0704010W0,6950
+2016-09-01,Tafluprost & Timolol,1106000AM,666
+2016-09-01,Tiotropium Brom/Olodaterol,0301040X0,5334
+2016-09-01,Triamcinolone Hexacetonide,1001022Y0,623
+2016-09-01,Umeclidinium Brom,0301020T0,39974
+2016-09-01,Umeclidinium Brom/Vilanterol,0301040W0,33172
+2016-09-01,Vortioxetine,0403040AB,7620
+2016-10-01,Aclidinium Brom/Formoterol,0301040V0,15460
+2016-10-01,Alogliptin,0601023AK,199986
+2016-10-01,Aripiprazole,0402020AD,1004
+2016-10-01,Avanafil,0704050AC,4926
+2016-10-01,Brimonidine Tart (Rosacea),1306030A0,1606
+2016-10-01,Brinzolamide/Brimonidine,1106000AL,19512
+2016-10-01,Brivaracetam,0408010AL,3066
+2016-10-01,Canagliflozin,0601023AM,108344
+2016-10-01,Canagliflozin/Metformin,0601023AP,2172
+2016-10-01,Ciclosporin (Eye Anti Inflam),1104020AE,2928
+2016-10-01,Ciprofloxain/Dexameth,1201010AE,1782
+2016-10-01,Clindamycin/Tretinoin,1306010AB,3666
+2016-10-01,Dapagliflozin/Metformin,0601023AL,5372
+2016-10-01,Dulaglutide,0601023AQ,26408
+2016-10-01,Edoxaban,0208020AA,10596
+2016-10-01,Empagliflozin,0601023AN,81148
+2016-10-01,Empagliflozin/Metformin,0601023AR,4440
+2016-10-01,Fluticasone Furoate (Inh),0302000V0,238415
+2016-10-01,Guanfacine,0404000V0,1696
+2016-10-01,Indacaterol/Glycopyrronium,0301040Y0,11842
+2016-10-01,Ins Degludec/Liraglutide,0601023AU,1796
+2016-10-01,Ivermectin,1306030B0,3014
+2016-10-01,Lurasidone,0402010AI,2892
+2016-10-01,Naloxegol,0106060B0,1324
+2016-10-01,Nitrous Oxide,1501020R0,1136
+2016-10-01,Perindopril + Calcium Channel Blocker,0205051AC,480
+2016-10-01,Sacubitril/Valsartan,0205052AE,5280
+2016-10-01,Safinamide,0409010AA,40
+2016-10-01,Solifenacin/Tamsulosin,0704010W0,6790
+2016-10-01,Tafluprost & Timolol,1106000AM,734
+2016-10-01,Tiotropium Brom/Olodaterol,0301040X0,5956
+2016-10-01,Triamcinolone Hexacetonide,1001022Y0,560
+2016-10-01,Umeclidinium Brom,0301020T0,41510
+2016-10-01,Umeclidinium Brom/Vilanterol,0301040W0,33790
+2016-10-01,Vortioxetine,0403040AB,8802
+2016-11-01,Alogliptin,0601023AK,218664
+2016-11-01,Aripiprazole,0402020AD,1084
+2016-11-01,Avanafil,0704050AC,5190
+2016-11-01,Brimonidine Tart (Rosacea),1306030A0,1666
+2016-11-01,Brinzolamide/Brimonidine,1106000AL,20752
+2016-11-01,Brivaracetam,0408010AL,4326
+2016-11-01,Canagliflozin,0601023AM,114704
+2016-11-01,Canagliflozin/Metformin,0601023AP,2284
+2016-11-01,Ciclosporin (Eye Anti Inflam),1104020AE,2988
+2016-11-01,Ciprofloxain/Dexameth,1201010AE,1838
+2016-11-01,Clindamycin/Tretinoin,1306010AB,3966
+2016-11-01,Dapagliflozin/Metformin,0601023AL,5788
+2016-11-01,Dulaglutide,0601023AQ,30604
+2016-11-01,Edoxaban,0208020AA,12816
+2016-11-01,Empagliflozin,0601023AN,90036
+2016-11-01,Empagliflozin/Metformin,0601023AR,5112
+2016-11-01,Fluticasone Furoate (Inh),0302000V0,262730
+2016-11-01,Guanfacine,0404000V0,2200
+2016-11-01,Indacaterol/Glycopyrronium,0301040Y0,13788
+2016-11-01,Ins Degludec/Liraglutide,0601023AU,1866
+2016-11-01,Ivermectin,1306030B0,3314
+2016-11-01,Lurasidone,0402010AI,3756
+2016-11-01,Naloxegol,0106060B0,1548
+2016-11-01,Nitrous Oxide,1501020R0,432
+2016-11-01,Opicapone,0409010AB,8
+2016-11-01,Perindopril + Calcium Channel Blocker,0205051AC,612
+2016-11-01,Sacubitril/Valsartan,0205052AE,6966
+2016-11-01,Safinamide,0409010AA,76
+2016-11-01,Solifenacin/Tamsulosin,0704010W0,7180
+2016-11-01,Tafluprost & Timolol,1106000AM,794
+2016-11-01,Tiotropium Brom/Olodaterol,0301040X0,7144
+2016-11-01,Triamcinolone Hexacetonide,1001022Y0,497
+2016-11-01,Umeclidinium Brom,0301020T0,56518
+2016-11-01,Umeclidinium Brom/Vilanterol,0301040W0,37504
+2016-11-01,Vortioxetine,0403040AB,10500
+2016-12-01,Aclidinium Brom/Formoterol,0301040V0,18638
+2016-12-01,Alogliptin,0601023AK,239226
+2016-12-01,Aripiprazole,0402020AD,1068
+2016-12-01,Avanafil,0704050AC,5250
+2016-12-01,Brimonidine Tart (Rosacea),1306030A0,1548
+2016-12-01,Brinzolamide/Brimonidine,1106000AL,22276
+2016-12-01,Brivaracetam,0408010AL,4914
+2016-12-01,Canagliflozin,0601023AM,121896
+2016-12-01,Canagliflozin/Metformin,0601023AP,2380
+2016-12-01,Ciclosporin (Eye Anti Inflam),1104020AE,3645
+2016-12-01,Ciprofloxain/Dexameth,1201010AE,2176
+2016-12-01,Clindamycin/Tretinoin,1306010AB,3706
+2016-12-01,Dapagliflozin/Metformin,0601023AL,6324
+2016-12-01,Dulaglutide,0601023AQ,35324
+2016-12-01,Edoxaban,0208020AA,15834
+2016-12-01,Empagliflozin,0601023AN,99156
+2016-12-01,Empagliflozin/Metformin,0601023AR,5968
+2016-12-01,Fluticasone Furoate (Inh),0302000V0,281010
+2016-12-01,Fosfomycin Trometamol,0501070AE,6237
+2016-12-01,Guanfacine,0404000V0,2536
+2016-12-01,Indacaterol/Glycopyrronium,0301040Y0,15352
+2016-12-01,Ins Degludec/Liraglutide,0601023AU,2150
+2016-12-01,Ivermectin,1306030B0,3460
+2016-12-01,Lurasidone,0402010AI,3918
+2016-12-01,Naloxegol,0106060B0,1644
+2016-12-01,Nitrous Oxide,1501020R0,560
+2016-12-01,Opicapone,0409010AB,20
+2016-12-01,Perindopril + Calcium Channel Blocker,0205051AC,600
+2016-12-01,Sacubitril/Valsartan,0205052AE,8784
+2016-12-01,Safinamide,0409010AA,120
+2016-12-01,Saxagliptin/Dapagliflozin,0601023AV,10
+2016-12-01,Solifenacin/Tamsulosin,0704010W0,7484
+2016-12-01,Tafluprost & Timolol,1106000AM,900
+2016-12-01,Tiotropium Brom/Olodaterol,0301040X0,8530
+2016-12-01,Triamcinolone Hexacetonide,1001022Y0,406
+2016-12-01,Umeclidinium Brom,0301020T0,61360
+2016-12-01,Umeclidinium Brom/Vilanterol,0301040W0,40380
+2016-12-01,Vortioxetine,0403040AB,12186
+2017-01-01,Aclidinium Brom/Formoterol,0301040V0,18384
+2017-01-01,Alogliptin,0601023AK,236670
+2017-01-01,Aripiprazole,0402020AD,1260
+2017-01-01,Avanafil,0704050AC,5094
+2017-01-01,Brimonidine Tart (Rosacea),1306030A0,1496
+2017-01-01,Brinzolamide/Brimonidine,1106000AL,21672
+2017-01-01,Brivaracetam,0408010AL,5278
+2017-01-01,Canagliflozin,0601023AM,117520
+2017-01-01,Canagliflozin/Metformin,0601023AP,2300
+2017-01-01,Ciclosporin (Eye Anti Inflam),1104020AE,3597
+2017-01-01,Ciprofloxain/Dexameth,1201010AE,2314
+2017-01-01,Clindamycin/Tretinoin,1306010AB,3748
+2017-01-01,Dapagliflozin/Metformin,0601023AL,5928
+2017-01-01,Dulaglutide,0601023AQ,36040
+2017-01-01,Edoxaban,0208020AA,17826
+2017-01-01,Empagliflozin,0601023AN,99748
+2017-01-01,Empagliflozin/Metformin,0601023AR,6232
+2017-01-01,Fluticasone Furoate (Inh),0302000V0,274455
+2017-01-01,Fosfomycin Trometamol,0501070AE,6786
+2017-01-01,Guanfacine,0404000V0,2784
+2017-01-01,Indacaterol/Glycopyrronium,0301040Y0,16144
+2017-01-01,Ins Degludec/Liraglutide,0601023AU,1970
+2017-01-01,Ivermectin,1306030B0,3494
+2017-01-01,Lurasidone,0402010AI,4086
+2017-01-01,Naloxegol,0106060B0,1680
+2017-01-01,Nitrous Oxide,1501020R0,448
+2017-01-01,Opicapone,0409010AB,36
+2017-01-01,Perindopril + Calcium Channel Blocker,0205051AC,660
+2017-01-01,Sacubitril/Valsartan,0205052AE,9942
+2017-01-01,Safinamide,0409010AA,168
+2017-01-01,Saxagliptin/Dapagliflozin,0601023AV,6
+2017-01-01,Solifenacin/Tamsulosin,0704010W0,7172
+2017-01-01,Tafluprost & Timolol,1106000AM,914
+2017-01-01,Tiotropium Brom/Olodaterol,0301040X0,8558
+2017-01-01,Triamcinolone Hexacetonide,1001022Y0,707
+2017-01-01,Umeclidinium Brom,0301020T0,61938
+2017-01-01,Umeclidinium Brom/Vilanterol,0301040W0,40460
+2017-01-01,Vortioxetine,0403040AB,12384
+2017-02-01,Aclidinium Brom/Formoterol,0301040V0,18342
+2017-02-01,Alogliptin,0601023AK,236520
+2017-02-01,Aripiprazole,0402020AD,1080
+2017-02-01,Avanafil,0704050AC,4686
+2017-02-01,Brimonidine Tart (Rosacea),1306030A0,1528
+2017-02-01,Brinzolamide/Brimonidine,1106000AL,21250
+2017-02-01,Brivaracetam,0408010AL,5292
+2017-02-01,Canagliflozin,0601023AM,112912
+2017-02-01,Canagliflozin/Metformin,0601023AP,2276
+2017-02-01,Ciclosporin (Eye Anti Inflam),1104020AE,3516
+2017-02-01,Ciprofloxain/Dexameth,1201010AE,2424
+2017-02-01,Clindamycin/Tretinoin,1306010AB,3578
+2017-02-01,Dapagliflozin/Metformin,0601023AL,5756
+2017-02-01,Dulaglutide,0601023AQ,38268
+2017-02-01,Edoxaban,0208020AA,19716
+2017-02-01,Empagliflozin,0601023AN,101084
+2017-02-01,Empagliflozin/Metformin,0601023AR,6400
+2017-02-01,Fluticasone Furoate (Inh),0302000V0,267065
+2017-02-01,Fosfomycin Trometamol,0501070AE,6912
+2017-02-01,Guanfacine,0404000V0,3008
+2017-02-01,Indacaterol/Glycopyrronium,0301040Y0,16452
+2017-02-01,Ins Degludec/Liraglutide,0601023AU,1958
+2017-02-01,Ivermectin,1306030B0,3912
+2017-02-01,Lurasidone,0402010AI,3744
+2017-02-01,Naloxegol,0106060B0,1680
+2017-02-01,Nitrous Oxide,1501020R0,368
+2017-02-01,Opicapone,0409010AB,64
+2017-02-01,Perindopril + Calcium Channel Blocker,0205051AC,576
+2017-02-01,Sacubitril/Valsartan,0205052AE,10128
+2017-02-01,Safinamide,0409010AA,240
+2017-02-01,Saxagliptin/Dapagliflozin,0601023AV,38
+2017-02-01,Solifenacin/Tamsulosin,0704010W0,6814
+2017-02-01,Tafluprost & Timolol,1106000AM,944
+2017-02-01,Tiotropium Brom/Olodaterol,0301040X0,8934
+2017-02-01,Triamcinolone Hexacetonide,1001022Y0,777
+2017-02-01,Umeclidinium Brom,0301020T0,62536
+2017-02-01,Umeclidinium Brom/Vilanterol,0301040W0,40332
+2017-02-01,Vortioxetine,0403040AB,13008
+2017-03-01,Aclidinium Brom/Formoterol,0301040V0,22386
+2017-03-01,Alogliptin,0601023AK,287592
+2017-03-01,Aripiprazole,0402020AD,1224
+2017-03-01,Avanafil,0704050AC,5406
+2017-03-01,Brimonidine Tart (Rosacea),1306030A0,1960
+2017-03-01,Brinzolamide/Brimonidine,1106000AL,25166
+2017-03-01,Brivaracetam,0408010AL,6790
+2017-03-01,Canagliflozin,0601023AM,133336
+2017-03-01,Canagliflozin/Metformin,0601023AP,2576
+2017-03-01,Ciclosporin (Eye Anti Inflam),1104020AE,4491
+2017-03-01,Ciprofloxain/Dexameth,1201010AE,2982
+2017-03-01,Clindamycin/Tretinoin,1306010AB,4264
+2017-03-01,Dapagliflozin/Metformin,0601023AL,7000
+2017-03-01,Dulaglutide,0601023AQ,48884
+2017-03-01,Edoxaban,0208020AA,26604
+2017-03-01,Empagliflozin,0601023AN,124888
+2017-03-01,Empagliflozin/Metformin,0601023AR,7864
+2017-03-01,Fluticasone Furoate (Inh),0302000V0,321720
+2017-03-01,Fosfomycin Trometamol,0501070AE,8667
+2017-03-01,Guanfacine,0404000V0,3752
+2017-03-01,Indacaterol/Glycopyrronium,0301040Y0,21676
+2017-03-01,Ins Degludec/Liraglutide,0601023AU,2356
+2017-03-01,Ivermectin,1306030B0,5026
+2017-03-01,Lurasidone,0402010AI,4560
+2017-03-01,Naloxegol,0106060B0,2312
+2017-03-01,Nitrous Oxide,1501020R0,528
+2017-03-01,Opicapone,0409010AB,124
+2017-03-01,Perindopril + Calcium Channel Blocker,0205051AC,708
+2017-03-01,Sacubitril/Valsartan,0205052AE,13158
+2017-03-01,Safinamide,0409010AA,320
+2017-03-01,Saxagliptin/Dapagliflozin,0601023AV,104
+2017-03-01,Solifenacin/Tamsulosin,0704010W0,8140
+2017-03-01,Tafluprost & Timolol,1106000AM,1152
+2017-03-01,Tiotropium Brom/Olodaterol,0301040X0,11622
+2017-03-01,Triamcinolone Hexacetonide,1001022Y0,798
+2017-03-01,Umeclidinium Brom,0301020T0,76970
+2017-03-01,Umeclidinium Brom/Vilanterol,0301040W0,49734
+2017-03-01,Vortioxetine,0403040AB,15984
+2017-04-01,Aclidinium Brom/Formoterol,0301040V0,20352
+2017-04-01,Alogliptin,0601023AK,270534
+2017-04-01,Aripiprazole,0402020AD,1148
+2017-04-01,Avanafil,0704050AC,5022
+2017-04-01,Brimonidine Tart (Rosacea),1306030A0,1830
+2017-04-01,Brinzolamide/Brimonidine,1106000AL,23380
+2017-04-01,Brivaracetam,0408010AL,6636
+2017-04-01,Canagliflozin,0601023AM,119856
+2017-04-01,Canagliflozin/Metformin,0601023AP,2416
+2017-04-01,Ciclosporin (Eye Anti Inflam),1104020AE,4119
+2017-04-01,Ciprofloxain/Dexameth,1201010AE,2518
+2017-04-01,Clindamycin/Tretinoin,1306010AB,3622
+2017-04-01,Dapagliflozin/Metformin,0601023AL,6492
+2017-04-01,Dulaglutide,0601023AQ,47688
+2017-04-01,Edoxaban,0208020AA,27870
+2017-04-01,Empagliflozin,0601023AN,118552
+2017-04-01,Empagliflozin/Metformin,0601023AR,7272
+2017-04-01,Fluticasone Furoate (Inh),0302000V0,293300
+2017-04-01,Fosfomycin Trometamol,0501070AE,7263
+2017-04-01,Guanfacine,0404000V0,3504
+2017-04-01,Indacaterol/Glycopyrronium,0301040Y0,20186
+2017-04-01,Ins Degludec/Liraglutide,0601023AU,2148
+2017-04-01,Ivermectin,1306030B0,4824
+2017-04-01,Lurasidone,0402010AI,4242
+2017-04-01,Naloxegol,0106060B0,2156
+2017-04-01,Nitrous Oxide,1501020R0,688
+2017-04-01,Opicapone,0409010AB,128
+2017-04-01,Perindopril + Calcium Channel Blocker,0205051AC,612
+2017-04-01,Sacubitril/Valsartan,0205052AE,14874
+2017-04-01,Safinamide,0409010AA,512
+2017-04-01,Saxagliptin/Dapagliflozin,0601023AV,164
+2017-04-01,Solifenacin/Tamsulosin,0704010W0,7128
+2017-04-01,Tafluprost & Timolol,1106000AM,1076
+2017-04-01,Tiotropium Brom/Olodaterol,0301040X0,10256
+2017-04-01,Triamcinolone Hexacetonide,1001022Y0,651
+2017-04-01,Umeclidinium Brom,0301020T0,71056
+2017-04-01,Umeclidinium Brom/Vilanterol,0301040W0,45670
+2017-04-01,Vortioxetine,0403040AB,15738
+2017-05-01,Aclidinium Brom/Formoterol,0301040V0,23012
+2017-05-01,Alogliptin,0601023AK,307146
+2017-05-01,Aripiprazole,0402020AD,1404
+2017-05-01,Avanafil,0704050AC,5190
+2017-05-01,Brimonidine Tart (Rosacea),1306030A0,2184
+2017-05-01,Brinzolamide/Brimonidine,1106000AL,25370
+2017-05-01,Brivaracetam,0408010AL,7896
+2017-05-01,Canagliflozin,0601023AM,131080
+2017-05-01,Canagliflozin/Metformin,0601023AP,2512
+2017-05-01,Ciclosporin (Eye Anti Inflam),1104020AE,4860
+2017-05-01,Ciprofloxain/Dexameth,1201010AE,3160
+2017-05-01,Clindamycin/Tretinoin,1306010AB,3920
+2017-05-01,Dapagliflozin/Metformin,0601023AL,6824
+2017-05-01,Dulaglutide,0601023AQ,56464
+2017-05-01,Edoxaban,0208020AA,34638
+2017-05-01,Empagliflozin,0601023AN,136040
+2017-05-01,Empagliflozin/Metformin,0601023AR,8624
+2017-05-01,Fluticasone Furoate (Inh),0302000V0,327720
+2017-05-01,Fosfomycin Trometamol,0501070AE,8460
+2017-05-01,Guanfacine,0404000V0,4680
+2017-05-01,Indacaterol/Glycopyrronium,0301040Y0,23066
+2017-05-01,Ins Degludec/Liraglutide,0601023AU,2418
+2017-05-01,Ivermectin,1306030B0,5720
+2017-05-01,Lurasidone,0402010AI,4884
+2017-05-01,Naloxegol,0106060B0,2480
+2017-05-01,Nitrous Oxide,1501020R0,720
+2017-05-01,Opicapone,0409010AB,178
+2017-05-01,Perindopril + Calcium Channel Blocker,0205051AC,788
+2017-05-01,Sacubitril/Valsartan,0205052AE,17796
+2017-05-01,Safinamide,0409010AA,524
+2017-05-01,Saxagliptin/Dapagliflozin,0601023AV,246
+2017-05-01,Solifenacin/Tamsulosin,0704010W0,7498
+2017-05-01,Tafluprost & Timolol,1106000AM,1276
+2017-05-01,Tiotropium Brom/Olodaterol,0301040X0,11582
+2017-05-01,Triamcinolone Hexacetonide,1001022Y0,784
+2017-05-01,Umeclidinium Brom,0301020T0,80538
+2017-05-01,Umeclidinium Brom/Vilanterol,0301040W0,51730
+2017-05-01,Vortioxetine,0403040AB,18228
+2017-06-01,Aclidinium Brom/Formoterol,0301040V0,23826
+2017-06-01,Alogliptin,0601023AK,322380
+2017-06-01,Aripiprazole,0402020AD,1456
+2017-06-01,Avanafil,0704050AC,5394
+2017-06-01,Brimonidine Tart (Rosacea),1306030A0,1944
+2017-06-01,Brinzolamide/Brimonidine,1106000AL,26796
+2017-06-01,Brivaracetam,0408010AL,8372
+2017-06-01,Canagliflozin,0601023AM,135564
+2017-06-01,Canagliflozin/Metformin,0601023AP,2684
+2017-06-01,Ciclosporin (Eye Anti Inflam),1104020AE,5133
+2017-06-01,Ciprofloxain/Dexameth,1201010AE,3644
+2017-06-01,Clindamycin/Tretinoin,1306010AB,4118
+2017-06-01,Dapagliflozin/Metformin,0601023AL,7112
+2017-06-01,Dulaglutide,0601023AQ,60952
+2017-06-01,Edoxaban,0208020AA,40872
+2017-06-01,Empagliflozin,0601023AN,146812
+2017-06-01,Empagliflozin/Metformin,0601023AR,9544
+2017-06-01,Fluticasone Furoate (Inh),0302000V0,344905
+2017-06-01,Fosfomycin Trometamol,0501070AE,9882
+2017-06-01,Guanfacine,0404000V0,4768
+2017-06-01,Indacaterol/Glycopyrronium,0301040Y0,25224
+2017-06-01,Ins Degludec/Liraglutide,0601023AU,2518
+2017-06-01,Ivermectin,1306030B0,6046
+2017-06-01,Lurasidone,0402010AI,5190
+2017-06-01,Naloxegol,0106060B0,2720
+2017-06-01,Nitrous Oxide,1501020R0,560
+2017-06-01,Opicapone,0409010AB,246
+2017-06-01,Perindopril + Calcium Channel Blocker,0205051AC,720
+2017-06-01,Sacubitril/Valsartan,0205052AE,20280
+2017-06-01,Safinamide,0409010AA,656
+2017-06-01,Saxagliptin/Dapagliflozin,0601023AV,344
+2017-06-01,Solifenacin/Tamsulosin,0704010W0,7888
+2017-06-01,Tafluprost & Timolol,1106000AM,1454
+2017-06-01,Tiotropium Brom/Olodaterol,0301040X0,13642
+2017-06-01,Triamcinolone Hexacetonide,1001022Y0,749
+2017-06-01,Umeclidinium Brom,0301020T0,86202
+2017-06-01,Umeclidinium Brom/Vilanterol,0301040W0,54564
+2017-06-01,Vortioxetine,0403040AB,19248
+2017-07-01,Aclidinium Brom/Formoterol,0301040V0,24204
+2017-07-01,Alogliptin,0601023AK,330024
+2017-07-01,Aripiprazole,0402020AD,1464
+2017-07-01,Avanafil,0704050AC,5358
+2017-07-01,Belladonna Alkaloids,0102000H0,42
+2017-07-01,Brimonidine Tart (Rosacea),1306030A0,1618
+2017-07-01,Brinzolamide/Brimonidine,1106000AL,26438
+2017-07-01,Brivaracetam,0408010AL,8330
+2017-07-01,Canagliflozin,0601023AM,133484
+2017-07-01,Canagliflozin/Metformin,0601023AP,2508
+2017-07-01,Ciclosporin (Eye Anti Inflam),1104020AE,5415
+2017-07-01,Ciprofloxain/Dexameth,1201010AE,2504
+2017-07-01,Clindamycin/Tretinoin,1306010AB,4002
+2017-07-01,Dapagliflozin/Metformin,0601023AL,7364
+2017-07-01,Dulaglutide,0601023AQ,64432
+2017-07-01,Edoxaban,0208020AA,46266
+2017-07-01,Empagliflozin,0601023AN,155340
+2017-07-01,Empagliflozin/Metformin,0601023AR,9896
+2017-07-01,Fluticasone Furoate (Inh),0302000V0,342800
+2017-07-01,Fosfomycin Trometamol,0501070AE,10242
+2017-07-01,Guanfacine,0404000V0,5008
+2017-07-01,Indacaterol/Glycopyrronium,0301040Y0,26084
+2017-07-01,Ins Degludec/Liraglutide,0601023AU,2522
+2017-07-01,Ivermectin,1306030B0,5702
+2017-07-01,Lurasidone,0402010AI,5202
+2017-07-01,Naloxegol,0106060B0,2796
+2017-07-01,Nitrous Oxide,1501020R0,608
+2017-07-01,Opicapone,0409010AB,292
+2017-07-01,Perindopril + Calcium Channel Blocker,0205051AC,672
+2017-07-01,Sacubitril/Valsartan,0205052AE,22542
+2017-07-01,Safinamide,0409010AA,724
+2017-07-01,Saxagliptin/Dapagliflozin,0601023AV,384
+2017-07-01,Solifenacin/Tamsulosin,0704010W0,7716
+2017-07-01,Tafluprost & Timolol,1106000AM,1350
+2017-07-01,Tiotropium Brom/Olodaterol,0301040X0,13808
+2017-07-01,Triamcinolone Hexacetonide,1001022Y0,693
+2017-07-01,Umeclidinium Brom,0301020T0,87014
+2017-07-01,Umeclidinium Brom/Vilanterol,0301040W0,55314
+2017-07-01,Vortioxetine,0403040AB,20394
+2017-08-01,Aclidinium Brom/Formoterol,0301040V0,25470
+2017-08-01,Alogliptin,0601023AK,348360
+2017-08-01,Aripiprazole,0402020AD,1500
+2017-08-01,Avanafil,0704050AC,5430
+2017-08-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,1
+2017-08-01,Belladonna Alkaloids,0102000H0,2870
+2017-08-01,Brimonidine Tart (Rosacea),1306030A0,1726
+2017-08-01,Brinzolamide/Brimonidine,1106000AL,27346
+2017-08-01,Brivaracetam,0408010AL,9156
+2017-08-01,Canagliflozin,0601023AM,132540
+2017-08-01,Canagliflozin/Metformin,0601023AP,2652
+2017-08-01,Ciclosporin (Eye Anti Inflam),1104020AE,5430
+2017-08-01,Ciprofloxain/Dexameth,1201010AE,1918
+2017-08-01,Clindamycin/Tretinoin,1306010AB,3696
+2017-08-01,Dapagliflozin/Metformin,0601023AL,7488
+2017-08-01,Dulaglutide,0601023AQ,69436
+2017-08-01,Edoxaban,0208020AA,54180
+2017-08-01,Empagliflozin,0601023AN,163372
+2017-08-01,Empagliflozin/Metformin,0601023AR,10752
+2017-08-01,Fluticasone Furoate (Inh),0302000V0,357405
+2017-08-01,Fosfomycin Trometamol,0501070AE,15120
+2017-08-01,Guanfacine,0404000V0,5136
+2017-08-01,Indacaterol/Glycopyrronium,0301040Y0,27954
+2017-08-01,Ins Degludec/Liraglutide,0601023AU,2706
+2017-08-01,Ivermectin,1306030B0,5584
+2017-08-01,Lurasidone,0402010AI,5028
+2017-08-01,Naloxegol,0106060B0,3204
+2017-08-01,Nitrous Oxide,1501020R0,672
+2017-08-01,Opicapone,0409010AB,354
+2017-08-01,Perindopril + Calcium Channel Blocker,0205051AC,784
+2017-08-01,Sacubitril/Valsartan,0205052AE,24552
+2017-08-01,Safinamide,0409010AA,764
+2017-08-01,Saxagliptin/Dapagliflozin,0601023AV,480
+2017-08-01,Solifenacin/Tamsulosin,0704010W0,7984
+2017-08-01,Tafluprost & Timolol,1106000AM,1456
+2017-08-01,Tiotropium Brom/Olodaterol,0301040X0,14602
+2017-08-01,Triamcinolone Hexacetonide,1001022Y0,2198
+2017-08-01,Umeclidinium Brom,0301020T0,92110
+2017-08-01,Umeclidinium Brom/Vilanterol,0301040W0,58372
+2017-08-01,Vortioxetine,0403040AB,21108
+2017-09-01,Aclidinium Brom/Formoterol,0301040V0,25824
+2017-09-01,Alogliptin,0601023AK,350580
+2017-09-01,Aripiprazole,0402020AD,1628
+2017-09-01,Avanafil,0704050AC,5334
+2017-09-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,48
+2017-09-01,Belladonna Alkaloids,0102000H0,1540
+2017-09-01,Brimonidine Tart (Rosacea),1306030A0,1618
+2017-09-01,Brinzolamide/Brimonidine,1106000AL,27118
+2017-09-01,Brivaracetam,0408010AL,9856
+2017-09-01,Canagliflozin,0601023AM,132484
+2017-09-01,Canagliflozin/Metformin,0601023AP,2524
+2017-09-01,Ciclosporin (Eye Anti Inflam),1104020AE,5820
+2017-09-01,Ciprofloxain/Dexameth,1201010AE,3564
+2017-09-01,Clindamycin/Tretinoin,1306010AB,4276
+2017-09-01,Dapagliflozin/Metformin,0601023AL,7640
+2017-09-01,Dulaglutide,0601023AQ,71856
+2017-09-01,Edoxaban,0208020AA,59958
+2017-09-01,Empagliflozin,0601023AN,168776
+2017-09-01,Empagliflozin/Metformin,0601023AR,11048
+2017-09-01,Fluticasone Furoate (Inh),0302000V0,362020
+2017-09-01,Fosfomycin Trometamol,0501070AE,16083
+2017-09-01,Guanfacine,0404000V0,5720
+2017-09-01,Indacaterol/Glycopyrronium,0301040Y0,28544
+2017-09-01,Ins Degludec/Liraglutide,0601023AU,2788
+2017-09-01,Ivermectin,1306030B0,5662
+2017-09-01,Lurasidone,0402010AI,5286
+2017-09-01,Naloxegol,0106060B0,3204
+2017-09-01,Nitrous Oxide,1501020R0,448
+2017-09-01,Opicapone,0409010AB,396
+2017-09-01,Perindopril + Calcium Channel Blocker,0205051AC,608
+2017-09-01,Sacubitril/Valsartan,0205052AE,25566
+2017-09-01,Safinamide,0409010AA,824
+2017-09-01,Saxagliptin/Dapagliflozin,0601023AV,496
+2017-09-01,Solifenacin/Tamsulosin,0704010W0,7592
+2017-09-01,Tafluprost & Timolol,1106000AM,1472
+2017-09-01,Tiotropium Brom/Olodaterol,0301040X0,15828
+2017-09-01,Triamcinolone Hexacetonide,1001022Y0,1701
+2017-09-01,Umeclidinium Brom,0301020T0,93712
+2017-09-01,Umeclidinium Brom/Vilanterol,0301040W0,58838
+2017-09-01,Vortioxetine,0403040AB,22296
+2017-10-01,Aclidinium Brom/Formoterol,0301040V0,26446
+2017-10-01,Alogliptin,0601023AK,370308
+2017-10-01,Aripiprazole,0402020AD,1664
+2017-10-01,Avanafil,0704050AC,5502
+2017-10-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,597
+2017-10-01,Belladonna Alkaloids,0102000H0,1274
+2017-10-01,Brimonidine Tart (Rosacea),1306030A0,1536
+2017-10-01,Brinzolamide/Brimonidine,1106000AL,27946
+2017-10-01,Brivaracetam,0408010AL,9786
+2017-10-01,Canagliflozin,0601023AM,133088
+2017-10-01,Canagliflozin/Metformin,0601023AP,2732
+2017-10-01,Ciclosporin (Eye Anti Inflam),1104020AE,5997
+2017-10-01,Ciprofloxain/Dexameth,1201010AE,3904
+2017-10-01,Clindamycin/Tretinoin,1306010AB,4554
+2017-10-01,Dapagliflozin/Metformin,0601023AL,8036
+2017-10-01,Dulaglutide,0601023AQ,76512
+2017-10-01,Edoxaban,0208020AA,69168
+2017-10-01,Empagliflozin,0601023AN,182732
+2017-10-01,Empagliflozin/Metformin,0601023AR,11664
+2017-10-01,Fluticasone Furoate (Inh),0302000V0,381235
+2017-10-01,Fosfomycin Trometamol,0501070AE,15174
+2017-10-01,Guanfacine,0404000V0,5792
+2017-10-01,Indacaterol/Glycopyrronium,0301040Y0,30602
+2017-10-01,Ins Degludec/Liraglutide,0601023AU,2924
+2017-10-01,Ivermectin,1306030B0,6108
+2017-10-01,Lurasidone,0402010AI,5262
+2017-10-01,Naloxegol,0106060B0,3464
+2017-10-01,Nitrous Oxide,1501020R0,544
+2017-10-01,Opicapone,0409010AB,498
+2017-10-01,Perindopril + Calcium Channel Blocker,0205051AC,780
+2017-10-01,Sacubitril/Valsartan,0205052AE,29970
+2017-10-01,Safinamide,0409010AA,904
+2017-10-01,Saxagliptin/Dapagliflozin,0601023AV,580
+2017-10-01,Solifenacin/Tamsulosin,0704010W0,8012
+2017-10-01,Tafluprost & Timolol,1106000AM,1552
+2017-10-01,Tiotropium Brom/Olodaterol,0301040X0,17444
+2017-10-01,Triamcinolone Hexacetonide,1001022Y0,819
+2017-10-01,Umeclidinium Brom,0301020T0,98656
+2017-10-01,Umeclidinium Brom/Vilanterol,0301040W0,61836
+2017-10-01,Vortioxetine,0403040AB,23292
+2017-11-01,Aclidinium Brom/Formoterol,0301040V0,27674
+2017-11-01,Alogliptin,0601023AK,392340
+2017-11-01,Aripiprazole,0402020AD,1708
+2017-11-01,Avanafil,0704050AC,5286
+2017-11-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,1716
+2017-11-01,Belladonna Alkaloids,0102000H0,966
+2017-11-01,Brimonidine Tart (Rosacea),1306030A0,1650
+2017-11-01,Brinzolamide/Brimonidine,1106000AL,29034
+2017-11-01,Brivaracetam,0408010AL,11620
+2017-11-01,Canagliflozin,0601023AM,135012
+2017-11-01,Canagliflozin/Metformin,0601023AP,2796
+2017-11-01,Ciclosporin (Eye Anti Inflam),1104020AE,6333
+2017-11-01,Ciprofloxain/Dexameth,1201010AE,3962
+2017-11-01,Clindamycin/Tretinoin,1306010AB,4662
+2017-11-01,Dapagliflozin/Metformin,0601023AL,8040
+2017-11-01,Dulaglutide,0601023AQ,82536
+2017-11-01,Edoxaban,0208020AA,79122
+2017-11-01,Empagliflozin,0601023AN,194984
+2017-11-01,Empagliflozin/Metformin,0601023AR,12768
+2017-11-01,Fluticasone Furoate (Inh),0302000V0,393905
+2017-11-01,Fosfomycin Trometamol,0501070AE,14823
+2017-11-01,Guanfacine,0404000V0,6528
+2017-11-01,Indacaterol/Glycopyrronium,0301040Y0,32396
+2017-11-01,Ins Degludec/Liraglutide,0601023AU,2992
+2017-11-01,Ivermectin,1306030B0,6344
+2017-11-01,Lurasidone,0402010AI,5460
+2017-11-01,Naloxegol,0106060B0,3732
+2017-11-01,Nitrous Oxide,1501020R0,688
+2017-11-01,Opicapone,0409010AB,608
+2017-11-01,Perindopril + Calcium Channel Blocker,0205051AC,748
+2017-11-01,Sacubitril/Valsartan,0205052AE,32160
+2017-11-01,Safinamide,0409010AA,1024
+2017-11-01,Saxagliptin/Dapagliflozin,0601023AV,624
+2017-11-01,Solifenacin/Tamsulosin,0704010W0,8066
+2017-11-01,Tafluprost & Timolol,1106000AM,1710
+2017-11-01,Tiotropium Brom/Olodaterol,0301040X0,18654
+2017-11-01,Triamcinolone Hexacetonide,1001022Y0,959
+2017-11-01,Umeclidinium Brom,0301020T0,103594
+2017-11-01,Umeclidinium Brom/Vilanterol,0301040W0,65276
+2017-11-01,Vortioxetine,0403040AB,25092
+2017-12-01,Aclidinium Brom/Formoterol,0301040V0,27996
+2017-12-01,Alogliptin,0601023AK,407184
+2017-12-01,Aripiprazole,0402020AD,1776
+2017-12-01,Avanafil,0704050AC,5508
+2017-12-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,2767
+2017-12-01,Belladonna Alkaloids,0102000H0,882
+2017-12-01,Brimonidine Tart (Rosacea),1306030A0,1468
+2017-12-01,Brinzolamide/Brimonidine,1106000AL,29500
+2017-12-01,Brivaracetam,0408010AL,12348
+2017-12-01,Canagliflozin,0601023AM,133684
+2017-12-01,Canagliflozin/Metformin,0601023AP,2712
+2017-12-01,Ciclosporin (Eye Anti Inflam),1104020AE,6645
+2017-12-01,Ciprofloxain/Dexameth,1201010AE,3612
+2017-12-01,Clindamycin/Tretinoin,1306010AB,3958
+2017-12-01,Dapagliflozin/Metformin,0601023AL,8524
+2017-12-01,Dulaglutide,0601023AQ,86900
+2017-12-01,Edoxaban,0208020AA,88770
+2017-12-01,Empagliflozin,0601023AN,206568
+2017-12-01,Empagliflozin/Metformin,0601023AR,13376
+2017-12-01,Fluticasone Furoate (Inh),0302000V0,402420
+2017-12-01,Fosfomycin Trometamol,0501070AE,16155
+2017-12-01,Guanfacine,0404000V0,6976
+2017-12-01,Indacaterol/Glycopyrronium,0301040Y0,33224
+2017-12-01,Ins Degludec/Liraglutide,0601023AU,3240
+2017-12-01,Ivermectin,1306030B0,6012
+2017-12-01,Lurasidone,0402010AI,6012
+2017-12-01,Naloxegol,0106060B0,4028
+2017-12-01,Nitrous Oxide,1501020R0,480
+2017-12-01,Opicapone,0409010AB,740
+2017-12-01,Perindopril + Calcium Channel Blocker,0205051AC,856
+2017-12-01,Sacubitril/Valsartan,0205052AE,35034
+2017-12-01,Safinamide,0409010AA,1080
+2017-12-01,Saxagliptin/Dapagliflozin,0601023AV,632
+2017-12-01,Solifenacin/Tamsulosin,0704010W0,7952
+2017-12-01,Tafluprost & Timolol,1106000AM,1776
+2017-12-01,Tiotropium Brom/Olodaterol,0301040X0,19296
+2017-12-01,Triamcinolone Hexacetonide,1001022Y0,1729
+2017-12-01,Umeclidinium Brom,0301020T0,106030
+2017-12-01,Umeclidinium Brom/Vilanterol,0301040W0,66348
+2017-12-01,Vortioxetine,0403040AB,26172
+2018-01-01,Aclidinium Brom/Formoterol,0301040V0,28436
+2018-01-01,Alogliptin,0601023AK,422688
+2018-01-01,Aripiprazole,0402020AD,1924
+2018-01-01,Avanafil,0704050AC,5706
+2018-01-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,4078
+2018-01-01,Belladonna Alkaloids,0102000H0,1260
+2018-01-01,Brimonidine Tart (Rosacea),1306030A0,1546
+2018-01-01,Brinzolamide/Brimonidine,1106000AL,29980
+2018-01-01,Brivaracetam,0408010AL,13454
+2018-01-01,Canagliflozin,0601023AM,137172
+2018-01-01,Canagliflozin/Metformin,0601023AP,2772
+2018-01-01,Ciclosporin (Eye Anti Inflam),1104020AE,6798
+2018-01-01,Ciprofloxain/Dexameth,1201010AE,2470
+2018-01-01,Clindamycin/Tretinoin,1306010AB,4666
+2018-01-01,Dapagliflozin/Metformin,0601023AL,8904
+2018-01-01,Dulaglutide,0601023AQ,91448
+2018-01-01,Edoxaban,0208020AA,99762
+2018-01-01,Empagliflozin,0601023AN,218104
+2018-01-01,Empagliflozin/Metformin,0601023AR,15208
+2018-01-01,Fluticasone Furoate (Inh),0302000V0,415805
+2018-01-01,Fosfomycin Trometamol,0501070AE,17559
+2018-01-01,Guanfacine,0404000V0,7552
+2018-01-01,Indacaterol/Glycopyrronium,0301040Y0,34578
+2018-01-01,Ins Degludec/Liraglutide,0601023AU,3288
+2018-01-01,Ivermectin,1306030B0,6302
+2018-01-01,Lurasidone,0402010AI,6228
+2018-01-01,Naloxegol,0106060B0,4068
+2018-01-01,Nitrous Oxide,1501020R0,528
+2018-01-01,Opicapone,0409010AB,878
+2018-01-01,Perindopril + Calcium Channel Blocker,0205051AC,832
+2018-01-01,Sacubitril/Valsartan,0205052AE,38196
+2018-01-01,Safinamide,0409010AA,1176
+2018-01-01,Saxagliptin/Dapagliflozin,0601023AV,736
+2018-01-01,Solifenacin/Tamsulosin,0704010W0,8084
+2018-01-01,Tafluprost & Timolol,1106000AM,1838
+2018-01-01,Tiotropium Brom/Olodaterol,0301040X0,20878
+2018-01-01,Triamcinolone Hexacetonide,1001022Y0,1785
+2018-01-01,Umeclidinium Brom,0301020T0,109940
+2018-01-01,Umeclidinium Brom/Vilanterol,0301040W0,70058
+2018-01-01,Vortioxetine,0403040AB,28140
+2018-02-01,Aclidinium Brom/Formoterol,0301040V0,26172
+2018-02-01,Alogliptin,0601023AK,398310
+2018-02-01,Aripiprazole,0402020AD,1712
+2018-02-01,Avanafil,0704050AC,4974
+2018-02-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,5190
+2018-02-01,Belladonna Alkaloids,0102000H0,1190
+2018-02-01,Brimonidine Tart (Rosacea),1306030A0,1540
+2018-02-01,Brinzolamide/Brimonidine,1106000AL,26946
+2018-02-01,Brivaracetam,0408010AL,12810
+2018-02-01,Canagliflozin,0601023AM,124596
+2018-02-01,Canagliflozin/Metformin,0601023AP,2668
+2018-02-01,Ciclosporin (Eye Anti Inflam),1104020AE,6480
+2018-02-01,Ciprofloxain/Dexameth,1201010AE,3426
+2018-02-01,Clindamycin/Tretinoin,1306010AB,4218
+2018-02-01,Dapagliflozin/Metformin,0601023AL,8252
+2018-02-01,Dulaglutide,0601023AQ,87728
+2018-02-01,Edoxaban,0208020AA,101052
+2018-02-01,Empagliflozin,0601023AN,209104
+2018-02-01,Empagliflozin/Metformin,0601023AR,14824
+2018-02-01,Fluticasone Furoate (Inh),0302000V0,384105
+2018-02-01,Fosfomycin Trometamol,0501070AE,17019
+2018-02-01,Guanfacine,0404000V0,6696
+2018-02-01,Indacaterol/Glycopyrronium,0301040Y0,32268
+2018-02-01,Ins Degludec/Liraglutide,0601023AU,2964
+2018-02-01,Ivermectin,1306030B0,6472
+2018-02-01,Lurasidone,0402010AI,5448
+2018-02-01,Naloxegol,0106060B0,4040
+2018-02-01,Nitrous Oxide,1501020R0,448
+2018-02-01,Opicapone,0409010AB,918
+2018-02-01,Perindopril + Calcium Channel Blocker,0205051AC,768
+2018-02-01,Sacubitril/Valsartan,0205052AE,37464
+2018-02-01,Safinamide,0409010AA,1128
+2018-02-01,Saxagliptin/Dapagliflozin,0601023AV,704
+2018-02-01,Solifenacin/Tamsulosin,0704010W0,7464
+2018-02-01,Tafluprost & Timolol,1106000AM,1782
+2018-02-01,Tiotropium Brom/Olodaterol,0301040X0,19592
+2018-02-01,Triamcinolone Hexacetonide,1001022Y0,1323
+2018-02-01,Umeclidinium Brom,0301020T0,101344
+2018-02-01,Umeclidinium Brom/Vilanterol,0301040W0,65374
+2018-02-01,Vortioxetine,0403040AB,27300
+2018-03-01,Aclidinium Brom/Formoterol,0301040V0,28910
+2018-03-01,Alogliptin,0601023AK,454632
+2018-03-01,Aripiprazole,0402020AD,1812
+2018-03-01,Avanafil,0704050AC,5658
+2018-03-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,7481
+2018-03-01,Belladonna Alkaloids,0102000H0,1792
+2018-03-01,Brimonidine Tart (Rosacea),1306030A0,1760
+2018-03-01,Brinzolamide/Brimonidine,1106000AL,30138
+2018-03-01,Brivaracetam,0408010AL,14742
+2018-03-01,Canagliflozin,0601023AM,137784
+2018-03-01,Canagliflozin/Metformin,0601023AP,3080
+2018-03-01,Ciclosporin (Eye Anti Inflam),1104020AE,7083
+2018-03-01,Ciprofloxain/Dexameth,1201010AE,3826
+2018-03-01,Clindamycin/Tretinoin,1306010AB,4624
+2018-03-01,Dapagliflozin/Metformin,0601023AL,9648
+2018-03-01,Dulaglutide,0601023AQ,101284
+2018-03-01,Edoxaban,0208020AA,122184
+2018-03-01,Empagliflozin,0601023AN,242428
+2018-03-01,Empagliflozin/Metformin,0601023AR,17064
+2018-03-01,Fluticasone Furoate (Inh),0302000V0,434630
+2018-03-01,Fosfomycin Trometamol,0501070AE,19845
+2018-03-01,Guanfacine,0404000V0,8304
+2018-03-01,Indacaterol/Glycopyrronium,0301040Y0,37382
+2018-03-01,Ins Degludec/Liraglutide,0601023AU,3404
+2018-03-01,Ivermectin,1306030B0,7294
+2018-03-01,Lurasidone,0402010AI,5874
+2018-03-01,Naloxegol,0106060B0,4304
+2018-03-01,Nitrous Oxide,1501020R0,416
+2018-03-01,Opicapone,0409010AB,1144
+2018-03-01,Perindopril + Calcium Channel Blocker,0205051AC,816
+2018-03-01,Sacubitril/Valsartan,0205052AE,43956
+2018-03-01,Safinamide,0409010AA,1452
+2018-03-01,Saxagliptin/Dapagliflozin,0601023AV,814
+2018-03-01,Solifenacin/Tamsulosin,0704010W0,8346
+2018-03-01,Tafluprost & Timolol,1106000AM,2140
+2018-03-01,Tiotropium Brom/Olodaterol,0301040X0,23156
+2018-03-01,Triamcinolone Hexacetonide,1001022Y0,1624
+2018-03-01,Umeclidinium Brom,0301020T0,114004
+2018-03-01,Umeclidinium Brom/Vilanterol,0301040W0,74476
+2018-03-01,Vortioxetine,0403040AB,30936
+2018-04-01,Aclidinium Brom/Formoterol,0301040V0,28378
+2018-04-01,Alogliptin,0601023AK,452124
+2018-04-01,Aripiprazole,0402020AD,1860
+2018-04-01,Avanafil,0704050AC,5496
+2018-04-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,8949
+2018-04-01,Belladonna Alkaloids,0102000H0,1722
+2018-04-01,Brimonidine Tart (Rosacea),1306030A0,1884
+2018-04-01,Brinzolamide/Brimonidine,1106000AL,29728
+2018-04-01,Brivaracetam,0408010AL,14686
+2018-04-01,Canagliflozin,0601023AM,133820
+2018-04-01,Canagliflozin/Metformin,0601023AP,2960
+2018-04-01,Ciclosporin (Eye Anti Inflam),1104020AE,7227
+2018-04-01,Ciprofloxain/Dexameth,1201010AE,3652
+2018-04-01,Clindamycin/Tretinoin,1306010AB,4402
+2018-04-01,Dapagliflozin/Metformin,0601023AL,9400
+2018-04-01,Dulaglutide,0601023AQ,103036
+2018-04-01,Edoxaban,0208020AA,130512
+2018-04-01,Empagliflozin,0601023AN,247008
+2018-04-01,Empagliflozin/Metformin,0601023AR,17512
+2018-04-01,Fluticasone Furoate (Inh),0302000V0,432495
+2018-04-01,Fosfomycin Trometamol,0501070AE,19287
+2018-04-01,Guanfacine,0404000V0,7776
+2018-04-01,Indacaterol/Glycopyrronium,0301040Y0,36646
+2018-04-01,Ins Degludec/Liraglutide,0601023AU,3384
+2018-04-01,Ivermectin,1306030B0,7880
+2018-04-01,Lurasidone,0402010AI,5952
+2018-04-01,Naloxegol,0106060B0,4652
+2018-04-01,Nitrous Oxide,1501020R0,416
+2018-04-01,Opicapone,0409010AB,1186
+2018-04-01,Perindopril + Calcium Channel Blocker,0205051AC,872
+2018-04-01,Sacubitril/Valsartan,0205052AE,45660
+2018-04-01,Safinamide,0409010AA,1468
+2018-04-01,Saxagliptin/Dapagliflozin,0601023AV,886
+2018-04-01,Solifenacin/Tamsulosin,0704010W0,8052
+2018-04-01,Tafluprost & Timolol,1106000AM,2160
+2018-04-01,Tiotropium Brom/Olodaterol,0301040X0,23118
+2018-04-01,Triamcinolone Hexacetonide,1001022Y0,1456
+2018-04-01,Umeclidinium Brom,0301020T0,110518
+2018-04-01,Umeclidinium Brom/Vilanterol,0301040W0,74090
+2018-04-01,Vortioxetine,0403040AB,31326
+2018-05-01,Aclidinium Brom/Formoterol,0301040V0,29364
+2018-05-01,Alogliptin,0601023AK,485454
+2018-05-01,Aripiprazole,0402020AD,1888
+2018-05-01,Avanafil,0704050AC,5586
+2018-05-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,11736
+2018-05-01,Belladonna Alkaloids,0102000H0,1806
+2018-05-01,Brimonidine Tart (Rosacea),1306030A0,1856
+2018-05-01,Brinzolamide/Brimonidine,1106000AL,31026
+2018-05-01,Brivaracetam,0408010AL,16044
+2018-05-01,Canagliflozin,0601023AM,139884
+2018-05-01,Canagliflozin/Metformin,0601023AP,3108
+2018-05-01,Ciclosporin (Eye Anti Inflam),1104020AE,7944
+2018-05-01,Ciprofloxain/Dexameth,1201010AE,3992
+2018-05-01,Clindamycin/Tretinoin,1306010AB,3372
+2018-05-01,Dapagliflozin/Metformin,0601023AL,9640
+2018-05-01,Dulaglutide,0601023AQ,112328
+2018-05-01,Edoxaban,0208020AA,148236
+2018-05-01,Empagliflozin,0601023AN,268804
+2018-05-01,Empagliflozin/Metformin,0601023AR,19160
+2018-05-01,Fluticasone Furoate (Inh),0302000V0,464755
+2018-05-01,Fosfomycin Trometamol,0501070AE,21744
+2018-05-01,Guanfacine,0404000V0,8856
+2018-05-01,Indacaterol/Glycopyrronium,0301040Y0,39342
+2018-05-01,Ins Degludec/Liraglutide,0601023AU,3662
+2018-05-01,Ivermectin,1306030B0,8518
+2018-05-01,Lurasidone,0402010AI,6222
+2018-05-01,Naloxegol,0106060B0,4764
+2018-05-01,Nitrous Oxide,1501020R0,496
+2018-05-01,Opicapone,0409010AB,1402
+2018-05-01,Perindopril + Calcium Channel Blocker,0205051AC,956
+2018-05-01,Sacubitril/Valsartan,0205052AE,49968
+2018-05-01,Safinamide,0409010AA,1744
+2018-05-01,Saxagliptin/Dapagliflozin,0601023AV,920
+2018-05-01,Solifenacin/Tamsulosin,0704010W0,8646
+2018-05-01,Tafluprost & Timolol,1106000AM,2304
+2018-05-01,Tiotropium Brom/Olodaterol,0301040X0,25350
+2018-05-01,Triamcinolone Hexacetonide,1001022Y0,1687
+2018-05-01,Umeclidinium Brom,0301020T0,115994
+2018-05-01,Umeclidinium Brom/Vilanterol,0301040W0,78812
+2018-05-01,Vortioxetine,0403040AB,33816
+2018-06-01,Aclidinium Brom/Formoterol,0301040V0,29418
+2018-06-01,Alogliptin,0601023AK,489372
+2018-06-01,Aripiprazole,0402020AD,1980
+2018-06-01,Avanafil,0704050AC,5724
+2018-06-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,13763
+2018-06-01,Belladonna Alkaloids,0102000H0,1960
+2018-06-01,Brimonidine Tart (Rosacea),1306030A0,1892
+2018-06-01,Brinzolamide/Brimonidine,1106000AL,30730
+2018-06-01,Brivaracetam,0408010AL,15624
+2018-06-01,Canagliflozin,0601023AM,137904
+2018-06-01,Canagliflozin/Metformin,0601023AP,3012
+2018-06-01,Ciclosporin (Eye Anti Inflam),1104020AE,8250
+2018-06-01,Ciprofloxain/Dexameth,1201010AE,4356
+2018-06-01,Clindamycin/Tretinoin,1306010AB,4580
+2018-06-01,Dapagliflozin/Metformin,0601023AL,9976
+2018-06-01,Dulaglutide,0601023AQ,116620
+2018-06-01,Edoxaban,0208020AA,159294
+2018-06-01,Empagliflozin,0601023AN,277180
+2018-06-01,Empagliflozin/Metformin,0601023AR,19248
+2018-06-01,Fluticasone Furoate (Inh),0302000V0,468440
+2018-06-01,Fosfomycin Trometamol,0501070AE,23346
+2018-06-01,Guanfacine,0404000V0,9264
+2018-06-01,Indacaterol/Glycopyrronium,0301040Y0,38966
+2018-06-01,Ins Degludec/Liraglutide,0601023AU,3658
+2018-06-01,Ivermectin,1306030B0,8300
+2018-06-01,Lurasidone,0402010AI,6396
+2018-06-01,Naloxegol,0106060B0,5044
+2018-06-01,Nitrous Oxide,1501020R0,352
+2018-06-01,Opicapone,0409010AB,1506
+2018-06-01,Perindopril + Calcium Channel Blocker,0205051AC,892
+2018-06-01,Sacubitril/Valsartan,0205052AE,52824
+2018-06-01,Safinamide,0409010AA,1704
+2018-06-01,Saxagliptin/Dapagliflozin,0601023AV,1034
+2018-06-01,Solifenacin/Tamsulosin,0704010W0,8188
+2018-06-01,Tafluprost & Timolol,1106000AM,2300
+2018-06-01,Tiotropium Brom/Olodaterol,0301040X0,25602
+2018-06-01,Triamcinolone Hexacetonide,1001022Y0,1477
+2018-06-01,Umeclidinium Brom,0301020T0,112800
+2018-06-01,Umeclidinium Brom/Vilanterol,0301040W0,79476
+2018-06-01,Vortioxetine,0403040AB,35562
+2018-07-01,Aclidinium Brom/Formoterol,0301040V0,29750
+2018-07-01,Alogliptin,0601023AK,508326
+2018-07-01,Aripiprazole,0402020AD,2068
+2018-07-01,Avanafil,0704050AC,5718
+2018-07-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,16631
+2018-07-01,Belladonna Alkaloids,0102000H0,1932
+2018-07-01,Brimonidine Tart (Rosacea),1306030A0,1544
+2018-07-01,Brinzolamide/Brimonidine,1106000AL,31644
+2018-07-01,Brivaracetam,0408010AL,17444
+2018-07-01,Canagliflozin,0601023AM,139852
+2018-07-01,Canagliflozin/Metformin,0601023AP,3184
+2018-07-01,Ciclosporin (Eye Anti Inflam),1104020AE,8589
+2018-07-01,Ciprofloxain/Dexameth,1201010AE,4934
+2018-07-01,Clindamycin/Tretinoin,1306010AB,3714
+2018-07-01,Dapagliflozin/Metformin,0601023AL,10248
+2018-07-01,Dulaglutide,0601023AQ,121832
+2018-07-01,Edoxaban,0208020AA,176490
+2018-07-01,Empagliflozin,0601023AN,294160
+2018-07-01,Empagliflozin/Metformin,0601023AR,20480
+2018-07-01,Fluticasone Furoate (Inh),0302000V0,490150
+2018-07-01,Fosfomycin Trometamol,0501070AE,24111
+2018-07-01,Guanfacine,0404000V0,9520
+2018-07-01,Indacaterol/Glycopyrronium,0301040Y0,40054
+2018-07-01,Ins Degludec/Liraglutide,0601023AU,3760
+2018-07-01,Ivermectin,1306030B0,7972
+2018-07-01,Lurasidone,0402010AI,6912
+2018-07-01,Naloxegol,0106060B0,5304
+2018-07-01,Nitrous Oxide,1501020R0,288
+2018-07-01,Opicapone,0409010AB,1788
+2018-07-01,Perindopril + Calcium Channel Blocker,0205051AC,880
+2018-07-01,Sacubitril/Valsartan,0205052AE,56856
+2018-07-01,Safinamide,0409010AA,2008
+2018-07-01,Saxagliptin/Dapagliflozin,0601023AV,1150
+2018-07-01,Solifenacin/Tamsulosin,0704010W0,8540
+2018-07-01,Tafluprost & Timolol,1106000AM,2414
+2018-07-01,Tiotropium Brom/Olodaterol,0301040X0,27172
+2018-07-01,Triamcinolone Hexacetonide,1001022Y0,1610
+2018-07-01,Umeclidinium Brom,0301020T0,113562
+2018-07-01,Umeclidinium Brom/Vilanterol,0301040W0,81950
+2018-07-01,Vortioxetine,0403040AB,37374
+2018-08-01,Aclidinium Brom/Formoterol,0301040V0,30668
+2018-08-01,Alogliptin,0601023AK,538074
+2018-08-01,Aripiprazole,0402020AD,2080
+2018-08-01,Avanafil,0704050AC,5982
+2018-08-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,19711
+2018-08-01,Belladonna Alkaloids,0102000H0,2030
+2018-08-01,Brimonidine Tart (Rosacea),1306030A0,1474
+2018-08-01,Brinzolamide/Brimonidine,1106000AL,32370
+2018-08-01,Brivaracetam,0408010AL,18494
+2018-08-01,Canagliflozin,0601023AM,143984
+2018-08-01,Canagliflozin/Metformin,0601023AP,3316
+2018-08-01,Ciclosporin (Eye Anti Inflam),1104020AE,8934
+2018-08-01,Ciprofloxain/Dexameth,1201010AE,5608
+2018-08-01,Clindamycin/Tretinoin,1306010AB,3510
+2018-08-01,Dapagliflozin/Metformin,0601023AL,10464
+2018-08-01,Dulaglutide,0601023AQ,129768
+2018-08-01,Edoxaban,0208020AA,196446
+2018-08-01,Empagliflozin,0601023AN,308596
+2018-08-01,Empagliflozin/Metformin,0601023AR,22160
+2018-08-01,Fluticasone Furoate (Inh),0302000V0,515945
+2018-08-01,Fosfomycin Trometamol,0501070AE,26901
+2018-08-01,Guanfacine,0404000V0,10008
+2018-08-01,Indacaterol/Glycopyrronium,0301040Y0,41804
+2018-08-01,Ins Degludec/Liraglutide,0601023AU,3902
+2018-08-01,Ivermectin,1306030B0,7252
+2018-08-01,Lurasidone,0402010AI,7062
+2018-08-01,Naloxegol,0106060B0,6200
+2018-08-01,Nitrous Oxide,1501020R0,624
+2018-08-01,Opicapone,0409010AB,1952
+2018-08-01,Perindopril + Calcium Channel Blocker,0205051AC,932
+2018-08-01,Sacubitril/Valsartan,0205052AE,61458
+2018-08-01,Safinamide,0409010AA,2040
+2018-08-01,Saxagliptin/Dapagliflozin,0601023AV,1228
+2018-08-01,Solifenacin/Tamsulosin,0704010W0,8376
+2018-08-01,Tafluprost & Timolol,1106000AM,2770
+2018-08-01,Tiotropium Brom/Olodaterol,0301040X0,28668
+2018-08-01,Triamcinolone Hexacetonide,1001022Y0,1407
+2018-08-01,Umeclidinium Brom,0301020T0,115462
+2018-08-01,Umeclidinium Brom/Vilanterol,0301040W0,86046
+2018-08-01,Vortioxetine,0403040AB,40104
+2018-09-01,Aclidinium Brom/Formoterol,0301040V0,28546
+2018-09-01,Alogliptin,0601023AK,511278
+2018-09-01,Aripiprazole,0402020AD,2088
+2018-09-01,Avanafil,0704050AC,5454
+2018-09-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,20843
+2018-09-01,Belladonna Alkaloids,0102000H0,2352
+2018-09-01,Brimonidine Tart (Rosacea),1306030A0,1330
+2018-09-01,Brinzolamide/Brimonidine,1106000AL,29802
+2018-09-01,Brivaracetam,0408010AL,18158
+2018-09-01,Canagliflozin,0601023AM,134808
+2018-09-01,Canagliflozin/Metformin,0601023AP,3172
+2018-09-01,Ciclosporin (Eye Anti Inflam),1104020AE,8649
+2018-09-01,Ciprofloxain/Dexameth,1201010AE,5994
+2018-09-01,Clindamycin/Tretinoin,1306010AB,4546
+2018-09-01,Dapagliflozin/Metformin,0601023AL,10128
+2018-09-01,Dulaglutide,0601023AQ,124812
+2018-09-01,Edoxaban,0208020AA,196116
+2018-09-01,Empagliflozin,0601023AN,295752
+2018-09-01,Empagliflozin/Metformin,0601023AR,21408
+2018-09-01,Fluticasone Furoate (Inh),0302000V0,492600
+2018-09-01,Fosfomycin Trometamol,0501070AE,24975
+2018-09-01,Guanfacine,0404000V0,9904
+2018-09-01,Indacaterol/Glycopyrronium,0301040Y0,38878
+2018-09-01,Ins Degludec/Liraglutide,0601023AU,3432
+2018-09-01,Ivermectin,1306030B0,7340
+2018-09-01,Lurasidone,0402010AI,6534
+2018-09-01,Naloxegol,0106060B0,5788
+2018-09-01,Nitrous Oxide,1501020R0,656
+2018-09-01,Opicapone,0409010AB,1894
+2018-09-01,Perindopril + Calcium Channel Blocker,0205051AC,860
+2018-09-01,Sacubitril/Valsartan,0205052AE,60942
+2018-09-01,Safinamide,0409010AA,2056
+2018-09-01,Saxagliptin/Dapagliflozin,0601023AV,1190
+2018-09-01,Solifenacin/Tamsulosin,0704010W0,8084
+2018-09-01,Tafluprost & Timolol,1106000AM,2572
+2018-09-01,Tiotropium Brom/Olodaterol,0301040X0,27300
+2018-09-01,Triamcinolone Hexacetonide,1001022Y0,1708
+2018-09-01,Umeclidinium Brom,0301020T0,105926
+2018-09-01,Umeclidinium Brom/Vilanterol,0301040W0,81096
+2018-09-01,Vortioxetine,0403040AB,39918
+2018-10-01,Aclidinium Brom/Formoterol,0301040V0,31042
+2018-10-01,Alogliptin,0601023AK,569604
+2018-10-01,Aripiprazole,0402020AD,2260
+2018-10-01,Avanafil,0704050AC,5556
+2018-10-01,BeclometDiprop/Formoterol/Glycopyrronium,0301011AB,26167
+2018-10-01,Belladonna Alkaloids,0102000H0,2660
+2018-10-01,Brimonidine Tart (Rosacea),1306030A0,1562
+2018-10-01,Brinzolamide/Brimonidine,1106000AL,32716
+2018-10-01,Brivaracetam,0408010AL,20440
+2018-10-01,Canagliflozin,0601023AM,146664
+2018-10-01,Canagliflozin/Metformin,0601023AP,3576
+2018-10-01,Ciclosporin (Eye Anti Inflam),1104020AE,9456
+2018-10-01,Ciprofloxain/Dexameth,1201010AE,6410
+2018-10-01,Clindamycin/Tretinoin,1306010AB,4586
+2018-10-01,Dapagliflozin/Metformin,0601023AL,10924
+2018-10-01,Dulaglutide,0601023AQ,139360
+2018-10-01,Edoxaban,0208020AA,229734
+2018-10-01,Empagliflozin,0601023AN,333276
+2018-10-01,Empagliflozin/Metformin,0601023AR,23608
+2018-10-01,Fluticasone Furoate (Inh),0302000V0,551875
+2018-10-01,Fosfomycin Trometamol,0501070AE,29448
+2018-10-01,Guanfacine,0404000V0,11240
+2018-10-01,Indacaterol/Glycopyrronium,0301040Y0,42728
+2018-10-01,Ins Degludec/Liraglutide,0601023AU,4172
+2018-10-01,Ivermectin,1306030B0,8240
+2018-10-01,Lurasidone,0402010AI,7350
+2018-10-01,Naloxegol,0106060B0,6616
+2018-10-01,Nitrous Oxide,1501020R0,1264
+2018-10-01,Opicapone,0409010AB,2172
+2018-10-01,Perindopril + Calcium Channel Blocker,0205051AC,1112
+2018-10-01,Sacubitril/Valsartan,0205052AE,68604
+2018-10-01,Safinamide,0409010AA,2460
+2018-10-01,Saxagliptin/Dapagliflozin,0601023AV,1428
+2018-10-01,Solifenacin/Tamsulosin,0704010W0,9040
+2018-10-01,Tafluprost & Timolol,1106000AM,3000
+2018-10-01,Tiotropium Brom/Olodaterol,0301040X0,30314
+2018-10-01,Triamcinolone Hexacetonide,1001022Y0,2142
+2018-10-01,Umeclidinium Brom,0301020T0,113612
+2018-10-01,Umeclidinium Brom/Vilanterol,0301040W0,90280
+2018-10-01,Vortioxetine,0403040AB,45498
