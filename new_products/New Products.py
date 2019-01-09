@@ -129,9 +129,13 @@ months.columns = ['month']
 df2 = months.merge(intros, how="left", left_on="month", right_on="month_introduced")[["month","code"]].set_index("month").fillna(0)
 import matplotlib.dates as mdates
 import matplotlib.pylab as plt
-ax = df2.plot(x_compat=True)
+fig, ax = plt.subplots(figsize=(9,4))
+ax.bar(df2.index, df2['code'], width=20)
 ax.xaxis.set_major_locator(mdates.YearLocator())
+ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
+plt.title("Introduction of new chemicals to prescribing in England, 2014-2018")
 plt.show()
+
 
 # ## Show prescribing rates of each chemical
 
@@ -167,9 +171,10 @@ else:
     df2['month'] = pd.to_datetime(df2['month'])
 
 df3 = df2.reset_index().set_index(['chemical','month']).unstack('chemical')['items']
-df3.plot(kind='area',stacked=True,legend=False)
+ax = df3.plot(kind='area',stacked=True,legend=False, title="Cumulative prescribing of new chemicals")
+ax.set_ylabel("Items")
 
-# ## Just count new drugs 6 months after introduction
+# ## Counting new drugs for first 6 months after introduction only
 
 # +
 from pandas.tseries.offsets import *
@@ -214,6 +219,16 @@ df5 = pd.DataFrame(index=df4.index)
 for column in df4.columns:
     df5[column] = df4[column] / df4[column].max()
 df5.plot(kind='area',stacked=True,legend=False)
+# -
+
+# # Attempt a measure of "noveltiness"
+#
+# For every new chemical, count the number of items prescribed per-CCG at 12 months following its introduction, and express that per patient.  Items with a high score tend to prescribe the most novel chemicals.
+#
+# This is very naive and needs more work as the vast majority of this is likely to be accounted for by one or two blockbuster drugs. If we really want novelty we should do this per-chemical and express as a proportion of the maximum uptake.
+#
+#
+#
 
 # +
 from pandas.tseries.offsets import *
@@ -239,20 +254,18 @@ where_template = "(bnf_code LIKE '{}%' AND rx.month = '{}')"
 for index, row in df.iterrows():
     start_date = row['month_introduced']
     code = row['code']
-    where.append(where_template.format(code, start_date + DateOffset(months=6)))
+    where.append(where_template.format(code, start_date + DateOffset(months=12)))
 where = " OR ".join(where)
 df6 = pd.read_gbq(sql_template.format(where), 'ebmdatalab', verbose=False, dialect='standard')
 # -
 
-#df6.groupby('pct').unstack('pct')
-#df3 = df2.reset_index().set_index(['chemical','month']).unstack('chemical')['items']
-#df3.plot(kind='area',stacked=True,legend=False)
 df6 = df6[df6['total_list_size']> 0]
 df6['x'] = (df6['novel_items']  / df6['total_list_size']) 
 df6.sort_values('x', ascending=False)
-df6.groupby('pct').sum().reset_index().sort_values('x', ascending=False)
-# divide this by number of patients or something - bigger practices more likely to prescribe stuff
+df6.groupby('pct').sum().reset_index().sort_values('x', ascending=False).head(10)
 
+
+# # Plots of individual chemical uptake
 
 # + {"scrolled": false}
 for chemical_code in df.code:
