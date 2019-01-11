@@ -137,9 +137,10 @@ df2.groupby('oct_category').count()
 changing = df2[(df2['sept_dt_ppu'] != df2['oct_dt_ppu']) & (df2['nov_dt_ppu'] != df2['oct_dt_ppu'])]
 print("There are {} pills which changed price each month during that quarter".format(changing.count()['bnf_code']))
 
-changing[changing['median_price_per_unit'] == changing['sept_dt_ppu']]
+changing.groupby('oct_category').count()
 
-asd = df2[(df2['nov_dt_ppu'] != df2['oct_dt_ppu'])].groupby('oct_category').count()
+# items with a chancing price that used the sept DT
+changing[changing['median_price_per_unit'] == changing['sept_dt_ppu']]
 
 # +
 import numpy as np
@@ -151,25 +152,15 @@ conditions = [
 
 choices = ['sept', 'oct', 'nov']
 changing['dt_used'] = np.select(conditions, choices)
-
-# +
-import numpy as np
-conditions = [
-    (asd['median_price_per_unit'] == asd['sept_dt_ppu']),
-    (asd['median_price_per_unit'] == asd['oct_dt_ppu']),
-    (asd['median_price_per_unit'] == asd['nov_dt_ppu'])
-]
-
-choices = ['sept', 'oct', 'nov']
-asd['dt_used'] = np.select(conditions, choices)
-#df2[(df2['sept_dt_ppu'] != df2['oct_dt_ppu'])
 # -
 
-asd.groupby('dt_used').count()
+changing.groupby('dt_used').count()
 
-asd[asd['dt_used'] == 'oct'].groupby('oct_category').count()
+changing[changing['dt_used'] == 'nov'].groupby('oct_category').count()
 
-asd[asd['dt_used'] == 'sept'].groupby('oct_category').count()
+changing[changing['dt_used'] == 'oct'].groupby('oct_category').count()
+
+changing[changing['dt_used'] == 'sept'].groupby('oct_category').count()
 
 # Missing ones - these look like rounding errors to me
 changing[changing['dt_used'] == '0']
