@@ -25,7 +25,9 @@
 #
 # It then compares it with the drug tariff (or price concession) price of each of those pills.
 #
-# We show that Category M presentations use the DT price for the month of dispensing, but Category A presentations use the Drug Tariff of the following month.
+# We show that Category M presentations use the DT price for the month of dispensing, but Category A presentations at least sometimes use the Drug Tariff of the following month.
+#
+# Correspondence with BSA about this tracked [here](https://github.com/ebmdatalab/openprescribing/issues/1318#issuecomment-453180209)
 
 import pandas as pd
 
