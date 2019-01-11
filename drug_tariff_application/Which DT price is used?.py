@@ -25,13 +25,9 @@
 #
 # It then compares it with the drug tariff (or price concession) price of each of those pills.
 #
-# We should that Category M presentations use the DT price for the month of dispensing, but Category A presentations use the Drug Tariff of the following month.
+# We show that Category M presentations use the DT price for the month of dispensing, but Category A presentations use the Drug Tariff of the following month.
 
 import pandas as pd
-
-# +
-
-
 
 sql = """WITH
   median_price_per_unit AS (
@@ -121,21 +117,27 @@ ON
   oct_rx.bnf_code = nov_dt.bnf_code"""
 df = pd.read_gbq(sql, 'ebmdatalab', dialect='standard', verbose=False)
 
-
-# -
-
 df = df.set_index('bnf_code')
 
 df.head(1)
 
+# +
+# Exclude items which have more than one price (i.e. more than one VMPP in the DT)
+# As these complicate our calculations
+# -
+
 df2 = df.join(df.groupby('bnf_code').count()['bnf_name'] > 1, rsuffix='x').reset_index()
 df2 = df2[df2['bnf_namex'] == False]
+
+df2.groupby('oct_category').count()
 
 # let's disregard anything where the DT never changed
 changing = df2[(df2['sept_dt_ppu'] != df2['oct_dt_ppu']) & (df2['nov_dt_ppu'] != df2['oct_dt_ppu'])]
 print("There are {} pills which changed price each month during that quarter".format(changing.count()['bnf_code']))
 
 changing[changing['median_price_per_unit'] == changing['sept_dt_ppu']]
+
+asd = df2[(df2['nov_dt_ppu'] != df2['oct_dt_ppu'])].groupby('oct_category').count()
 
 # +
 import numpy as np
@@ -147,13 +149,25 @@ conditions = [
 
 choices = ['sept', 'oct', 'nov']
 changing['dt_used'] = np.select(conditions, choices)
+
+# +
+import numpy as np
+conditions = [
+    (asd['median_price_per_unit'] == asd['sept_dt_ppu']),
+    (asd['median_price_per_unit'] == asd['oct_dt_ppu']),
+    (asd['median_price_per_unit'] == asd['nov_dt_ppu'])
+]
+
+choices = ['sept', 'oct', 'nov']
+asd['dt_used'] = np.select(conditions, choices)
+#df2[(df2['sept_dt_ppu'] != df2['oct_dt_ppu'])
 # -
 
-changing.groupby('dt_used').count()
+asd.groupby('dt_used').count()
 
-changing[changing['dt_used'] == 'oct'].groupby('oct_category').count()
+asd[asd['dt_used'] == 'oct'].groupby('oct_category').count()
 
-changing[changing['dt_used'] == 'nov'].groupby('oct_category').count()
+asd[asd['dt_used'] == 'sept'].groupby('oct_category').count()
 
 # Missing ones - these look like rounding errors to me
 changing[changing['dt_used'] == '0']
