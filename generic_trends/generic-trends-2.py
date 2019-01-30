@@ -17,8 +17,9 @@
 #     version: 3.6.5
 # ---
 
+# + {"scrolled": false}
 import pandas as pd
-filename = 'generic_ratios_by_chemical_3.csv'
+filename = 'generic_ratios_by_chemical_4.csv'
 try:
     df = pd.read_csv(filename)
 except IOError:
@@ -27,7 +28,7 @@ except IOError:
       SELECT
         month,
         SUBSTR(bnf_code, 0, 9) AS product,
-        COUNT(*) AS items
+        SUM(items) AS items
       FROM
         `ebmdatalab.hscic.normalised_prescribing_standard`
       WHERE
@@ -39,21 +40,18 @@ except IOError:
       SELECT
         month,
         SUBSTR(bnf_code, 0, 9) AS product,
-        COUNT(*) AS items
+        SUM(items) AS items
       FROM
         `ebmdatalab.hscic.normalised_prescribing_standard`
-      --WHERE
-      --  bnf_code LIKE '0%'
       GROUP BY
         month,
-        product
-      HAVING
-        COUNT(*) > 100),
+        product),
       data AS (
       SELECT
         num.month,
         num.product,
-        num.items / denom.items AS value
+        num.items / denom.items AS value,
+        denom.items AS items
       FROM
         num
       INNER JOIN
@@ -66,6 +64,7 @@ except IOError:
         DISTINCT month,
         product,
         value,
+        data.items AS total_items,
         LAST_VALUE(value) OVER (PARTITION BY product ORDER BY month ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) - FIRST_VALUE(value) OVER (PARTITION BY product ORDER BY month ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS delta,
         ABS(PERCENTILE_CONT(value,
             0.75) OVER (PARTITION BY product) - PERCENTILE_CONT(value,
@@ -84,12 +83,13 @@ except IOError:
       """
     df = pd.read_gbq(sql, 'ebmdatalab', verbose=False, dialect='standard')
     df.to_csv(filename)
+# -
 
 sql = """WITH
   num AS (
   SELECT
     month,
-    COUNT(*) AS items,
+    SUM(items) AS items,
     SUM(actual_cost) AS actual_cost
   FROM
     `ebmdatalab.hscic.normalised_prescribing_standard`
@@ -100,7 +100,7 @@ sql = """WITH
   denom AS (
   SELECT
     month,
-    COUNT(*) AS items,
+    SUM(items) AS items,
     SUM(actual_cost) AS actual_cost
   FROM
     `ebmdatalab.hscic.normalised_prescribing_standard`
@@ -122,7 +122,7 @@ top_df = pd.read_gbq(sql, 'ebmdatalab', verbose=False, dialect='standard')
 
 # # Overall generic prescribing
 #
-# The following chart shows that the proportion of prescriptions made generically has dropped a very small amount over the last 8 years; the proportion of spending which has been prescribed generically has dropped a lot more.
+# The following chart shows that the proportion of prescriptions made generically has not dropped over the last 8 years; the proportion of spending which has been prescribed generically has dropped a lot more.
 #
 #
 
@@ -131,7 +131,8 @@ top_df.set_index('month').plot.line(title="Proportions of generic versus all pre
 
 # # Which are the chemicals showing the greatest positive and negative changes?
 
-most_variance = df.groupby('product').min().reset_index().sort_values('iqr', ascending=False).head(50)
+most_variance = df.groupby('product').min().reset_index()
+most_variance = most_variance[most_variance.total_items > 10000].sort_values('iqr', ascending=False).head(50)
 
 most_variance
 
