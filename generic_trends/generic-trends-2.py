@@ -21,6 +21,8 @@
 #
 # The following chart shows that the proportion of prescriptions made generically has not dropped over the last 8 years; the proportion of spending which has been prescribed generically has dropped a lot more.
 #
+# **Possible improvement**: we could exclude those marked in DM+D with `pres_statcd <> 1` as this supposedly identifies things that should not be prescribed generically.
+#
 #
 
 sql = """WITH
