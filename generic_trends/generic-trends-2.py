@@ -17,7 +17,18 @@
 #     version: 3.6.5
 # ---
 
-# # Overall generic prescribing
+# # Trends in generic prescribing
+#
+# This notebook explores some trends in generic prescribing.
+#
+# It covers:
+#
+# * top-level stastics
+# * examples of it working well
+# * surprising examples of it not working, or working strangely
+# * some initial exploratory analysis of Modified Release (MR) tablets and capsules, a relatively new phenomenon where a formulation with dubious clinical benefits (MR) is appearing more and more frequently in branded generics at low price points, incentivising clinicians to switch from generic
+
+# ## Overall generic prescribing
 #
 # The following chart shows that the proportion of prescriptions made generically has not dropped over the last 8 years; the proportion of spending which has been prescribed generically has dropped a lot more.
 #
@@ -263,13 +274,13 @@ most_variance
 # 1. Why were they not already being prescribed as generics?
 # 2. What is driving the change?
 #
-# Generally, things are not prescribed as generics  because:
+# Generally, a thing is not prescribed as generics because:
 #
 #
-# * it is officially not recommended (for example, things which come in radically different strengths but the format is similar (patches, opioids), things which work differently despite being equivalent at VMP level (modified-release stuff, things with narrow therapeutic index, things which come with devices (viz inhalers, syringes)), things with narrow therapeutic index / bioavailability variance, things which a different within generic class (e.g. skin preparations containing paraffin, foods). These things should never be prescribed as generics, according to current best practice.
-# * it is avoided for similar, non-official reasons (opthamologists prescribing eye drops by brand because the bottle is more squeezy)
-# * because people are wary of prescribing generically because they're easy to confuse (this is common with contraceptive pills)
-# * because people just don't know the generic names (more common with combination products, products with long names)
+# * it is **officially not recommended** (for example, things which come in radically different strengths but the format is similar (patches, opioids), things which work differently despite being equivalent at VMP level (modified-release stuff, things with narrow therapeutic index, things which come with devices (viz inhalers, syringes)), things with narrow therapeutic index / bioavailability variance, things which a different within generic class (e.g. skin preparations containing paraffin, foods). These things should never be prescribed as generics, according to current best practice.
+# * it is avoided for **similar, non-official reasons** (opthamologists prescribing eye drops by brand because the bottle is more squeezy)
+# * because people are wary of prescribing generically because they're **easy to confuse** (this is common with contraceptive pills)
+# * because people just **don't know (or even like) the generic names** (more common with combination products, products with long names)
 #
 # Just two of the things below are not in the class "should not substitute generically" (phenytoin, salbutamol); in these cases we should ask why they are increasingly being prescribed generically.  Phenytoin was always a "prescribe by brand" product which went off-patent and became subject of an [ongoing CMA case](https://www.gov.uk/government/news/cma-considers-appeal-in-phenytoin-case).  Salbutamol is a mystery.  First, we normally expect inhalers to be prescribed as a brand; in general the trend goes in the other direction for inhaler-related chemicals. Second, it shows a clear seasonal variation with either branded prescribing going up or generic prescribing going down every September.
 #
