@@ -266,13 +266,14 @@ most_variance
 # Generally, things are not prescribed as generics  because:
 #
 #
-# * it is officially not recommended (for example, things which come in radically different strengths but the format is similar (patches, opioids), things which work differently despite being equivalent at VMP level (modified-release stuff, things with narrow therapeutic index, things which come with devices (viz inhalers, syringes)), things with narrow therapeutic index / bioavailability variance, things which a different within generic class (e.g. skin preparations containing paraffin, foods)
+# * it is officially not recommended (for example, things which come in radically different strengths but the format is similar (patches, opioids), things which work differently despite being equivalent at VMP level (modified-release stuff, things with narrow therapeutic index, things which come with devices (viz inhalers, syringes)), things with narrow therapeutic index / bioavailability variance, things which a different within generic class (e.g. skin preparations containing paraffin, foods). These things should never be prescribed as generics, according to current best practice.
 # * it is avoided for similar, non-official reasons (opthamologists prescribing eye drops by brand because the bottle is more squeezy)
 # * because people are wary of prescribing generically because they're easy to confuse (this is common with contraceptive pills)
 # * because people just don't know the generic names (more common with combination products, products with long names)
 #
 # Just two of the things below are not in the class "should not substitute generically" (phenytoin, salbutamol); in these cases we should ask why they are increasingly being prescribed generically.  All the others it was always OK for them to be prescribed generically, so why weren't they?
 #
+# A particularly interesting example below is Salbutamol. First, we normally expect inhalers to be prescribed as a brand; in general the trend goes in the other direction for inhaler-related chemicals. Second, it shows a clear seasonal variation with either branded prescribing going up or generic prescribing going down every September.
 #
 #
 
