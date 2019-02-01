@@ -292,9 +292,9 @@ for product in most_variance[most_variance['delta'] > 0]['product']:
 # 2. How the recommendation was disseminated
 # 3. In the case of MR formulations, why and when were they introduced. 
 #
+# General consensus in the team is that MR formulations are not clinically useful - they tend to have different titration regimes for their introduction, but thereafter are still 1 per day.  But by virtue of being branded generics they always end up in Category C instead of A.  
 #
-#
-# There are more which are not subject to the "shouldn't be prescribed genericaly" rule though, such as galantamine, ibuprofen, exanatide, Isosorbide mononitrate, venlafaxine, tolterodine, quetiapine. Most of these appear to be MR formulations.  Isosorbide mononitrate is a good example.
+# There are many more (usually MR also) which are not even subject to the "shouldn't be prescribed generically" rule though, such as galantamine, ibuprofen, exanatide, Isosorbide mononitrate, venlafaxine, tolterodine, quetiapine.   Isosorbide mononitrate is a good example.
 #
 # * Tolterodine's change is from [one 4mg presentation](https://openprescribing.net/ccg/99P/0704020N0BFAAAC/price_per_unit/?date=2018-11-01) which has many branded generics, which are MR
 # * Galantamine has many branded generics ([example](https://openprescribing.net/ccg/99P/0411000F0BFACAG/price_per_unit/?date=2018-11-01), which are MR
