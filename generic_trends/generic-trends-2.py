@@ -271,9 +271,12 @@ most_variance
 # * because people are wary of prescribing generically because they're easy to confuse (this is common with contraceptive pills)
 # * because people just don't know the generic names (more common with combination products, products with long names)
 #
-# Just two of the things below are not in the class "should not substitute generically" (phenytoin, salbutamol); in these cases we should ask why they are increasingly being prescribed generically.  All the others it was always OK for them to be prescribed generically, so why weren't they?
+# Just two of the things below are not in the class "should not substitute generically" (phenytoin, salbutamol); in these cases we should ask why they are increasingly being prescribed generically.  Phenytoin was always a "prescribe by brand" product which went off-patent and became subject of an [ongoing CMA case](https://www.gov.uk/government/news/cma-considers-appeal-in-phenytoin-case).  Salbutamol is a mystery.  First, we normally expect inhalers to be prescribed as a brand; in general the trend goes in the other direction for inhaler-related chemicals. Second, it shows a clear seasonal variation with either branded prescribing going up or generic prescribing going down every September.
 #
-# A particularly interesting example below is Salbutamol. First, we normally expect inhalers to be prescribed as a brand; in general the trend goes in the other direction for inhaler-related chemicals. Second, it shows a clear seasonal variation with either branded prescribing going up or generic prescribing going down every September.
+# All the others chemicals have always been ones that should be prescribed generically, so why weren't they?
+#
+# It would be interesting to see if there's a correlation between length of generic name and how often it is prescribed generically (i.e. test the final bullet point above).
+#
 #
 #
 
