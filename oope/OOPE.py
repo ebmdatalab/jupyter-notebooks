@@ -32,6 +32,18 @@ import pandas as pd
 #    * Foods for Special Diets (£52,000 per month)
 #    * Enteral Nutrition (£43,000 per month)
 
+# A [recent case of a pharmacist being suspended](https://www.pharmacyregulation.org/sites/default/files/determinations/tasleem_fatma_2063889_determination.pdf) gives some background to how OOPE overcharging might happen. In this case (2013)it was carelessness and inexperience:
+#
+#  * It affected Aciferol D3, Amlostin, Glutafin G/F bread, Mepradec capsules, ProD3 4, Simvador tablets
+#  * These were branded generics, prescribed as brand by GP on grounds they were cheaper (10%) that DT price
+#  * But there were not available from the usual wholesaler
+#  * They were therefore put through as "specials" to their alternative wholesaler (Pharmacare)
+#  * Each order to Pharmacare incurs a £50 plus VAT handling fee and a £15 plus VAT administration fee
+#
+# It was confirmed [on Twitter](https://twitter.com/CPPEOli/status/1082224683167244289) that the £36.98 amount mentioned below is the standard "special obtains" fee charged by Alliance; which they will always charge for items they don't usually hold.
+#
+#
+
 # +
 sql = """
 SELECT
