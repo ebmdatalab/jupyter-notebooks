@@ -164,7 +164,7 @@ GROUP BY
 ORDER BY
   month""".format(measure_id=measure_id)
     import pandas as pd
-    df = bq.cached_read(sql, csv_path="data/{}_with_vendor.csv".format(measure_id))
+    df = bq.cached_read(sql, csv_path="data/{}_with_vendor.csv".format(measure_id), use_cache=False)
     return df
 
 
