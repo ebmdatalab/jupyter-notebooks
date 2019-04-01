@@ -140,6 +140,7 @@ for i, supplier in enumerate(['EMIS', 'TPP', 'Microtest', 'Vision']):
         show_legend=False,
         ax=left_ax
     )
+    left_ax.set_ylim([0, 1])
     maps.ccg_map(
         by_supplier_and_pct[by_supplier_and_pct['supplier'] == supplier], 
         column='calc_value', 
