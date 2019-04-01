@@ -17,13 +17,9 @@
 #     version: 3.6.5
 # ---
 
-# +
 from ebmdatalab.bq import cached_read
 import matplotlib.pyplot as plt
 import pandas as pd
-
-
-# -
 
 vendors = pd.read_csv('vendors.csv')
 # Clean up the input data
@@ -86,48 +82,68 @@ df.groupby(['month', 'supplier']).mean()['calc_value'].unstack().plot.line()
 plt.legend(loc='best')
 plt.title("diltiazem measure, mean values per supplier")
 
+df.rename(columns={'pct_id':'pct'}, inplace=True)  # The CCG column must be named 'pct' for the maps function
+by_pct = df.groupby('pct').sum().reset_index()
+by_pct['calc_value'] = by_pct['numerator'] / by_pct['denominator']
+by_supplier_and_pct = df.groupby(['supplier', 'pct']).sum().reset_index()
+by_supplier_and_pct['calc_value'] = by_supplier_and_pct['numerator'] / by_supplier_and_pct['denominator']
+
 # + {"scrolled": false}
 from ebmdatalab import charts
-plt = charts.deciles_chart(
+import matplotlib.gridspec as gridspec
+from ebmdatalab import maps
+import importlib
+importlib.reload(maps)
+
+plt.figure(figsize=(12,8))
+layout = gridspec.GridSpec(2, 2)
+left_ax = plt.subplot(layout[0, 0])
+right_subplot = layout[0:2, 1]
+
+
+
+charts.deciles_chart(
         df,
         period_column='month',
         column='calc_value',
         title="Diltiazem measure nationally",
         ylabel="proportion",
         show_outer_percentiles=True,
-        show_legend=True
+        show_legend=False,
+    ax=left_ax
     )
+maps.ccg_map(by_pct, title="Diltiazem measure (all suppliers)", 
+             column='calc_value', cartogram=True,
+             show_legend=False,
+             subplot_spec=right_subplot)
+
 plt.show()
-    
-for supplier in ['EMIS', 'TPP', 'Microtest', 'Vision']:
-    plt = charts.deciles_chart(
+
+# + {"scrolled": false}
+
+
+plt.figure(figsize=(20,30))
+layout = gridspec.GridSpec(8, 4)
+for i, supplier in enumerate(['EMIS', 'TPP', 'Microtest', 'Vision']):
+    left_ax = plt.subplot(layout[i * 2, 0])
+    right_subplot = layout[(i * 2):(i * 2 + 2), 1]
+    #print("right subplot layout[%s]" % (2 - i % 2))
+    #print("left ax layout[%s:%s, 0]" % ((i * 2), (i * 2 + 2)))
+    #continue
+    charts.deciles_chart(
         df[df['supplier'] == supplier],
         period_column='month',
         column='calc_value',
         title="Diltiazem measure for {}".format(supplier),
         ylabel="proportion",
         show_outer_percentiles=True,
-        show_legend=True
+        show_legend=False,
+        ax=left_ax
     )
-    plt.show()
-# -
-
-df.rename(columns={'pct_id':'pct'}, inplace=True)  # The CCG column must be named 'pct' for the maps function
-
-by_pct = df.groupby('pct').sum().reset_index()
-by_pct['calc_value'] = by_pct['numerator'] / by_pct['denominator']
-by_supplier_and_pct = df.groupby(['supplier', 'pct']).sum().reset_index()
-by_supplier_and_pct['calc_value'] = by_supplier_and_pct['numerator'] / by_supplier_and_pct['denominator']
-
-# +
-from ebmdatalab import maps
-importlib.reload(maps)
-
-fig = maps.ccg_map(by_pct, title="Diltiazem measure (all suppliers)", column='calc_value', cartogram=True)
-
-# -
-
-for supplier in ['EMIS', 'TPP', 'Microtest']:
-    data = by_supplier_and_pct[by_supplier_and_pct['supplier'] == supplier]
-    plt = maps.ccg_map(data, title="Diltiazem measure ({})".format(supplier), column='calc_value', cartogram=True)
-    plt.show()
+    maps.ccg_map(
+        by_supplier_and_pct[by_supplier_and_pct['supplier'] == supplier], 
+        column='calc_value', 
+        show_legend=False,
+        cartogram=True, 
+        subplot_spec=right_subplot)
+plt.show()
