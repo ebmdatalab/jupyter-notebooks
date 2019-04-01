@@ -21,11 +21,15 @@ from ebmdatalab.bq import cached_read
 import matplotlib.pyplot as plt
 import pandas as pd
 
+# +
 vendors = pd.read_csv('vendors.csv')
 # Clean up the input data
 vendors['Principal Supplier'] = vendors['Principal Supplier'].str.strip()
 vendors.loc[vendors['Principal Supplier'] == 'INPS', 'Principal Supplier'] = 'Vision'  # seems they changed in 2017
 vendors = vendors.loc[vendors['Date'] > '2016-02-01']  # there is some dirty data ("Unknowns") before this
+
+start = pd.to_datetime('2016-01-01')
+end = pd.to_datetime('2018-12-01')
 
 # +
 from ebmdatalab import bq
@@ -83,7 +87,7 @@ plt.legend(loc='best')
 plt.title("diltiazem measure, mean values per supplier")
 
 df.rename(columns={'pct_id':'pct'}, inplace=True)  # The CCG column must be named 'pct' for the maps function
-by_pct = df.groupby('pct').sum().reset_index()
+by_pct = df[df['month'] == end].groupby('pct').sum().reset_index()
 by_pct['calc_value'] = by_pct['numerator'] / by_pct['denominator']
 by_supplier_and_pct = df.groupby(['supplier', 'pct']).sum().reset_index()
 by_supplier_and_pct['calc_value'] = by_supplier_and_pct['numerator'] / by_supplier_and_pct['denominator']
@@ -152,8 +156,10 @@ plt.show()
 
 # ## What do CCGs with a 50/50 emis/tpp split look like?
 
-by_pct_and_supplier = df.groupby(['pct', 'supplier']).count().reset_index()
-by_pct = df.groupby(['pct']).count().reset_index()
+single_month = df[df['month'] == end]
+
+by_pct_and_supplier = single_month.groupby(['pct', 'supplier']).count().reset_index()
+by_pct = single_month.groupby(['pct']).count().reset_index()
 
 # Create a list of CCGs in which between them TPP and EMIS roughly equally dominate the market
 both = by_pct_and_supplier.merge(by_pct, how='inner', left_on='pct', right_on='pct')
@@ -171,7 +177,21 @@ for key, rows in proportions.groupby('pct'):
         if emis > 0.4 and tpp > 0.4 and abs(emis - tpp) > fuzz:
             interesting_pcts.append(key)
 
-# + {"scrolled": false}
+qwe = pd.DataFrame(interesting_pcts)
+qwe['interesting'] = 100
+qwe.columns = ['pct', 'interesting']
+
+plt.figure(figsize=(6,4))
+qwe = pd.concat([qwe, pd.DataFrame([{'pct': '99P', 'interesting': 0}])])
+maps.ccg_map(
+        qwe, 
+        column='interesting', 
+        show_legend=False,
+        title='Locations of 50/50 CCGs',
+        cartogram=True)
+plt.show()
+
+# + {"scrolled": true}
 # Plot them side-by-side
 for ccg in interesting_pcts:
     plt.figure(figsize=(12,8))
@@ -188,8 +208,3 @@ for ccg in interesting_pcts:
             ax=plt.subplot(layout[cell])
         )
     plt.show()
-# -
-
-by_pct['calc_value'] = by_pct['numerator'] / by_pct['denominator']
-by_supplier_and_pct = df.groupby(['supplier', 'pct']).sum().reset_index()
-by_supplier_and_pct['calc_value'] = by_supplier_and_pct['numerator'] / by_supplier_and_pct['denominator']
