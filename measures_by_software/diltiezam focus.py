@@ -148,3 +148,48 @@ for i, supplier in enumerate(['EMIS', 'TPP', 'Microtest', 'Vision']):
         cartogram=True, 
         subplot_spec=right_subplot)
 plt.show()
+# -
+
+# ## What do CCGs with a 50/50 emis/tpp split look like?
+
+by_pct_and_supplier = df.groupby(['pct', 'supplier']).count().reset_index()
+by_pct = df.groupby(['pct']).count().reset_index()
+
+# Create a list of CCGs in which between them TPP and EMIS roughly equally dominate the market
+both = by_pct_and_supplier.merge(by_pct, how='inner', left_on='pct', right_on='pct')
+both['proportion'] = both['practice_id_x'] / both['practice_id_y']
+proportions = both[['pct', 'supplier_x', 'proportion']]
+interesting_pcts = []
+for key, rows in proportions.groupby('pct'):
+    emis = tpp = None
+    for i, row in rows.iterrows():
+        if row['supplier_x'] == 'EMIS':
+            emis = row['proportion']
+        elif row['supplier_x'] == 'TPP':
+            tpp = row['proportion']
+    if emis is not None and tpp is not None:
+        if emis > 0.4 and tpp > 0.4 and abs(emis - tpp) > fuzz:
+            interesting_pcts.append(key)
+
+# + {"scrolled": false}
+# Plot them side-by-side
+for ccg in interesting_pcts:
+    plt.figure(figsize=(12,8))
+    layout = gridspec.GridSpec(2, 2)
+    for cell, supplier in enumerate(['TPP', 'EMIS']):
+        charts.deciles_chart(
+            df[(df['supplier'] == supplier) & (df['pct'] == ccg)],
+            period_column='month',
+            column='calc_value',
+            title="Diltiazem measure for {} ({})".format(ccg, supplier),
+            ylabel="proportion",
+            show_outer_percentiles=True,
+            show_legend=False,
+            ax=plt.subplot(layout[cell])
+        )
+    plt.show()
+# -
+
+by_pct['calc_value'] = by_pct['numerator'] / by_pct['denominator']
+by_supplier_and_pct = df.groupby(['supplier', 'pct']).sum().reset_index()
+by_supplier_and_pct['calc_value'] = by_supplier_and_pct['numerator'] / by_supplier_and_pct['denominator']
