@@ -29,6 +29,7 @@ vendors.loc[vendors['Principal Supplier'] == 'INPS', 'Principal Supplier'] = 'Vi
 vendors = vendors.loc[vendors['Date'] > '2016-02-01']  # there is some dirty data ("Unknowns") before this
 
 start = pd.to_datetime('2016-01-01')
+mid = pd.to_datetime('2017-01-01')
 end = pd.to_datetime('2018-12-01')
 
 # +
@@ -208,3 +209,111 @@ for ccg in interesting_pcts:
             ax=plt.subplot(layout[cell])
         )
     plt.show()
+# -
+
+# ## Finding practices that swap
+
+two_dates = vendors[(vendors.Date == '2017-01-01') | (vendors.Date == '2018-12-01')]
+
+two_dates.groupby(['ODS', 'Principal Supplier', 'Date'])['Principal Supplier'].count().head(20)
+
+changes = two_dates.groupby(
+    ['ODS', 'Principal Supplier', 'Date'])['Principal Supplier'].count().unstack().unstack()
+changes.head()
+
+change_dates = pd.DataFrame(vendors.groupby(['ODS', 'Principal Supplier'])['Date'].max()).groupby('ODS')['Date'].min()
+
+import numpy as np
+def from_vendor(df, vendor):
+    no_longer = df[(df['2017-01-01', vendor] == 1.0) & (df['2018-12-01', vendor] != 1.0)]
+    still = no_longer[~(np.isnan(no_longer['2018-12-01', 'EMIS'])&np.isnan(no_longer['2018-12-01', 'TPP'])&np.isnan(no_longer['2018-12-01', 'Vision']))]
+    vendors[vendors['ODS'] == ]
+    still['switch_date'] = # last date we see vendor for 
+    return still
+from_tpp = from_vendor(changes, 'TPP')
+from_emis = from_vendor(changes, 'EMIS')
+from_vision = from_vendor(changes, 'Vision')
+from_microtest = from_vendor(changes, 'Microtest')
+
+from_emis.head()
+
+from_emis.count()
+
+from_tpp.count()
+
+# Create two groups of equal size (should really match to population number too)
+tpp_to_emis = from_tpp[from_tpp['2018-12-01', 'EMIS'] == 1.0]
+emis_to_tpp = from_emis[from_emis['2018-12-01', 'TPP'] == 1.0].sample(n=32)
+
+to_emis_data = tpp_to_emis.reset_index().merge(df, how='inner', left_on='ODS', right_on='practice_id')
+to_tpp_data = emis_to_tpp.reset_index().merge(df, how='inner', left_on='ODS', right_on='practice_id')
+
+charts.deciles_chart(
+        to_emis_data,
+        period_column='month',
+        column='calc_value',
+        title="Diltiazem measure - switchers to EMIS only",
+        ylabel="proportion",
+        show_outer_percentiles=True,
+        show_legend=False
+    )
+plt.show()
+
+
+charts.deciles_chart(
+        to_tpp_data,
+        period_column='month',
+        column='calc_value',
+        title="Diltiazem measure - switchers to TPP only",
+        ylabel="proportion",
+        show_outer_percentiles=True,
+        show_legend=False
+    )
+plt.show()
+
+
+to_tpp_data[to_tpp_data['month'] == start]['calc_value'].describe()
+
+to_tpp_data[to_tpp_data['month'] == end]['calc_value'].describe()
+
+to_emis_data[to_emis_data['month'] == start]['calc_value'].describe()
+
+to_emis_data[to_emis_data['month'] == end]['calc_value'].describe()
+
+change_dates['A81001']
+
+# + {"scrolled": false}
+print ("Switchers to TPP")
+for practice_id in to_tpp_data.practice_id.unique():
+    _, ax = plt.subplots()
+    charts.deciles_chart(
+        to_tpp_data,
+        period_column='month',
+        column='calc_value',
+        title="Diltiazem measure - {}".format(practice_id),
+        ylabel="proportion",
+        show_outer_percentiles=True,
+        ax=ax)
+    
+    practice_data = to_tpp_data[to_tpp_data['practice_id'] == practice_id]
+    plt.plot(practice_data['month'], practice_data['calc_value'], 'r-')
+    ax.axvline(pd.to_datetime(change_dates[practice_id]), color='g', linestyle='--', lw=2)
+
+
+# + {"scrolled": false}
+print ("Switchers to EMIS")
+for practice_id in to_emis_data.practice_id.unique():
+    _, ax = plt.subplots()
+    charts.deciles_chart(
+        to_emis_data,
+        period_column='month',
+        column='calc_value',
+        title="Diltiazem measure - {}".format(practice_id),
+        ylabel="proportion",
+        show_outer_percentiles=True,
+        ax=ax)
+    
+    practice_data = to_tpp_data[to_tpp_data['practice_id'] == practice_id]
+    plt.plot(practice_data['month'], practice_data['calc_value'], 'r-')
+    ax.axvline(pd.to_datetime(change_dates[practice_id]), color='g', linestyle='--', lw=2)
+
