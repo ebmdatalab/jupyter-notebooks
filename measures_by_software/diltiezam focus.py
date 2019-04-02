@@ -175,7 +175,7 @@ for key, rows in proportions.groupby('pct'):
         elif row['supplier_x'] == 'TPP':
             tpp = row['proportion']
     if emis is not None and tpp is not None:
-        if emis > 0.4 and tpp > 0.4 and abs(emis - tpp) > fuzz:
+        if emis > 0.4 and tpp > 0.4 and abs(emis - tpp) > 0.06:
             interesting_pcts.append(key)
 
 qwe = pd.DataFrame(interesting_pcts)
@@ -192,19 +192,20 @@ maps.ccg_map(
         cartogram=True)
 plt.show()
 
-# + {"scrolled": true}
+# + {"scrolled": false}
 # Plot them side-by-side
 for ccg in interesting_pcts:
     plt.figure(figsize=(12,8))
     layout = gridspec.GridSpec(2, 2)
     for cell, supplier in enumerate(['TPP', 'EMIS']):
+        data = df[(df['supplier'] == supplier) & (df['pct'] == ccg)]
         charts.deciles_chart(
-            df[(df['supplier'] == supplier) & (df['pct'] == ccg)],
+            data,
             period_column='month',
             column='calc_value',
-            title="Diltiazem measure for {} ({})".format(ccg, supplier),
+            title="Diltiazem measure for {} ({}, n={})".format(ccg, supplier, data.practice_id.count()),
             ylabel="proportion",
-            show_outer_percentiles=True,
+            show_outer_percentiles=False,
             show_legend=False,
             ax=plt.subplot(layout[cell])
         )
@@ -243,34 +244,10 @@ from_tpp.count()
 
 # Create two groups of equal size (should really match to population number too)
 tpp_to_emis = from_tpp[from_tpp['2018-12-01', 'EMIS'] == 1.0]
-emis_to_tpp = from_emis[from_emis['2018-12-01', 'TPP'] == 1.0].sample(n=32)
+emis_to_tpp = from_emis[from_emis['2018-12-01', 'TPP'] == 1.0]
 
 to_emis_data = tpp_to_emis.reset_index().merge(df, how='inner', left_on='ODS', right_on='practice_id')
 to_tpp_data = emis_to_tpp.reset_index().merge(df, how='inner', left_on='ODS', right_on='practice_id')
-
-charts.deciles_chart(
-        to_emis_data,
-        period_column='month',
-        column='calc_value',
-        title="Diltiazem measure - switchers to EMIS only",
-        ylabel="proportion",
-        show_outer_percentiles=True,
-        show_legend=False
-    )
-plt.show()
-
-
-charts.deciles_chart(
-        to_tpp_data,
-        period_column='month',
-        column='calc_value',
-        title="Diltiazem measure - switchers to TPP only",
-        ylabel="proportion",
-        show_outer_percentiles=True,
-        show_legend=False
-    )
-plt.show()
-
 
 to_tpp_data[to_tpp_data['month'] == start]['calc_value'].describe()
 
@@ -279,8 +256,6 @@ to_tpp_data[to_tpp_data['month'] == end]['calc_value'].describe()
 to_emis_data[to_emis_data['month'] == start]['calc_value'].describe()
 
 to_emis_data[to_emis_data['month'] == end]['calc_value'].describe()
-
-change_dates['A81001']
 
 # + {"scrolled": false}
 print ("Switchers to TPP")
@@ -292,7 +267,7 @@ for practice_id in to_tpp_data.practice_id.unique():
         column='calc_value',
         title="Diltiazem measure - {}".format(practice_id),
         ylabel="proportion",
-        show_outer_percentiles=True,
+        show_outer_percentiles=False,
         ax=ax)
     
     practice_data = to_tpp_data[to_tpp_data['practice_id'] == practice_id]
@@ -310,10 +285,10 @@ for practice_id in to_emis_data.practice_id.unique():
         column='calc_value',
         title="Diltiazem measure - {}".format(practice_id),
         ylabel="proportion",
-        show_outer_percentiles=True,
+        show_outer_percentiles=False,
         ax=ax)
     
-    practice_data = to_tpp_data[to_tpp_data['practice_id'] == practice_id]
+    practice_data = to_emis_data[to_emis_data['practice_id'] == practice_id]
     plt.plot(practice_data['month'], practice_data['calc_value'], 'r-')
     ax.axvline(pd.to_datetime(change_dates[practice_id]), color='g', linestyle='--', lw=2)
 
