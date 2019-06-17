@@ -1,0 +1,187 @@
+bnf_code,bnf_name,form_route,total_items,total_cost,total_qty
+0302000V0BCAAA0,Trelegy Ellipta_Inha 92/55/22mcg (30 D),powderinhalation.inhalation,121434,5612027.069369963,135708
+0302000K0AAAUAU,Budesonide/Formoterol_InhaB/A 400/12(60D,powderinhalation.inhalation,16690,621346.5983600008,23878
+0302000N0BDACBL,Flutiform_Inha 50/5mcg (120 D),pressurizedinhalation.inhalation,14098,234523.7849000024,17518
+0301011U0BBAFAH,Serevent_Evohaler 25mcg (120 D),pressurizedinhalation.inhalation,5153,172624.9164199993,6348
+0302000N0AABFBF,Fluticasone/Salmeterol_Inh 125/25mcg120D,pressurizedinhalation.inhalation,26752,735811.9124399947,33760
+0301040V0AAAAAA,Aclid/Formot_PdrFor Inh 396/11.8mcg(60D),powderinhalation.inhalation,3000,102273.18231999979,3386
+0302000K0BBAHAG,Pulmicort_Turbohaler 200mcg (100 D),powderinhalation.inhalation,5921,100102.4381600003,7556
+0302000V0AAABAB,Fluticasone/Vilanterol_Inha 92/22mcg 30D,powderinhalation.inhalation,14894,358559.0369799994,17534
+0302000C0AAABAB,Beclomet Diprop_Inha 100mcg (200D),pressurizedinhalation.inhalation,11,51.116809999999994,11
+0302000N0AABGBG,Fluticasone/Salmeterol_Inh 250/25mcg120D,pressurizedinhalation.inhalation,26670,899005.5642799927,32992
+0302000N0BCABAY,Seretide 250_Accuhaler 250mcg/50mcg(60D),powderinhalation.inhalation,45040,1939514.5805200115,59630
+0301011U0AAAAAA,Salmeterol_Pdr For Inh 50mcg Disk + Dev,powderinhalation.inhalation,1,32.63159,15
+0301020I0AAAAAA,Ipratrop Brom_Inha 20mcg (200 D),pressurizedinhalation.inhalation,1,5.17796,1
+0301011E0AAADAD,Formoterol Fumar_Inh 12mcg (100D) CFF,pressurizedinhalation.inhalation,1951,60932.73238999998,2181
+0301020R0BBAAAA,Eklira_Inh 322mcg (60D) (Genuair),powderinhalation.inhalation,20288,687600.3506499974,22765
+0302000N0BJAABF,Aloflute_Inh 125mcg/25mcg (120D),pressurizedinhalation.inhalation,224,5884.469479999996,282
+0302000K0AAALAL,Budesonide/Formoterol_InhaB/A 100/6(120D,powderinhalation.inhalation,10360,338505.3962599961,13008
+0302000N0AABHBH,Fluticasone Prop_Inha 50mcg (120 D) CFF,pressurizedinhalation.inhalation,4724,35357.687429999816,5819
+0301011U0BGAAAH,Soltel_Inha 25mcg (120D) CFF,pressurizedinhalation.inhalation,2246,53907.78021999998,2907
+0302000N0BCACAZ,Seretide 500_Accuhaler 500mcg/50mcg(60D),powderinhalation.inhalation,78050,2849142.0385999754,93622
+0302000K0BBAKAK,Pulmicort_Turbohaler 100mcg (200 D),powderinhalation.inhalation,2117,33109.16134000006,2499
+0301011R0BEAIAP,Ventolin_Evohaler 100mcg (200 D),pressurizedinhalation.inhalation,514195,978806.0462499919,697902
+0302000N0BCADBE,Seretide 50_Evohaler 50mcg/25mcg (120 D),pressurizedinhalation.inhalation,55366,1165231.248779998,69640
+0302000R0AAAAAA,Mometasone Fur_Pdr For Inh 200mcg (30 D),powderinhalation.inhalation,53,1182.0892199999998,81
+0302000C0BPAABE,Clenil Modulite_Inha 50mcg (200D),pressurizedinhalation.inhalation,68616,269618.65422999975,78199
+0301020R0AAAAAA,Aclidinium Brom_Pdr For Inh 375mcg (60D),powderinhalation.inhalation,6262,213818.53070999886,7079
+0302000C0BPACBV,Clenil Modulite_Inha 200mcg (200D),pressurizedinhalation.inhalation,54458,975626.9683099971,64900
+0302000C0BJAFBH,Qvar 100 E-Breathe_Inha 100mcg (200 D),pressurizedinhalation.inhalation,9017,165958.52032000074,10532
+0301011E0BCABAC,Oxis 12_Turbohaler 12mcg (60 D),powderinhalation.inhalation,1389,44023.21389999984,1910
+0302000N0AABCBC,Fluticasone Prop_Inha 250mcg (120 D) CFF,pressurizedinhalation.inhalation,3976,175514.66262999925,5226
+0302000V0BBABAB,Relvar Ellipta_Inha 92mcg/22mcg (30 D),powderinhalation.inhalation,116876,2821144.3437798936,137958
+0301011V0BBAMAL,Bricanyl_Turbohaler 500mcg (100 D),powderinhalation.inhalation,5,38.61785,5
+0301020I0BIAAAN,Inhalvent_Inha 20mcg (200D),pressurizedinhalation.inhalation,5,25.877399999999998,5
+0301011E0AAACAC,Formoterol Fumar_Pdr For Inh 12mcg(60 D),powderinhalation.inhalation,1051,29271.147370000028,1270
+0302000C0AABZBZ,Beclomet/Formoterol_Inh 200/6 (120D) CFF,pressurizedinhalation.inhalation,4332,138048.2626400006,5066
+0302000N0AAAZAZ,Fluticasone/Salmeterol_Inh 500/50mcg 60D,powderinhalation.inhalation,20972,773275.5824599988,25414
+0302000R0BBACAC,Asmanex Twisthaler_D/P Inh 400mcg (30 D),powderinhalation.inhalation,21,566.82407,28
+0301011R0AAAFAF,Salbutamol_Pdr For Inh 95mcg (200 D),powderinhalation.inhalation,7,57.77194,7
+0301040W0BBAAAA,Anoro Ellipta_Inha 55mcg/22mcg (30D),powderinhalation.inhalation,94666,3255343.54044,107776
+0301011R0BZAAAP,AirSalb_Inha 100mcg (200 D) CFF,pressurizedinhalation.inhalation,7,11.235500000000002,8
+0301011U0BEAAAH,Neovent_Inha 25mcg (120 D) CFF,pressurizedinhalation.inhalation,71,2365.8192299999996,87
+0301011E0AAAAAA,Formoterol Fumar_Pdr Inh Cap 12mcg +Dev,powderinhalation.inhalation,392,11892.230580000003,27360
+0302000N0AABLBL,Fluticasone/Formoterol_Inh 50/5mcg 120 D,pressurizedinhalation.inhalation,3898,61289.71667999968,4578
+0302000C0BQABBZ,Fostair_Inh 200mcg/6mcg (120D) CFF,pressurizedinhalation.inhalation,124276,3928685.0729800025,144172
+0301011Z0AAAAAA,Olodaterol_Inha 2.5mcg (60D) CFF + Dev,pressurizedinhalation.inhalation,70,1983.75103,81
+0302000K0BHAAAM,DuoResp Spiromax_Inh 160mcg/4.5mcg(120D),powderinhalation.inhalation,98332,3075321.4111800906,118300
+0301020Q0BBABAB,Spiriva_Pdr For Inh Cap 18mcg,powderinhalation.inhalation,20073,763567.9233500042,735750
+0301020Q0BBACAC,Spiriva Respimat_Inha 2.5mcg (60D) + Dev,pressurizedinhalation.inhalation,54397,1321191.5481099982,61798
+0301011V0AAALAL,Terbut Sulf_B/A Inha 500mcg (100 D),powderinhalation.inhalation,6,54.04019,7
+0301020S0BBAAAA,Seebri_Breezhaler Inh Cap 55mcg + Dev,powderinhalation.inhalation,32624,943768.6851200042,1107640
+0302000N0BHAAAZ,Aerivio Spiromax_Inh 500/50mcg (60D),powderinhalation.inhalation,2624,87405.27239999996,3138
+0301040X0AAAAAA,Tiotropium/Olodaterol_Inha2.5/2.5mcg 60D,pressurizedinhalation.inhalation,2609,85812.71111000016,2841
+0302000C0BIAEBJ,Asmabec Clickhaler_D/P Inh 100mcg(200 D),powderinhalation.inhalation,1,18.2405,2
+0302000N0BCAFBG,Seretide 250_Evohaler 250mcg/25mcg(120D),pressurizedinhalation.inhalation,71846,2421714.882259993,88872
+0301011E0BDAAAD,Atimos Modulite_Inh 12mcg (100D),pressurizedinhalation.inhalation,1121,35591.412820000056,1274
+0301011X0BBABAB,Onbrez Breezhaler_Pdr Inh Cap 300mcg+Dev,powderinhalation.inhalation,112,3739.5077,3750
+0302000K0BFABAC,Budelin Novolizer_Inh 200mcg 100D Ref,powderinhalation.inhalation,51,588.65738,66
+0301011U0AAAEAE,Salmeterol_Pdr For Inh 50mcg (60 D),powderinhalation.inhalation,3255,142291.09642000005,4361
+0302000C0AAATAT,Beclomet Diprop_Inha B/A 100mcg (200 D),pressurizedinhalation.inhalation,2,47.73187,3
+0302000C0AABYBY,Beclomet/Formoterol_Inh 100/6 (120D) Dry,powderinhalation.inhalation,4516,141810.2034600008,5204
+0302000N0AAATAT,Fluticasone Prop_Pdr For Inh 250mcg(60D),powderinhalation.inhalation,862,28663.609359999973,1209
+0301011ABBBAAA0,Trimbow_Inh 87mcg/5mcg/9mcg (120 D),pressurizedinhalation.inhalation,132876,5937329.850809862,143574
+0302000N0BIABBG,Sereflo_Inh 250mcg/25mcg (120D),pressurizedinhalation.inhalation,9622,215099.4941999999,11576
+0301040V0BBAAAA,Duaklir Genuair_340mcg/12mcg (60D),powderinhalation.inhalation,27844,950652.5742599948,31474
+0302000K0BDABAM,Symbicort_Turbohaler 200mcg/6mcg (120 D),powderinhalation.inhalation,186652,6366461.043000107,244654
+0302000N0AAAUAU,Fluticasone Prop_Pdr For Inh 500mcg(60D),powderinhalation.inhalation,403,23818.053189999984,591
+0302000C0BFABAB,Beclazone 100_Inha 100mcg (200 D),pressurizedinhalation.inhalation,3,29.46972,4
+0302000K0BGABAX,Easyhaler_Budesonide 200mcg (200 D),powderinhalation.inhalation,1552,28252.948119999972,1716
+0302000U0AAAAAA,Ciclesonide_Inh 80mcg (120 D) CFF,pressurizedinhalation.inhalation,583,20655.818320000006,677
+0302000C0BRAABY,Fostair NEXThaler_Inh 100mcg/6mcg (120D),powderinhalation.inhalation,78142,2470086.8584200456,90646
+0302000C0BJADBH,Qvar 100_Autohaler 100mcg (200 D),pressurizedinhalation.inhalation,5772,109849.20688000007,6866
+0302000C0BPADBW,Clenil Modulite_Inha 250mcg (200D),pressurizedinhalation.inhalation,8558,160251.43790000086,10582
+0301011X0AAABAB,Indacaterol Mal_Pdr Inh Cap 300mcg + Dev,powderinhalation.inhalation,158,5594.345580000001,5610
+0302000N0BGAAAZ,AirFluSal Forspiro_Inh 500/50mcg (60D),powderinhalation.inhalation,11538,371295.2499399992,13330
+0301011R0BMABBU,Airomir_Autohaler 100mcg (200 D) CFF,pressurizedinhalation.inhalation,5974,41211.07040999988,7356
+0301011E0BEAAAE,Formoterol Easyhaler_12mcg (120 D),powderinhalation.inhalation,3632,85588.83505000029,3877
+0302000N0AAARAR,Fluticasone Prop_Pdr For Inh 50mcg (60D),powderinhalation.inhalation,312,1627.62439,437
+0302000U0BBAAAA,Alvesco 80_Inh 80mcg (120 D) CFF,pressurizedinhalation.inhalation,206,7048.010729999998,231
+0302000V0BBAAAA,Relvar Ellipta_Inha 184mcg/22mcg (30 D),powderinhalation.inhalation,34004,1097678.1530199929,40036
+0302000R0BBAAAA,Asmanex Twisthaler_D/P Inh 200mcg (30 D),powderinhalation.inhalation,32,569.2211199999999,39
+0302000K0BIABBC,Fobumix_Easyhaler 160mcg/4.5mcg (60 D),powderinhalation.inhalation,922,18762.512500000004,1188
+0301011R0BEAHAQ,Ventolin_Accuhaler 200mcg (60 D),powderinhalation.inhalation,21413,102492.11961999949,30569
+0302000N0BFABBG,Sirdupla_Inh 250mcg/25mcg (120D),pressurizedinhalation.inhalation,49646,1560776.7735599875,59296
+0301020T0AAAAAA,Umeclidinium Brom_Inh 65mcg (30D),powderinhalation.inhalation,4458,128667.17982000037,5034
+0302000C0AABGBG,Beclomet Diprop_Inha B/A 50mcg(200 D)CFF,pressurizedinhalation.inhalation,100,900.31003,123
+0301020I0AAANAN,Ipratrop Brom_Inha 20mcg (200 D) CFF,pressurizedinhalation.inhalation,20725,131234.3199400008,25358
+0303010Q0BBALAN,Intal_Inha 5mg (112 D) CFF,pressurizedinhalation.inhalation,198,4889.531850000001,287
+0301011R0BMAAAP,Airomir_Inha 100mcg (200 D),pressurizedinhalation.inhalation,1136,2770.058000000002,1506
+0301020Q0AAACAC,Tiotropium_Inha 2.5mcg (60D) CFF + Dev,pressurizedinhalation.inhalation,27642,669577.8025099984,31320
+0301011R0BXABCC,Salbulin Novolizer_Inh 100mcg (200D) Ref,powderinhalation.inhalation,37,125.57489999999999,49
+0302000C0AABWBW,Beclomet Diprop_Inha 250mcg (200 D) CFF,pressurizedinhalation.inhalation,137,2604.6311700000006,172
+0302000R0AAACAC,Mometasone Fur_Pdr For Inh 400mcg (30 D),powderinhalation.inhalation,41,1012.2141900000001,50
+0302000N0AABEBE,Fluticasone/Salmeterol_Inh 50/25mcg 120D,pressurizedinhalation.inhalation,19326,410541.58034000196,24536
+0301011U0BFAAAH,Vertine_Inha 25mcg (120 D) CFF,pressurizedinhalation.inhalation,51,1391.85152,64
+0301040Y0AAAAAA,Indacaterol/Glycopy_Pdr Inh Cap 85/54mcg,powderinhalation.inhalation,3532,117336.28551999966,116540
+0302000K0BDACAU,Symbicort_Turbohaler 400mcg/12mcg (60 D),powderinhalation.inhalation,84420,3192118.15631993,122672
+0301020S0AAAAAA,Glycopyrronium Brom_Inh Cap 55mcg + Dev,powderinhalation.inhalation,5801,171144.61931000062,200880
+0301040X0BBAAAA,Spiolto Respimat_Inha2.5/2.5mcg(60D)+Dev,pressurizedinhalation.inhalation,15129,509824.94747,16879
+0302000U0AAABAB,Ciclesonide_Inh 160mcg (120 D) CFF,pressurizedinhalation.inhalation,1002,42080.92800999994,1175
+0301020Q0AAADAD,Tiotropium_Pdr For Inh Cap 10mcg + Dev,powderinhalation.inhalation,4731,125151.37201999883,156570
+0302000N0BIAABF,Sereflo_Inh 125mcg/25mcg (120D),pressurizedinhalation.inhalation,9744,168037.93527999966,12058
+0301020Q0BCAAAD,Braltus_Pdr For Inh Cap 10mcg+Zonda Inh,powderinhalation.inhalation,136261,3754827.4130799584,4697460
+0302000C0BJABBF,Qvar 100_Inha 100mcg (200 D),pressurizedinhalation.inhalation,45024,849040.7735299871,53069
+0302000C0BRABCA,Fostair NEXThaler_Inh 200mcg/6mcg (120D),powderinhalation.inhalation,27194,858974.0024799985,31522
+0301011R0AAAPAP,Salbutamol_Inha 100mcg (200 D) CFF,pressurizedinhalation.inhalation,1033226,1831023.9952800006,1305258
+0302000C0AABUBU,Beclomet Diprop_Pdr For Inh 200mcg(200D),powderinhalation.inhalation,153,2373.79502,171
+0302000N0BJABBG,Aloflute_Inh 250mcg/25mcg (120D),pressurizedinhalation.inhalation,242,7580.5123200000035,288
+0302000K0AAAGAG,Budesonide_Pdr For Inh 200mcg (100 D),powderinhalation.inhalation,4341,77843.30856000049,5876
+0302000K0BHABAU,DuoResp Spiromax_Inh 320mcg/9mcg (60 D),powderinhalation.inhalation,67694,2282979.2339800773,87822
+0302000K0AAAVAV,Budesonide_Pdr For Inh 200mcg (100D)+Dev,powderinhalation.inhalation,116,1906.6115299999994,138
+0302000C0BPABBF,Clenil Modulite_Inha 100mcg (200D),pressurizedinhalation.inhalation,249745,2035601.569119996,294863
+0302000C0AABEBE,Beclomet Diprop_Inha 50mcg (200 D) CFF,pressurizedinhalation.inhalation,2936,12152.925120000047,3524
+0301020Q0AAABAB,Tiotropium_Pdr For Inh Cap 18mcg,powderinhalation.inhalation,57231,2166479.1206099736,2087600
+0302000K0AAAMAM,Budesonide/Formoterol_InhaB/A 200/6(120D,powderinhalation.inhalation,33654,1148001.842299997,44116
+0302000K0AAAKAK,Budesonide_Pdr For Inh 100mcg (200 D),powderinhalation.inhalation,1510,23675.95701999998,1787
+0302000N0BBATAT,Flixotide_Accuhaler 250mcg (60 D),powderinhalation.inhalation,802,25913.38952,1093
+0302000N0BBAZBC,Flixotide_Evohaler 250mcg (120 D),pressurizedinhalation.inhalation,1426,60251.29484999994,1794
+0302000K0BIAAAU,Fobumix_Easyhaler 320mcg/9mcg (60 D),powderinhalation.inhalation,1724,47959.49463999993,2400
+0302000C0AABVBV,Beclomet Diprop_Inha 200mcg (200 D) CFF,pressurizedinhalation.inhalation,460,8688.650819999995,578
+0302000K0BGAAAK,Easyhaler_Budesonide 100mcg (200 D),powderinhalation.inhalation,2276,21091.05907000003,2559
+0301011X0AAAAAA,Indacaterol Mal_Pdr Inh Cap 150mcg + Dev,powderinhalation.inhalation,864,30335.122360000023,30420
+0302000K0BFAAAV,Budelin Novolizer_Inh 200mcg (100 D),powderinhalation.inhalation,51,815.08672,59
+0302000K0AAAWAW,Budesonide_Pdr For Inh 200mcg (100D) Ref,powderinhalation.inhalation,101,1034.7230799999998,116
+0302000N0BBBBBH,Flixotide_Evohaler 50mcg (120 D),pressurizedinhalation.inhalation,2027,14929.09418000003,2457
+0301011R0BXAACB,Salbulin Novolizer_Inh 100mcg (200D)+Dev,powderinhalation.inhalation,88,483.9435900000002,105
+0302000K0BDAAAL,Symbicort_Turbohaler 100mcg/6mcg (120 D),powderinhalation.inhalation,42540,1388417.5950600062,53354
+0301011E0BBAAAA,Foradil_Inh Cap 12mcg + Inha,powderinhalation.inhalation,78,3103.1562400000003,7140
+0302000C0AABXBX,Beclomet Diprop/Formoterol_Inh100/6(120D,pressurizedinhalation.inhalation,39386,1301596.919179994,47766
+0307000R0BBAAAA,Bronchitol_Pdr Inh Cap 40mg + 2 Dev,powderinhalation.inhalation,1,215.23771,280
+0302000C0BCAQAR,Becotide 200_Inha 200mcg (200 D),pressurizedinhalation.inhalation,1,15.13745,2
+0302000V0AAAAAA,Fluticasone/Vilanterol_Inha 184/22mcg30D,powderinhalation.inhalation,4810,154963.12430000032,5652
+0302000N0BGABBF,AirFluSal_Inh 125mcg/25mcg (120D),pressurizedinhalation.inhalation,8292,178263.7166999997,10366
+0301020I0BBAJAN,Atrovent_Inha 20mcg (200 D) CFF,pressurizedinhalation.inhalation,4057,25889.921710000097,5003
+0302000C0AACACA,Beclomet/Formoterol_Inh 200/6 (120D) Dry,powderinhalation.inhalation,2938,92487.29914000034,3394
+0301040W0AAAAAA,Umeclidinium/Vilanterol_Inha 65/22mcg30D,powderinhalation.inhalation,7732,265802.0899600006,8800
+0302000K0AABBBB,Budesonide/Formoterol_Inha200/6(120D)CFF,pressurizedinhalation.inhalation,3026,91811.8836,3528
+0301011R0AABUBU,Salbutamol_Inha B/A 100mcg (200 D) CFF,pressurizedinhalation.inhalation,65340,468638.4983399986,79930
+0301020T0BBAAAA,Incruse Ellipta_Inh 55mcg (30D),powderinhalation.inhalation,48093,1396288.7717500175,54629
+0302000K0BBAIAH,Pulmicort_Turbohaler 400mcg (50 D),powderinhalation.inhalation,2019,41726.42540000015,3150
+0303010Q0AAANAN,Sod Cromoglicate_Inha 5mg (112D) CFF,pressurizedinhalation.inhalation,440,11125.494149999999,653
+0302000N0AAAYAY,Fluticasone/Salmeterol_Inh 250/50mcg 60D,powderinhalation.inhalation,11956,527697.4273400024,16224
+0302000C0AAACAC,Beclomet Diprop_Inha 250mcg (200D),pressurizedinhalation.inhalation,1,15.14674,1
+0301020Q0AAAAAA,Tiotropium_Pdr For Inh Cap 18mcg + Dev,powderinhalation.inhalation,13753,506906.8875199958,469230
+0301011R0BIAGBU,Salamol E-Breathe_Inh 100mcg (200 D) CFF,pressurizedinhalation.inhalation,31806,233772.02917000142,39877
+0302000K0BDADBB,Symbicort_Inh Pressurised 200/6mcg(120D),pressurizedinhalation.inhalation,9414,292815.38709999714,11252
+0302000N0AABJBJ,Fluticasone/Formoterol_Inh 125/5mcg 120D,pressurizedinhalation.inhalation,12070,367240.30051999894,14112
+0301011E0AAABAB,Formoterol Fumar_Pdr For Inh 6mcg (60 D),powderinhalation.inhalation,577,18623.70728000003,808
+0302000C0BNAABU,Easyhaler_Beclomet 200mcg (200 D),powderinhalation.inhalation,2631,41144.159120000084,2964
+0302000N0BGACBG,AirFluSal_Inh 250mcg/25mcg (120D),pressurizedinhalation.inhalation,8636,240851.01774000083,10386
+0301011R0AAAAAA,Salbutamol_Inha 100mcg (200 D),pressurizedinhalation.inhalation,40,83.68069,60
+0302000C0AABHBH,Beclomet Diprop_Inha B/A100mcg(200 D)CFF,pressurizedinhalation.inhalation,1063,20141.456270000017,1259
+0302000N0BBAXBA,Flixotide_Evohaler 125mcg (120 D),pressurizedinhalation.inhalation,1599,38573.33332000002,1952
+0301011E0BCAAAB,Oxis 6_Turbohaler 6mcg (60 D),powderinhalation.inhalation,470,15419.425690000022,669
+0301011R0BWAABZ,Easyhaler_Salbutamol Sulf 100mcg (200D),powderinhalation.inhalation,23278,82249.72029999986,26656
+0302000N0AAASAS,Fluticasone Prop_Pdr For Inh 100mcg(60D),powderinhalation.inhalation,1586,16778.535059999995,2255
+0302000N0BBASAS,Flixotide_Accuhaler 100mcg (60 D),powderinhalation.inhalation,1572,15997.705439999983,2150
+0301011Z0BBAAAA,Striverdi Respimat_Inha 2.5mcg (60D)+Dev,pressurizedinhalation.inhalation,139,3796.087910000002,155
+0302000K0AAAHAH,Budesonide_Pdr For Inh 400mcg (50 D),powderinhalation.inhalation,1458,33300.10884,2514
+0301011X0BBAAAA,Onbrez Breezhaler_Pdr Inh Cap 150mcg+Dev,powderinhalation.inhalation,653,22437.232200000024,22500
+0301011U0AAAHAH,Salmeterol_Inha 25mcg (120 D) CFF,pressurizedinhalation.inhalation,17346,576695.4385700021,21207
+0301040Y0BBAAAA,Ultibro Breezhaler_Pdr Inh Cap + Dev,powderinhalation.inhalation,40280,1356033.9416800116,1346840
+0302000C0BJACBG,Qvar 50_Autohaler 50mcg (200 D),pressurizedinhalation.inhalation,2435,21085.803329999988,2880
+0301011R0BWABCA,Easyhaler_Salbutamol Sulf 200mcg (200D),powderinhalation.inhalation,5040,36155.51008999994,5860
+0301011U0BBAEAE,Serevent_Accuhaler 50mcg (60 D),powderinhalation.inhalation,2001,85224.00780000005,2612
+0302000N0BCAAAX,Seretide 100_Accuhaler 100mcg/50mcg(60D),powderinhalation.inhalation,24436,540771.8005200028,32320
+0302000C0BJAEBG,Qvar 50 E-Breathe_Inha 50mcg (200 D),pressurizedinhalation.inhalation,5526,46768.7059000002,6495
+0302000K0BIADAL,Fobumix_Easyhaler 80mcg/4.5mcg (120 D),powderinhalation.inhalation,934,22542.329619999997,1128
+0301011U0AAACAC,Salmeterol_Inha 25mcg (120 D),pressurizedinhalation.inhalation,1,27.1966,1
+0302000N0AAAXAX,Fluticasone/Salmeterol_Inh 100/50mcg 60D,powderinhalation.inhalation,7170,161194.32230000163,9634
+0302000C0BFAGAR,Beclazone 200_Inha 200mcg (200 D),pressurizedinhalation.inhalation,2,46.08744,4
+0301011R0AABZBZ,Salbutamol_Pdr For Inh 100mcg (200 D),powderinhalation.inhalation,1143,4116.239190000002,1334
+0302000C0BJAABE,Qvar 50_Inha 50mcg (200 D),pressurizedinhalation.inhalation,24188,210081.6500199983,28695
+0302000N0AABABA,Fluticasone Prop_Inha 125mcg (120 D) CFF,pressurizedinhalation.inhalation,3982,99259.07869000056,5023
+0301020Q0BBAAAA,Spiriva_Pdr For Inh Cap 18mcg+HandiHaler,powderinhalation.inhalation,5311,196192.49186000015,181590
+0302000C0AABFBF,Beclomet Diprop_Inha 100mcg (200 D) CFF,pressurizedinhalation.inhalation,7322,58562.337189999984,8480
+0302000N0BBAUAU,Flixotide_Accuhaler 500mcg (60 D),powderinhalation.inhalation,444,23133.354369999983,574
+0302000U0BBACAC,Alvesco 160_Inh 160mcg (60 D) CFF,pressurizedinhalation.inhalation,363,7754.086689999993,432
+0302000N0BDAABJ,Flutiform_Inha 125/5mcg (120 D),pressurizedinhalation.inhalation,40484,1297077.4552199903,49844
+0302000C0BQAABX,Fostair_Inh 100mcg/6mcg (120D) CFF,pressurizedinhalation.inhalation,596388,19291588.401419785,707956
+0302000N0BFAABF,Sirdupla_Inh 125mcg/25mcg (120D),pressurizedinhalation.inhalation,46494,1196924.6957399952,57360
+0302000N0BBARAR,Flixotide_Accuhaler 50mcg (60 D),powderinhalation.inhalation,410,2063.47715,554
+0302000K0BGACAY,Easyhaler_Budesonide 400mcg (100 D),powderinhalation.inhalation,436,8544.463729999996,519
+0303010J0AAADAD,Nedocromil Sod_Inha 2mg (112 D) CFF,pressurizedinhalation.inhalation,134,6754.9260600000025,182
+0303010J0BBAFAD,Tilade_Inha 2mg (112 D) CFF,pressurizedinhalation.inhalation,53,2449.6385799999994,66
+0302000N0BCAEBF,Seretide 125_Evohaler 125mcg/25mcg(120D),pressurizedinhalation.inhalation,69590,1917419.848580007,87972
+0301011R0BIAFAP,Salamol_Inha 100mcg (200 D) CFF (Teva),pressurizedinhalation.inhalation,33264,56685.333169998965,41489
