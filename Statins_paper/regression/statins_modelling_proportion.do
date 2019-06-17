@@ -1,7 +1,7 @@
-cd "C:\Users\ajwalker\Documents\GitHub\jupyter-notebooks\Statins_paper"
+cd "C:\Users\ajwalker\Documents\GitHub\jupyter-notebooks\Statins_paper\regression"
 import delimited "regression_file.csv",clear
 
-gen prophighdose = proportion_lm_dose/100
+gen prophighdose = proportion_lm_dose_hp/100
 *gen add = ruc11cd + " " + ruc11
 
 summ,d
