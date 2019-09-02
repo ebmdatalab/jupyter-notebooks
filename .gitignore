@@ -7,3 +7,4 @@ antibiotics/ACHIEVEMENT_EXCEPTIONS.csv
 .ipynb_checkpoints
 .#
 *#
+*.tmp
