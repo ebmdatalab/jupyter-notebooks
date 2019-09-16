@@ -1,0 +1,44 @@
+id,vpiddt,vpidprev,vtm,invalid,nm,abbrevnm,basis,nmdt,nmprev,basis_prev,nmchange,combprod,pres_stat,sug_f,glu_f,pres_f,cfc_f,non_avail,non_availdt,df_ind,udfs,udfs_uom,unit_dose_uom,bnf_code
+8797911000001107,,,48603004,False,Warfarin 10mg/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAVAV
+8798011000001109,,,48603004,False,Warfarin 10mg/5ml oral suspension,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAVAV
+8798511000001101,,,48603004,False,Warfarin 3mg/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAMAM
+8798611000001102,,,48603004,False,Warfarin 3mg/5ml oral suspension,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAMAM
+8798711000001106,,,48603004,False,Warfarin 5mg/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAIAI
+8798811000001103,,,48603004,False,Warfarin 5mg/5ml oral suspension,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAIAI
+8798111000001105,,,48603004,False,Warfarin 1mg/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAANAN
+8798211000001104,,,48603004,False,Warfarin 1mg/5ml oral suspension,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAANAN
+8798311000001107,,,48603004,False,Warfarin 2mg/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAJAJ
+8798411000001100,,,48603004,False,Warfarin 2mg/5ml oral suspension,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAJAJ
+13016611000001102,,,48603004,False,Warfarin 1.5mg/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAARAR
+13016711000001106,,,48603004,False,Warfarin 100micrograms/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAATAT
+13016811000001103,,,48603004,False,Warfarin 2.5mg/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAUAU
+13016911000001108,,,48603004,False,Warfarin 25mg/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAKAK
+13017011000001107,,,48603004,False,Warfarin 4.16mg/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAPAP
+13017111000001108,,,48603004,False,Warfarin 4mg/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAWAW
+13017211000001102,,,48603004,False,Warfarin 500micrograms/5ml oral solution,,1,,,,,,1,False,False,False,False,,,2,,,,0208020V0AAAXAX
+18290011000001102,,,48603004,False,Warfarin 1mg/ml oral suspension sugar free,,1,,,,,,1,True,False,False,False,,,2,,,,0208020V0AABBBB
+34819111000001102,,,442539005,False,Rivaroxaban 15mg tablets and Rivaroxaban 20mg tablets,,7,,,,,1.0,1,False,False,False,False,,,3,,,,0208020Y0AAAEAE
+13532911000001104,,,13568411000001103,False,Dabigatran etexilate 75mg capsules,,1,,,,,,1,False,False,False,False,,,1,1,428641000.0,428641000.0,0208020X0AAAAAA
+13532811000001109,,,13568411000001103,False,Dabigatran etexilate 110mg capsules,,1,,,,,,1,False,False,False,False,,,1,1,428641000.0,428641000.0,0208020X0AAABAB
+19469811000001101,,,13568411000001103,False,Dabigatran etexilate 150mg capsules,,1,,,,,,1,False,False,False,False,,,1,1,428641000.0,428641000.0,0208020X0AAACAC
+32751311000001101,,,48603004,False,Warfarin 5mg capsules,,1,,,,,,1,False,False,False,False,,,1,1,428641000.0,428641000.0,0208020V0AABDBD
+32751211000001109,,,48603004,False,Warfarin 3mg capsules,,1,,,,,,1,False,False,False,False,,,1,1,428641000.0,428641000.0,0208020V0AABCBC
+32751111000001103,,,48603004,False,Warfarin 1mg capsules,,1,,,,,,1,False,False,False,False,,,1,1,428641000.0,428641000.0,0208020V0AABABA
+319734006,,,48603004,False,Warfarin 3mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020V0AAABAB
+319733000,,,48603004,False,Warfarin 1mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020V0AAAAAA
+319735007,,,48603004,False,Warfarin 5mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020V0AAADAD
+319736008,,,48603004,False,Warfarin 500microgram tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020V0AAASAS
+319745009,,,47527007,False,Phenindione 10mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020N0AAAAAA
+319746005,,,47527007,False,Phenindione 25mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020N0AAABAB
+319747001,,,47527007,False,Phenindione 50mg tablets,,1,,,,,,1,False,False,False,False,1.0,2019-04-05,1,1,428673006.0,428673006.0,0208020N0AAACAC
+14254711000001104,,,442539005,False,Rivaroxaban 10mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020Y0AAAAAA
+375374009,,,48603004,False,Warfarin 4mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020V0AAACAC
+703907006,2015-04-02,1.9524611000001104e+16,703906002,False,Apixaban 2.5mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020Z0AAAAAA
+19842111000001101,,,442539005,False,Rivaroxaban 15mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020Y0AAABAB
+19842211000001107,,,442539005,False,Rivaroxaban 20mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020Y0AAACAC
+703908001,2015-04-02,2.1681211000001108e+16,703906002,False,Apixaban 5mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020Z0AAABAB
+27810711000001104,,,442539005,False,Rivaroxaban 2.5mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020Y0AAADAD
+29903211000001100,,,714687009,False,Edoxaban 15mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020AAAAAAAA
+29903311000001108,,,714687009,False,Edoxaban 30mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020AAAAABAB
+29903411000001101,,,714687009,False,Edoxaban 60mg tablets,,1,,,,,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020AAAAACAC
+319740004,,,79356008,False,Acenocoumarol 1mg tablets,,1,2003-12-01,Nicoumalone 1mg tablets,2.0,3.0,,1,False,False,False,False,,,1,1,428673006.0,428673006.0,0208020H0AAAAAA

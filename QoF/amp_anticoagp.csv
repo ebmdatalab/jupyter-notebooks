@@ -1,0 +1,129 @@
+id,invalid,vmp,nm,abbrevnm,descr,nmdt,nm_prev,supp,lic_auth,lic_auth_prev,lic_authchange,lic_authchangedt,combprod,flavour,ema,parallel_import,avail_restrict,bnf_code
+29902111000001100,False,29903211000001100,Lixiana 15mg tablets,,Lixiana 15mg tablets (Daiichi Sankyo UK Ltd),,,2081301000001107,1,,,,,,True,False,1,0208020AABBAAAA
+29902411000001105,False,29903311000001108,Lixiana 30mg tablets,,Lixiana 30mg tablets (Daiichi Sankyo UK Ltd),,,2081301000001107,1,,,,,,True,False,1,0208020AABBABAB
+29902711000001104,False,29903411000001101,Lixiana 60mg tablets,,Lixiana 60mg tablets (Daiichi Sankyo UK Ltd),,,2081301000001107,1,,,,,,True,False,1,0208020AABBACAC
+738511000001103,False,319740004,Sinthrome 1mg tablets,,Sinthrome 1mg tablets (Merus Labs Luxco II S.a R.L.),,,22480511000001101,1,,,,,,False,False,1,0208020H0BBAAAA
+3781211000001108,False,319745009,Phenindione 10mg tablets,,Phenindione 10mg tablets (Advanz Pharma),,,24129411000001106,1,,,,,,False,False,1,0208020N0AAAAAA
+3781411000001107,False,319745009,Phenindione 10mg tablets,,Phenindione 10mg tablets (Alliance Healthcare (Distribution) Ltd),,,2089901000001107,1,,,,,,False,False,1,0208020N0AAAAAA
+3782311000001109,False,319746005,Phenindione 25mg tablets,,Phenindione 25mg tablets (Advanz Pharma),,,24129411000001106,1,,,,,,False,False,1,0208020N0AAABAB
+3782511000001103,False,319746005,Phenindione 25mg tablets,,Phenindione 25mg tablets (Alliance Healthcare (Distribution) Ltd),,,2089901000001107,1,,,,,,False,False,1,0208020N0AAABAB
+421411000001103,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (A A H Pharmaceuticals Ltd),,,3144701000001104,1,,,,,,False,False,1,0208020V0AAAAAA
+303111000001107,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Actavis UK Ltd),,,3875201000001104,1,,,,,,False,False,1,0208020V0AAAAAA
+437711000001102,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Teva UK Ltd),,,3849901000001105,1,,,,,,False,False,1,0208020V0AAAAAA
+739511000001109,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Alliance Healthcare (Distribution) Ltd),,,2089901000001107,1,,,,,,False,False,1,0208020V0AAAAAA
+9798311000001105,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Almus Pharmaceuticals Ltd),,,9507111000001106,1,,,,,,False,False,1,0208020V0AAAAAA
+16071211000001106,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Bristol Laboratories Ltd),,,15987211000001101,1,,,,,,False,False,1,0208020V0AAAAAA
+17876711000001107,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Phoenix Healthcare Distribution Ltd),,,17845311000001104,1,,,,,,False,False,1,0208020V0AAAAAA
+22735311000001104,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (DE Pharmaceuticals),,,2268901000001109,1,,,,,,False,False,1,0208020V0AAAAAA
+28988911000001100,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Crescent Pharma Ltd),,,18616811000001107,1,,,,,,False,False,1,0208020V0AAAAAA
+30945211000001105,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Mawdsley-Brooks & Company Ltd),,,15125811000001100,1,,,,,,False,False,1,0208020V0AAAAAA
+36843011000001100,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Torrent Pharma (UK) Ltd),,,31535811000001105,1,,,,,,False,False,1,0208020V0AAAAAA
+456711000001104,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (A A H Pharmaceuticals Ltd),,,3144701000001104,1,,,,,,False,False,1,0208020V0AAABAB
+555911000001104,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Actavis UK Ltd),,,3875201000001104,1,,,,,,False,False,1,0208020V0AAABAB
+508311000001104,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Teva UK Ltd),,,3849901000001105,1,,,,,,False,False,1,0208020V0AAABAB
+584211000001100,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Alliance Healthcare (Distribution) Ltd),,,2089901000001107,1,,,,,,False,False,1,0208020V0AAABAB
+9798011000001107,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Almus Pharmaceuticals Ltd),,,9507111000001106,1,,,,,,False,False,1,0208020V0AAABAB
+16071411000001105,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Bristol Laboratories Ltd),,,15987211000001101,1,,,,,,False,False,1,0208020V0AAABAB
+17876911000001109,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Phoenix Healthcare Distribution Ltd),,,17845311000001104,1,,,,,,False,False,1,0208020V0AAABAB
+22735611000001109,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (DE Pharmaceuticals),,,2268901000001109,1,,,,,,False,False,1,0208020V0AAABAB
+28989111000001105,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Crescent Pharma Ltd),,,18616811000001107,1,,,,,,False,False,1,0208020V0AAABAB
+30945411000001109,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Mawdsley-Brooks & Company Ltd),,,15125811000001100,1,,,,,,False,False,1,0208020V0AAABAB
+36844011000001103,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Torrent Pharma (UK) Ltd),,,31535811000001105,1,,,,,,False,False,1,0208020V0AAABAB
+751611000001108,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (A A H Pharmaceuticals Ltd),,,3144701000001104,1,,,,,,False,False,1,0208020V0AAADAD
+642911000001101,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Actavis UK Ltd),,,3875201000001104,1,,,,,,False,False,1,0208020V0AAADAD
+617811000001100,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Teva UK Ltd),,,3849901000001105,1,,,,,,False,False,1,0208020V0AAADAD
+883011000001107,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Alliance Healthcare (Distribution) Ltd),,,2089901000001107,1,,,,,,False,False,1,0208020V0AAADAD
+9797411000001102,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Almus Pharmaceuticals Ltd),,,9507111000001106,1,,,,,,False,False,1,0208020V0AAADAD
+16071611000001108,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Bristol Laboratories Ltd),,,15987211000001101,1,,,,,,False,False,1,0208020V0AAADAD
+17877111000001109,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Phoenix Healthcare Distribution Ltd),,,17845311000001104,1,,,,,,False,False,1,0208020V0AAADAD
+22736411000001102,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (DE Pharmaceuticals),,,2268901000001109,1,,,,,,False,False,1,0208020V0AAADAD
+28989311000001107,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Crescent Pharma Ltd),,,18616811000001107,1,,,,,,False,False,1,0208020V0AAADAD
+30945711000001103,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Mawdsley-Brooks & Company Ltd),,,15125811000001100,1,,,,,,False,False,1,0208020V0AAADAD
+36844311000001100,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Torrent Pharma (UK) Ltd),,,31535811000001105,1,,,,,,False,False,1,0208020V0AAADAD
+395111000001106,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (Alliance Healthcare (Distribution) Ltd),,,2089901000001107,1,,,,,,False,False,1,0208020V0AAASAS
+3659711000001104,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (A A H Pharmaceuticals Ltd),,,3144701000001104,1,,,,,,False,False,1,0208020V0AAASAS
+10305211000001109,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (Actavis UK Ltd),,,3875201000001104,1,,,,,,False,False,1,0208020V0AAASAS
+15202611000001100,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (Sigma Pharmaceuticals Plc),,,2087601000001106,1,,,,,,False,False,1,0208020V0AAASAS
+17876511000001102,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (Phoenix Healthcare Distribution Ltd),,,17845311000001104,1,,,,,,False,False,1,0208020V0AAASAS
+20538311000001102,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (Advanz Pharma),,,24129411000001106,1,,,,,,False,False,1,0208020V0AAASAS
+22736711000001108,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (DE Pharmaceuticals),,,2268901000001109,1,,,,,,False,False,1,0208020V0AAASAS
+34759911000001108,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (Sun Pharmaceutical Industries Europe B.V.),,,14937711000001109,1,,,,,,False,False,1,0208020V0AAASAS
+18288311000001103,False,18290011000001102,Warfarin 1mg/ml oral suspension sugar free,,Warfarin 1mg/ml oral suspension sugar free (Rosemont Pharmaceuticals Ltd),,,2269501000001108,1,,,,,,False,False,1,0208020V0AABBBB
+18723611000001101,False,18290011000001102,Warfarin 1mg/ml oral suspension sugar free,,Warfarin 1mg/ml oral suspension sugar free (Alliance Healthcare (Distribution) Ltd),,,2089901000001107,1,,,,,,False,False,1,0208020V0AABBBB
+22736911000001105,False,18290011000001102,Warfarin 1mg/ml oral suspension sugar free,,Warfarin 1mg/ml oral suspension sugar free (DE Pharmaceuticals),,,2268901000001109,1,,,,,,False,False,1,0208020V0AABBBB
+13504711000001102,False,13532911000001104,Pradaxa 75mg capsules,,Pradaxa 75mg capsules (Boehringer Ingelheim Ltd),,,2065401000001103,1,,,,,,False,False,1,0208020X0BBAAAA
+13505411000001109,False,13532811000001109,Pradaxa 110mg capsules,,Pradaxa 110mg capsules (Boehringer Ingelheim Ltd),,,2065401000001103,1,,,,,,False,False,1,0208020X0BBABAB
+19465811000001104,False,19469811000001101,Pradaxa 150mg capsules,,Pradaxa 150mg capsules (Boehringer Ingelheim Ltd),,,2065401000001103,1,,,,,,False,False,1,0208020X0BBACAC
+14237311000001106,False,14254711000001104,Xarelto 10mg tablets,,Xarelto 10mg tablets (Bayer Plc),,,2063701000001109,1,,,,,,True,False,1,0208020Y0BBAAAA
+19840811000001107,False,19842111000001101,Xarelto 15mg tablets,,Xarelto 15mg tablets (Bayer Plc),,,2063701000001109,1,,,,,,True,False,1,0208020Y0BBABAB
+19841411000001101,False,19842211000001107,Xarelto 20mg tablets,,Xarelto 20mg tablets (Bayer Plc),,,2063701000001109,1,,,,,,True,False,1,0208020Y0BBACAC
+27160311000001106,False,27810711000001104,Xarelto 2.5mg tablets,,Xarelto 2.5mg tablets (Bayer Plc),,,2063701000001109,1,,,,,,True,False,1,0208020Y0BBADAD
+34793111000001102,False,34819111000001102,Xarelto 15mg / 20mg treatment initiation pack,,Xarelto 15mg / 20mg treatment initiation pack (Bayer Plc),,,2063701000001109,1,,,,1.0,,True,False,1,0208020Y0BBAEAE
+19506911000001105,False,703907006,Eliquis 2.5mg tablets,,Eliquis 2.5mg tablets (Bristol-Myers Squibb Pharmaceuticals Ltd),,,3145301000001104,1,,,,,,False,False,1,0208020Z0BBAAAA
+21677511000001105,False,703908001,Eliquis 5mg tablets,,Eliquis 5mg tablets (Bristol-Myers Squibb Pharmaceuticals Ltd),,,3145301000001104,1,,,,,,False,False,1,0208020Z0BBABAB
+18509011000001102,False,375374009,Coumadin 4mg tablets,,Coumadin 4mg tablets (Imported (Canada)),,,11820111000001109,0,,,,,,False,False,4,0208020V0BDAAAC
+8730911000001102,False,8798711000001106,Warfarin 5mg/5ml oral solution,,Warfarin 5mg/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAIAI
+8732411000001106,False,8798811000001103,Warfarin 5mg/5ml oral suspension,,Warfarin 5mg/5ml oral suspension (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAIAI
+8731411000001101,False,8798311000001107,Warfarin 2mg/5ml oral solution,,Warfarin 2mg/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAJAJ
+8733211000001101,False,8798411000001100,Warfarin 2mg/5ml oral suspension,,Warfarin 2mg/5ml oral suspension (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAJAJ
+12959011000001109,False,13016911000001108,Warfarin 25mg/5ml oral solution,,Warfarin 25mg/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAKAK
+8728611000001109,False,8798511000001101,Warfarin 3mg/5ml oral solution,,Warfarin 3mg/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAMAM
+8729111000001108,False,8798611000001102,Warfarin 3mg/5ml oral suspension,,Warfarin 3mg/5ml oral suspension (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAMAM
+8729811000001101,False,8798111000001105,Warfarin 1mg/5ml oral solution,,Warfarin 1mg/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAANAN
+8730111000001100,False,8798211000001104,Warfarin 1mg/5ml oral suspension,,Warfarin 1mg/5ml oral suspension (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAANAN
+12959411000001100,False,13017011000001107,Warfarin 4.16mg/5ml oral solution,,Warfarin 4.16mg/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAPAP
+12957311000001102,False,13016611000001102,Warfarin 1.5mg/5ml oral solution,,Warfarin 1.5mg/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAARAR
+12958011000001104,False,13016711000001106,Warfarin 100micrograms/5ml oral solution,,Warfarin 100micrograms/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAATAT
+12958511000001107,False,13016811000001103,Warfarin 2.5mg/5ml oral solution,,Warfarin 2.5mg/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAUAU
+8728011000001102,False,8797911000001107,Warfarin 10mg/5ml oral solution,,Warfarin 10mg/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAVAV
+8728311000001104,False,8798011000001109,Warfarin 10mg/5ml oral suspension,,Warfarin 10mg/5ml oral suspension (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAVAV
+12960011000001105,False,13017111000001108,Warfarin 4mg/5ml oral solution,,Warfarin 4mg/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAWAW
+12961311000001103,False,13017211000001102,Warfarin 500micrograms/5ml oral solution,,Warfarin 500micrograms/5ml oral solution (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AAAXAX
+32742511000001102,False,32751111000001103,Warfarin 1mg capsules,,Warfarin 1mg capsules (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AABABA
+32742211000001100,False,32751211000001109,Warfarin 3mg capsules,,Warfarin 3mg capsules (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AABCBC
+32741911000001103,False,32751311000001101,Warfarin 5mg capsules,,Warfarin 5mg capsules (Special Order),,,8286711000001104,0,,,,,,False,False,6,0208020V0AABDBD
+3780911000001106,False,319745009,Phenindione 10mg tablets,,Phenindione 10mg tablets (A A H Pharmaceuticals Ltd),,,3144701000001104,1,,,,,,False,False,9,0208020N0AAAAAA
+3782011000001106,False,319746005,Phenindione 25mg tablets,,Phenindione 25mg tablets (A A H Pharmaceuticals Ltd),,,3144701000001104,1,,,,,,False,False,9,0208020N0AAABAB
+3783211000001107,False,319747001,Phenindione 50mg tablets,,Phenindione 50mg tablets (A A H Pharmaceuticals Ltd),,,3144701000001104,1,,,,,,False,False,9,0208020N0AAACAC
+3783611000001109,False,319747001,Phenindione 50mg tablets,,Phenindione 50mg tablets (Advanz Pharma),,,24129411000001106,1,,,,,,False,False,9,0208020N0AAACAC
+3783811000001108,False,319747001,Phenindione 50mg tablets,,Phenindione 50mg tablets (Alliance Healthcare (Distribution) Ltd),,,2089901000001107,1,,,,,,False,False,9,0208020N0AAACAC
+590411000001106,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (The Boots Company Plc),,,7497111000001106,1,,,,,,False,False,9,0208020V0AAAAAA
+746411000001102,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Mylan),,,144301000001108,1,,,,,,False,False,9,0208020V0AAAAAA
+272711000001102,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (IVAX Pharmaceuticals UK Ltd),,,4028101000001100,1,,,,,,False,False,9,0208020V0AAAAAA
+524811000001109,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Kent Pharmaceuticals Ltd),,,2073701000001100,1,,,,,,False,False,9,0208020V0AAAAAA
+321511000001106,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Sandoz Ltd),,,2074301000001102,1,,,,,,False,False,9,0208020V0AAAAAA
+10138911000001108,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Zentiva),,,9043311000001106,1,,,,,,False,False,9,0208020V0AAAAAA
+10418211000001107,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Arrow Generics Ltd),,,10190711000001104,1,,,,,,False,False,9,0208020V0AAAAAA
+19835411000001102,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (APC Pharmaceuticals & Chemicals (Europe) Ltd),,,18759211000001102,1,,,,,,False,False,9,0208020V0AAAAAA
+21919511000001107,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Waymade Healthcare Plc),,,2091401000001103,1,,,,,,False,False,9,0208020V0AAAAAA
+34760111000001106,False,319733000,Warfarin 1mg tablets,,Warfarin 1mg tablets (Sun Pharmaceutical Industries Europe B.V.),,,14937711000001109,1,,,,,,False,False,9,0208020V0AAAAAA
+473111000001108,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (The Boots Company Plc),,,7497111000001106,1,,,,,,False,False,9,0208020V0AAABAB
+347911000001109,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Mylan),,,144301000001108,1,,,,,,False,False,9,0208020V0AAABAB
+927211000001109,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (IVAX Pharmaceuticals UK Ltd),,,4028101000001100,1,,,,,,False,False,9,0208020V0AAABAB
+772211000001101,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Kent Pharmaceuticals Ltd),,,2073701000001100,1,,,,,,False,False,9,0208020V0AAABAB
+550411000001100,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Sandoz Ltd),,,2074301000001102,1,,,,,,False,False,9,0208020V0AAABAB
+10139111000001103,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Zentiva),,,9043311000001106,1,,,,,,False,False,9,0208020V0AAABAB
+10418411000001106,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Arrow Generics Ltd),,,10190711000001104,1,,,,,,False,False,9,0208020V0AAABAB
+19835611000001104,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (APC Pharmaceuticals & Chemicals (Europe) Ltd),,,18759211000001102,1,,,,,,False,False,9,0208020V0AAABAB
+21919811000001105,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Waymade Healthcare Plc),,,2091401000001103,1,,,,,,False,False,9,0208020V0AAABAB
+34760411000001101,False,319734006,Warfarin 3mg tablets,,Warfarin 3mg tablets (Sun Pharmaceutical Industries Europe B.V.),,,14937711000001109,1,,,,,,False,False,9,0208020V0AAABAB
+504911000001105,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (The Boots Company Plc),,,7497111000001106,1,,,,,,False,False,9,0208020V0AAADAD
+727111000001108,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Mylan),,,144301000001108,1,,,,,,False,False,9,0208020V0AAADAD
+729811000001109,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (IVAX Pharmaceuticals UK Ltd),,,4028101000001100,1,,,,,,False,False,9,0208020V0AAADAD
+36911000001105,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Kent Pharmaceuticals Ltd),,,2073701000001100,1,,,,,,False,False,9,0208020V0AAADAD
+919811000001107,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Sandoz Ltd),,,2074301000001102,1,,,,,,False,False,9,0208020V0AAADAD
+10139311000001101,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Zentiva),,,9043311000001106,1,,,,,,False,False,9,0208020V0AAADAD
+10418611000001109,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Arrow Generics Ltd),,,10190711000001104,1,,,,,,False,False,9,0208020V0AAADAD
+19835811000001100,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (APC Pharmaceuticals & Chemicals (Europe) Ltd),,,18759211000001102,1,,,,,,False,False,9,0208020V0AAADAD
+21920111000001102,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Waymade Healthcare Plc),,,2091401000001103,1,,,,,,False,False,9,0208020V0AAADAD
+34760611000001103,False,319735007,Warfarin 5mg tablets,,Warfarin 5mg tablets (Sun Pharmaceutical Industries Europe B.V.),,,14937711000001109,1,,,,,,False,False,9,0208020V0AAADAD
+622211000001107,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (Kent Pharmaceuticals Ltd),,,2073701000001100,1,,,,,,False,False,9,0208020V0AAASAS
+10417011000001103,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (Arrow Generics Ltd),,,10190711000001104,1,,,,,,False,False,9,0208020V0AAASAS
+10733911000001106,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (Zentiva),,,9043311000001106,1,,,,,,False,False,9,0208020V0AAASAS
+21919311000001101,False,319736008,Warfarin 500microgram tablets,,Warfarin 500microgram tablets (Waymade Healthcare Plc),,,2091401000001103,1,,,,,,False,False,9,0208020V0AAASAS
+20367411000001100,False,18290011000001102,Warfarin 1mg/ml oral suspension sugar free,,Warfarin 1mg/ml oral suspension sugar free (A A H Pharmaceuticals Ltd),,,3144701000001104,1,,,,,,False,False,9,0208020V0AABBBB
+21919111000001103,False,18290011000001102,Warfarin 1mg/ml oral suspension sugar free,,Warfarin 1mg/ml oral suspension sugar free (Waymade Healthcare Plc),,,2091401000001103,1,,,,,,False,False,9,0208020V0AABBBB
+933311000001105,False,319733000,Marevan 1mg tablets,,Marevan 1mg tablets (Advanz Pharma),,,24129411000001106,1,,,,,,False,False,9,0208020V0BBAAAA
+284011000001104,False,319734006,Marevan 3mg tablets,,Marevan 3mg tablets (Advanz Pharma),,,24129411000001106,1,,,,,,False,False,9,0208020V0BBABAB
+461911000001100,False,319735007,Marevan 5mg tablets,,Marevan 5mg tablets (Advanz Pharma),,,24129411000001106,1,,,,,,False,False,9,0208020V0BBACAD
+204811000001109,False,319736008,Marevan 500microgram tablets,,Marevan 500microgram tablets (Advanz Pharma),,,24129411000001106,1,,,,,,False,False,9,0208020V0BBAFAS
